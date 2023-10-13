@@ -69,17 +69,25 @@ int main(){
 		//scanf("%s", buffer);
 		SDL_PumpEvents();
 		
-		if (state[ SDL_SCANCODE_W ]) { 
-			fflush(stdout);
-			//cout << "W " ;
-			printf("W ");
-
-			strcpy(buffer, "w \n\0");
-			//buffer[0] = 'w';
-			//buffer[1] = ' ';
-			//buffer[2] = '\n';
-			//buffer[3] = '\0';
-
+		//if (state[ SDL_SCANCODE_W ]) { 
+		if( event.type == SDL_KEYDOWN){	
+			
+			if (state[ SDL_SCANCODE_W ]){
+				fflush(stdout); printf("W ");	
+				strcpy(buffer, "w \n\0");
+			}
+			else if(state[ SDL_SCANCODE_A ]){
+				fflush(stdout); printf("A ");	
+				strcpy(buffer, "a \n\0");
+			}
+			else if(state[ SDL_SCANCODE_S ]){
+				fflush(stdout); printf("S ");	
+				strcpy(buffer, "s \n\0");
+			}
+			else if(state[ SDL_SCANCODE_D ]){
+				fflush(stdout); printf("D ");	
+				strcpy(buffer, "d \n\0");
+			}
 
 			int n = write(serial_port, buffer, strlen(buffer));
 			
