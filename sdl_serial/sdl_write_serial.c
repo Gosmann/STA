@@ -74,11 +74,11 @@ int main(){
 			//cout << "W " ;
 			printf("W ");
 
-			//strcpy(buffer, "w \n\0");
-			buffer[0] = 'w';
-			buffer[1] = ' ';
-			buffer[2] = '\n';
-			buffer[3] = '\0';
+			strcpy(buffer, "w \n\0");
+			//buffer[0] = 'w';
+			//buffer[1] = ' ';
+			//buffer[2] = '\n';
+			//buffer[3] = '\0';
 
 
 			int n = write(serial_port, buffer, strlen(buffer));
