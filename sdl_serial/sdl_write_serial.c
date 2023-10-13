@@ -11,6 +11,11 @@
 
 #include <SDL2/SDL.h>
 
+#define SCREEN_HEIGHT   400
+#define SCREEN_WIDTH    400
+#define SCREEN_ORIGIN_X     100
+#define SCREEN_ORIGIN_Y     100
+
 #define MAX_BUFFER 256
 
 int main(){
@@ -38,13 +43,30 @@ int main(){
 	const Uint8 *state = SDL_GetKeyboardState(NULL); 
 	SDL_Event event;
 
-	while(1){
+	SDL_Window *window ;
+
+	window = SDL_CreateWindow("test oppening screen", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+		SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_RESIZABLE)  ; 
+
+	if( window == NULL ){       // error opening window
+		//cout << "error oppening screen! \n " << SDL_GetError();
+	}
+
+	char running = 1;
+
+	while( running ){
 
 		while( SDL_PollEvent( &event ) ){
+		
+			if( event.type ==  SDL_QUIT ){
+                running = 0;
+                //cout << "this is the end! \n" ;
+                break;
+            }
+
 		int j = 0;
 
 		//scanf("%s", buffer);
-		
 		SDL_PumpEvents();
 		
 		if (state[ SDL_SCANCODE_W ]) { 
