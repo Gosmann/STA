@@ -24,12 +24,55 @@ int main( int argc, char *argv[] ){
         cout << "error oppening screen! \n " << SDL_GetError();
     }
 
-    while(1){
-        cin >> input; 
+    SDL_Event event;
+
+    char running = 1;
+    const Uint8 *state = SDL_GetKeyboardState(NULL); 
+
+    while( running ){
         
-        if( input == 'F'){
-            break;
+        while( SDL_PollEvent( &event ) ){
+        
+            if( event.type ==  SDL_QUIT ){
+                running = 0;
+                cout << "this is the end! \n" ;
+                break;
+            }
+
+            /*
+            else if( event.type == SDL_KEYDOWN ){
+                
+                switch( event.key.keysym.sym ){
+                    case SDLK_w: 
+                        cout << "W is down! \n" ;
+                        break;
+                    case SDLK_a: 
+                        cout << "A is down! \n" ;
+                        break;
+                    case SDLK_s: 
+                        cout << "S is down! \n" ;
+                        break;
+                    case SDLK_d: 
+                        cout << "D is down! \n" ;
+                        break;
+                    default:
+                        cout << "other key is down! \n" ;            
+                }
+            }
+            */
+
+            SDL_PumpEvents();
+            if (state[ SDL_SCANCODE_W ]) { 
+                fflush(stdout);
+                //cout << "W " ;
+                printf("W ");
+            }
+                
         }
+
+        // main program loop
+
+
 
     }
 
