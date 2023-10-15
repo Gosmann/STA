@@ -38,6 +38,48 @@ void expand_node( node_t * node, double dt ){
 
 }
 
+double best = 10e3 ;
+
+//expand_recursive( &start, dt, 5 );
+void expand_recursive( node_t * node, double dt, uint32_t max_depth ){
+
+    // stops recursion
+    if( node->depth < max_depth ){      
+        
+        //print_node( node[0] );
+        
+        // creates new nodes
+        node_t node_left = node[0] ; 
+        node_t node_right = node[0] ; 
+        node_t node_forwards = node[0] ; 
+        node_t node_backwards = node[0] ; 
+
+        node_left.state.phi += 0.1 ;         // move 5 degrees to left
+        node_right.state.phi -= 0.1 ;        // move 5 degrees to left
+        node_forwards.state.speed = 1.0;     // move forwards at 1 m/s
+        node_backwards.state.speed = -1.0;   // move forwards at 1 m/s
+
+        node->children[ 0 ] = simulate( &node_left, dt, Left);
+        expand_recursive( node->children[0], dt, max_depth );
+
+        node->children[ 1 ] = simulate( &node_right, dt, Right);
+        expand_recursive( node->children[1], dt, max_depth );
+
+        node->children[ 2 ] = simulate( &node_forwards, dt, Forwards);
+        expand_recursive( node->children[2], dt, max_depth );
+
+        node->children[ 3 ] = simulate( &node_backwards, dt, Backwards);
+        expand_recursive( node->children[3], dt, max_depth );        
+
+    }
+    else{
+        if( node->cost < best ){
+            print_node( node[0] );
+            best = node->cost ;
+        }
+        
+    }
+}
 
 int main( int argc, char ** argv ){
 
@@ -57,169 +99,29 @@ int main( int argc, char ** argv ){
 
     double dt = 0.5 ;
 
-    expand_node( &start, dt ) ;
+    //expand_node( &start, dt ) ;
 
     printf("%p \n", start.children[0]) ;
     cout << "start: \n";
     print_node( start );
     
     cout << "children: \n";
-    expand_node( &start, dt ) ;
-    print_all_children( &start );
+    //expand_node( &start, dt ) ;
+    //print_all_children( &start );
+    //expand_recursive( &start, dt, 10 );
 
-    int i, j, k, l, m, n, o, p, q, r, s;
-    bool running = false ;
+    int i, j;
+    bool running = true ;
     
-
+    /*
     cout << "new layer \n" ;
     for( i = 0 ; i < 4 ; i++ ){
         expand_node( start.children[i], dt ) ;
         //print_all_children( &start.children[i][0] );
     }
+    */
 
-    cout << "new new layer \n" ;
-    for( i = 0 ; i < 4 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){
-            expand_node( start.children[i]->children[j], dt ) ;
-            //print_all_children( &start.children[i]->children[j][0] );
-        }
-    }
 
-    cout << "new new new layer \n" ;
-    for( i = 0 ; i < 4 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){
-            for(k = 0 ; k < 4 ; k++){
-                expand_node( start.children[i]->children[j]->children[k], dt ) ;
-                //print_all_children( &start.children[i]->children[j]->children[k][0] );
-            }
-        }
-    }
-
-    cout << "new new new new layer \n" ;
-    for( i = 0 ; i < 4 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){
-            for(k = 0 ; k < 4 ; k++){
-                for(l = 0 ; l < 4 ; l++){
-                    expand_node( start.children[i]->children[j]->children[k]->children[l], dt ) ;
-                    //print_all_children( &start.children[i]->children[j]->children[k]->children[l][0] );
-                }
-            }
-        }
-    }
-
-    cout << "new new new new new layer \n" ;
-    for( i = 0 ; i < 4 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){
-            for(k = 0 ; k < 4 ; k++){
-                for(l = 0 ; l < 4 ; l++){
-                    for(m = 0 ; m < 4 ; m++){
-                        expand_node( start.children[i]->children[j]->children[k]->children[l]->children[m], dt ) ;
-                        //print_all_children( &start.children[i]->children[j]->children[k]->children[l]->children[m][0] );
-                    }
-                }
-            }
-        }
-    }
-
-    cout << "new new new new new new layer \n" ;
-    for( i = 0 ; i < 4 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){
-            for(k = 0 ; k < 4 ; k++){
-                for(l = 0 ; l < 4 ; l++){
-                    for(m = 0 ; m < 4 ; m++){
-                        for(n = 0 ; n < 4 ; n++){
-                            expand_node( start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n], dt ) ;
-                            //print_all_children( &start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n][0] );
-                        }
-                    }
-                }
-            }
-        }
-    }
-        
-    cout << "new new new new new new new layer \n" ;
-    for( i = 0 ; i < 4 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){
-            for(k = 0 ; k < 4 ; k++){
-                for(l = 0 ; l < 4 ; l++){
-                    for(m = 0 ; m < 4 ; m++){
-                        for(n = 0 ; n < 4 ; n++){
-                            for(o = 0 ; o < 4 ; o++){
-                                expand_node( start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n]->children[o], dt ) ;
-                                //print_all_children( &start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n]->children[o][0] );
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    cout << "new new new new new new new new layer \n" ;
-    for( i = 0 ; i < 4 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){
-            for(k = 0 ; k < 4 ; k++){
-                for(l = 0 ; l < 4 ; l++){
-                    for(m = 0 ; m < 4 ; m++){
-                        for(n = 0 ; n < 4 ; n++){
-                            for(o = 0 ; o < 4 ; o++){
-                                for(p = 0 ; p < 4 ; p++){
-                                    expand_node( start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n]->children[o]->children[p], dt ) ;
-                                    //print_all_children( &start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n]->children[o]->children[p][0] );
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    cout << "new new new new new new new new new layer \n" ;
-    for( i = 0 ; i < 4 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){
-            for(k = 0 ; k < 4 ; k++){
-                for(l = 0 ; l < 4 ; l++){
-                    for(m = 0 ; m < 4 ; m++){
-                        for(n = 0 ; n < 4 ; n++){
-                            for(o = 0 ; o < 4 ; o++){
-                                for(p = 0 ; p < 4 ; p++){
-                                    for(q = 0 ; q < 4 ; q++){
-                                        expand_node( start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n]->children[o]->children[p]->children[q], dt ) ;
-                                        print_all_children( &start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n]->children[o]->children[p]->children[q][0] );
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    cout << "new new new new new new new new new new layer \n" ;
-    for( i = 0 ; i < 4 ; i++ ){
-        for(j = 0 ; j < 4 ; j++){
-            for(k = 0 ; k < 4 ; k++){
-                for(l = 0 ; l < 4 ; l++){
-                    for(m = 0 ; m < 4 ; m++){
-                        for(n = 0 ; n < 4 ; n++){
-                            for(o = 0 ; o < 4 ; o++){
-                                for(p = 0 ; p < 4 ; p++){
-                                    for(q = 0 ; q < 4 ; q++){
-                                        for(r = 0 ; r < 4 ; r++){
-                                            expand_node( start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n]->children[o]->children[p]->children[q]->children[r], dt ) ;
-                                            print_all_children( &start.children[i]->children[j]->children[k]->children[l]->children[m]->children[n]->children[o]->children[p]->children[q]->children[r][0] );
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     // simultion stuff
 
@@ -247,6 +149,7 @@ int main( int argc, char ** argv ){
     show_path( renderer, path );
     */
 
+    printf("[%d] ", sizeof(node_t));
 
     while( running ){
         
@@ -262,7 +165,9 @@ int main( int argc, char ** argv ){
         }
 
         // main program loop 
-        
+        expand_recursive( &start, dt, 12 );
+
+        running = false;
 
         
 

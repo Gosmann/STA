@@ -8,6 +8,33 @@ void simulate_robot( robot_t * robot, double dt ){
     
 }
 
+double angle_diff( double alfa, double beta ){
+    double x_alfa = cos(alfa) ;
+    double x_beta = cos(beta) ;
+
+    double y_alfa = sin(alfa) ;
+    double y_beta = sin(beta) ;
+
+    double dot_product = x_alfa * x_beta + y_alfa * y_beta ;
+    
+    return acos( dot_product ) ;
+}
+
+double calculate_cost( pose_t pose, pose_t target ){
+    
+    double alfa = 1.0 ;
+    double beta = alfa ; 
+    double gama = 1.0 ;
+
+    double delta_x = pow(pose.x - target.x, 2) ;
+    double delta_y = pow(pose.y - target.y, 2) ;
+    double delta_theta = pow( angle_diff( pose.theta, target.theta ), 2 ) ;
+
+    double cost = delta_x * alfa + delta_y * beta + delta_theta * gama ;
+
+    return cost;
+
+}
 
 node_t * simulate( node_t * node, double dt, actions act ){
 
@@ -32,6 +59,9 @@ node_t * simulate( node_t * node, double dt, actions act ){
     p_node->state.pose.theta = node->state.pose.theta + ( node->state.speed / node->state.L ) * tan( node->state.phi ) * dt ;
 
     p_node->depth = node->depth + 1;    // increase depth
+
+    pose_t target = {2, 2, 0} ;
+    p_node->cost = calculate_cost( p_node->state.pose, target);
 
     return p_node;
 }
@@ -72,7 +102,7 @@ void print_state( robot_t state ){
 }
 
 void print_node( node_t node ){
-    /*
+    
     int j;
     for(j = 0 ; j < node.depth ; j++)
         printf("\t");
@@ -82,7 +112,7 @@ void print_node( node_t node ){
     
     char buffer[200];
     
-    sprintf(buffer, "[x, y, theta, speed, phi, depth, cost] : [%8.5f, %8.5f, %1.2f, %5.2f, %5.2f, %2d, %4.2f] \n",
+    sprintf(buffer, "[x, y, theta, speed, phi, depth, cost] : [%8.5f, %8.5f, %1.2f, %5.2f, %5.2f, %2d, %8.5f] \n",
         node.state.pose.x, node.state.pose.y, node.state.pose.theta, 
         node.state.speed, node.state.phi, node.depth, node.cost) ;
     cout << buffer ;
