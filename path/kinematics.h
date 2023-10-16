@@ -6,13 +6,16 @@ using namespace std;
 
 #include "display.h"
 
-#define MAX_DEPTH 20
+#define MAX_DEPTH 50
+#define CHILDREN_NUM 6
 
 enum actions {
-    Left = 'L', 
-    Right = 'R', 
+    Left_Forwards = 'L', 
+    Right_Forwards = 'R', 
     Forwards = 'F', 
-    Backwards = 'B'
+    Backwards = 'B',
+    Left_Backwards = 'Z', 
+    Right_Backwards = 'X', 
 } ;
 
 typedef struct {
@@ -32,11 +35,13 @@ typedef struct node_t{
 
     robot_t state ;
     uint32_t depth ;
-    double cost ;
+    double cost ;       // TODO change this to h_cost
+    double g_cost ;
+    double t_cost ; 
     
     uint8_t path[MAX_DEPTH] ; 
     
-    struct node_t * children[4] ;     // left, right, up, down
+    struct node_t * children[CHILDREN_NUM] ;     // left, right, up, down
                                     // TODO create an enum for this
 } node_t ;
 

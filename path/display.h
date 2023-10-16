@@ -1,5 +1,5 @@
 #define SCREEN_HEIGHT       480
-#define SCREEN_WIDTH        640
+#define SCREEN_WIDTH        480
 #define SCREEN_ORIGIN_X     100
 #define SCREEN_ORIGIN_Y     100
 
