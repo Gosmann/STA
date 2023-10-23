@@ -75,7 +75,7 @@ node_t * simulate( node_t * node, double dt, actions act ){
 
     p_node->depth = node->depth + 1;    // increase depth
 
-    pose_t target = {6, 6, -M_PI/2} ;
+    pose_t target = {4, 4, M_PI} ;
     p_node->cost = calculate_cost( p_node->state.pose, target);
     
     p_node->g_cost += p_node->cost * 0.10 ;

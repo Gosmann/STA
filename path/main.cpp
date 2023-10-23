@@ -134,7 +134,7 @@ void print_possible_nodes_rec( node_t * start ){
     
 }
 
-void a_star( node_t * node, double dt ){
+node_t * a_star( node_t * node, double dt ){
 
     int i;
     for(i = 0 ; i < CHILDREN_NUM ; i++)
@@ -151,7 +151,7 @@ void a_star( node_t * node, double dt ){
     
     best_node = current_best_node;
 
-    for( i = 0 ; i < 1000 ; i++ ){
+    for( i = 0 ; i < 10000 ; i++ ){
 
         //printf("[%d] print possible nodes: \n", i);
         //print_possible_nodes_rec( node ) ;
@@ -183,6 +183,7 @@ void a_star( node_t * node, double dt ){
     printf("\nbest node now: \n");
     print_node( current_best_node[0] );
     
+    return best_node ;
 }
 
 int main( int argc, char ** argv ){
@@ -197,11 +198,11 @@ int main( int argc, char ** argv ){
 
     //robot_t robot = { {2, 2, 1}, 0, 0, 1} ;
         
-    node_t start = { { { 2, 2, M_PI/2 }, 0, 0, 1 }, 0, 1e3, 0, 1e3, {0}, NULL };
+    node_t start = { { { 0, 0, 0 }, 0, 0, 1 }, 0, 1e3, 0, 1e3, {0}, NULL };
     best_node = &start ;
     //node_t start = create_node( { 2, 2, M_PI/2 }, 0, 0 );
 
-    double dt = 1.0 ;
+    double dt = 0.5 ;
 
     //expand_node( &start, dt ) ;
 
@@ -233,7 +234,10 @@ int main( int argc, char ** argv ){
     
     */
 
-    a_star( &start, dt );
+    node_t * final = a_star( &start, dt );
+
+    printf("Hello World: \n");
+    print_node(final[0]);
 
     //expand_recursive( &start, dt, 12 );
 
