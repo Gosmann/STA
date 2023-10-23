@@ -1,0 +1,173 @@
+\documentclass[11pt,letterpaper]{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[a4paper,top=1cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tikz, pgfplots}
+\usetikzlibrary{shapes,arrows,chains}
+\usetikzlibrary[calc]
+
+\usepackage{soul}
+\usepackage{color}
+\usepackage{soulutf8}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumerate}  % Create lists
+\usepackage{indentfirst} % Indent first paragraph
+\usepackage{hyperref} % Math mode in titles
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{float}
+\usepackage{nicefrac}
+\usepackage{siunitx}
+\usepackage{svg}
+
+\usepackage{footmisc}% for \footref and \mpfootnotemark
+
+\usepackage{amssymb}
+
+\usepackage[sorting=none]{biblatex}
+\bibliography{sample}
+
+\newlength\esquerda
+\setlength\esquerda{\dimexpr .40\textwidth }
+
+\newlength\direita
+\setlength\direita{\dimexpr .40\textwidth }
+
+\newlength\padding
+\setlength\padding{\dimexpr .10\textwidth }
+
+\newlength\paddingtwo
+\setlength\paddingtwo{\dimexpr .05\textwidth }
+
+
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\title{Your Paper}
+\author{You}
+
+\begin{document}
+
+\nocite{xiao2017}
+\nocite{chollet2015keras}
+\nocite{scikit-learn}
+\nocite{Chen:2016:XST:2939672.2939785}    
+
+\usetikzlibrary{positioning}
+\tikzset{every picture/.style={line width=0.75pt}}    
+\pagestyle{plain}
+
+\begin{tabular}{p{\paddingtwo}p{\esquerda}p{\direita}p{\padding}}
+{ } &
+{
+\begin{centering}
+    \vspace{4mm}
+    \includesvg[width=4.8cm]{imagens/ECLille.svg}  % Coloca a imagem 'image.svg' aqui.
+
+    \vspace{4mm}
+    \textbf{ École Centrale de Lille } \par
+    STA - Système de transport autonome \par 
+\end{centering} 
+}
+&
+{
+\begin{centering}
+\vspace{6mm}
+Nicolas CAMBOU   \par
+Cyriac DE BELSUNCE \par
+Gabriel GOSMANN  \par
+François GUILTAUX \par
+Farouk MOHAMED \par
+Axel ROCHE \par
+
+\vspace{2mm}
+\end{centering}
+}
+& 
+{}
+\end{tabular}
+
+\begin{center}
+\vspace{-6mm}
+\rule{\linewidth}{0.3mm} \par
+\vspace{2mm} { \large Cahier de charges -  Sujet Robot Explorateur } 
+\rule{\linewidth}{0.3mm}
+\end{center}
+
+\section{ Résumé }
+Le robot doit être capable d'obtenir de manière autonome (en déplacement et en énergie) une cartographie d'une pièce à partir des mesures effectuées par ses capteurs. Un algorithme SLAM (simultaneos location and mapping) doit permettre le calcul et la communication des résultats en temps réel.
+
+\section{ Diagramme Bloc }
+
+\par \vspace{10mm}
+
+\newlength\rounding \setlength\rounding{1mm}
+\newlength\verticalsize \setlength\verticalsize{3mm}
+
+\tikzstyle{line} = [draw, -latex']
+
+\begin{center}
+    \begin{tikzpicture}[
+        RECT/.style={ draw, rounded corners=\rounding, rectangle, minimum size = 10mm, text centered, node distance = 10mm, font=\large} ,
+        LINE/.style={draw, -latex'}
+    ]  
+    
+    \node[RECT] (network)           [text width=0.8\textwidth]{ \textbf{ réseau : visualisation et transmission de données } } ;
+    \node[RECT] (explorer)          [text width=0.40\textwidth, below=of network, xshift=-0.20\textwidth]{ \textbf{ algorithme d'exploration } } ;
+
+    %\path [line] (network.200) -- node [text width=2.5cm,midway,above ] {test} (explorer.north);
+    \path [LINE] (explorer.90) -- node [text width=20mm,midway, left] { target pose } ($ (explorer.north) + (0, 1) $);
+        
+    \node[RECT] (path)     [text width=0.30\textwidth, below=of explorer, xshift=-0.05\textwidth ]{ \textbf{path planning} } ;
+    
+    \node[RECT] (SLAM)              [text width=0.30\textwidth, right=of path, xshift=0.125\textwidth]{ \textbf{SLAM} } ;
+
+    %\path [LINE] (SLAM.8) -- node [text width=22mm,midway, left] { current pose } (network.-8);
+    %\path [LINE] (SLAM.6) -- node [text width=10mm,midway, right] { map } (network.-6);
+    
+    \path [LINE] (explorer.-90) -- node [text width=20mm,midway, left] { target pose } ( $ (explorer.south) + (0, -1) $ );
+    
+    \path [LINE] ($ (SLAM.north) + (-2.0, 0) $) |- node [text width=8mm, pos=0.70, below] { $\text{map}^{\dagger}$ } ($(explorer.east) + (0, -0.25)$);
+    \path [LINE] ($ (SLAM.north) + (-1.5, 0) $) |- node [text width=22mm, pos=0.72, above] { current pose }($(explorer.east) + (0, 0.25)$) ;  %(explorer.4);
+
+    \path [LINE] ($ (SLAM.north) + (0.5, 0) $) -- node [text width=8mm, pos=0.50, left] { map } ($(SLAM.north) + (0.5, 3)$);
+    \path [LINE] ($ (SLAM.north) + (1.0, 0) $) -- node [text width=10mm, pos=0.50, right] { current pose }($(SLAM.north) + (1.0, 3)$) ;  %(explorer.4);
+    
+    \path [LINE] ($(SLAM.west) + (0, +0.25)$) -- node [text width=22mm,midway, above] { current pose } ($ (path.east) + (0, 0.25) $);
+    \path [LINE] ($(SLAM.west) + (0, -0.25)$) -- node [text width=10mm,midway, below] { map } ($(path.east) + (0, -0.25)$);
+
+    \node[RECT] (automatique)              [text width=0.40\textwidth, below=of path, xshift=0.05\textwidth]{ \textbf{ automatique } } ;
+
+    
+    \node[RECT] (encoders)              [text width=0.20\textwidth, below=of automatique, xshift=0.20\textwidth]{ \textbf{ encoders } } ;
+
+    \node[RECT] (motors)              [text width=0.20\textwidth, below=of automatique, 
+    xshift=-0.1\textwidth]{ \textbf{ motors } } ;
+
+    \node[RECT] (LIDAR)              [text width=0.20\textwidth, below=of automatique, xshift=0.50\textwidth]{ \textbf{ LIDAR } } ;
+    
+
+    
+    
+    \end{tikzpicture}
+\end{center}
+
+
+
+
+
+\end{document}
+
