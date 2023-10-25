@@ -14,7 +14,8 @@
 int main(){
 
 	// int serial_port = open("/dev/ttyUSB0", O_RDWR); 	// usb port
-	int serial_port = open("/dev/ttyS0", O_RDWR);	// GPIO pins
+	//int serial_port = open("/dev/ttyS0", O_RDWR);	// GPIO pins
+	int serial_port = open("/dev/ttyACM0", O_RDWR);	// GPIO pins
 	
 	char buffer[MAX_BUFFER] ;	// buffer that stores the commands
 
@@ -23,14 +24,21 @@ int main(){
 	tcgetattr(serial_port, &tty) ;	
 	tty.c_cc[VTIME] = 0;		// no timeout delay	
 	tty.c_cc[VMIN] = 0;		// no timeout delay
-	cfsetispeed(&tty, B9600);	// define input speed
-	cfsetospeed(&tty, B9600);	// define output speed
+	
+	cfsetispeed(&tty, B115200);	// define input speed
+	cfsetospeed(&tty, B115200);	// define output speed
 	
 	if(serial_port < 0){
 		printf("error oppening serial port \n" );
 		return -1;
 	}
 	
+
+	sprintf(buffer, "%c%c\n\0", 0xA5, 0x60);
+	int n = write(serial_port, buffer, 4);
+
+	printf("%d \n", n);
+
 	while(1){
 		int j = 0;
 
