@@ -1,2 +1,2 @@
-all :
-	g++ main.cpp `pkg-config --cflags --libs sdl2` -o output
+all : 
+	g++ main.cpp display.cpp -lSDL2 -o output

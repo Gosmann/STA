@@ -6,7 +6,7 @@ using namespace std;
 
 #include "display.h"
 
-#define MAX_DEPTH 50
+#define MAX_DEPTH 100
 #define CHILDREN_NUM 6
 
 enum actions {

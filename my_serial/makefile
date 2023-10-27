@@ -1,2 +1,2 @@
 all:
-	gcc write_serial.c -o output
+	gcc listen_serial.c -o listen

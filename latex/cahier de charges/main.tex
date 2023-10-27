@@ -1,0 +1,239 @@
+\documentclass[11pt,letterpaper, usenames,dvipsnames]{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[a4paper,top=1cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tikz, pgfplots}
+\usetikzlibrary{shapes,arrows,chains}
+\usetikzlibrary[calc]
+\usetikzlibrary{fit}
+
+\usepackage{soul}
+\usepackage{color}
+\usepackage{soulutf8}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumerate}  % Create lists
+\usepackage{indentfirst} % Indent first paragraph
+\usepackage{hyperref} % Math mode in titles
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{gensymb}
+
+\usepackage{nicefrac}
+\usepackage{svg}
+
+\usepackage{footmisc}% for \footref and \mpfootnotemark
+
+\usepackage{amssymb}
+
+
+\bibliography{sample}
+
+\newlength\esquerda
+\setlength\esquerda{\dimexpr .40\textwidth }
+
+\newlength\direita
+\setlength\direita{\dimexpr .40\textwidth }
+
+\newlength\padding
+\setlength\padding{\dimexpr .10\textwidth }
+
+\newlength\paddingtwo
+\setlength\paddingtwo{\dimexpr .05\textwidth }
+
+
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\title{Your Paper}
+\author{You}
+
+\begin{document}
+
+\nocite{xiao2017}
+\nocite{chollet2015keras}
+\nocite{scikit-learn}
+\nocite{Chen:2016:XST:2939672.2939785}    
+
+\usetikzlibrary{positioning}
+\tikzset{every picture/.style={line width=0.75pt}}    
+\pagestyle{plain}
+
+\begin{tabular}{p{\paddingtwo}p{\esquerda}p{\direita}p{\padding}}
+{ } &
+{
+\begin{centering}
+    \vspace{4mm}
+    \includesvg[width=4.8cm]{./images/ECLille.svg}  % Coloca a imagem 'image.svg' aqui.
+
+    \vspace{4mm}
+    \textbf{ École Centrale de Lille } \par
+    STA - Système de transport autonome \par 
+\end{centering} 
+}
+&
+{
+\begin{centering}
+\vspace{6mm}
+Nicolas CAMBOU   \par
+Cyriac DE BELSUNCE \par
+Gabriel GOSMANN  \par
+François GUILTAUX \par
+Farouk MOHAMED \par
+Axel ROCHE \par
+
+\vspace{2mm}
+\end{centering}
+}
+& 
+{}
+\end{tabular}
+
+\begin{center}
+\vspace{-6mm}
+\rule{\linewidth}{0.3mm} \par
+\vspace{2mm} { \large Cahier de charges -  Sujet Robot Explorateur } 
+\rule{\linewidth}{0.3mm}
+\end{center}
+
+\vspace{-8mm}
+\section{ Résumé } 
+\vspace{-2mm} Le robot doit être capable d'obtenir de manière autonome une cartographie d'une pièce à partir des mesures effectuées par ses capteurs. Un algorithme SLAM (simultaneos location and mapping) doit permettre le calcul et la communication des résultats en temps réel.
+
+\section{ Diagramme Bloc }
+
+\par \vspace{1mm}
+
+\newlength\rounding \setlength\rounding{1mm}
+\newlength\verticalsize \setlength\verticalsize{3mm}
+
+\tikzstyle{line} = [draw, -latex']
+
+\begin{center}
+    \begin{tikzpicture}[
+        RECT/.style={ draw, rounded corners=\rounding, rectangle, minimum size = 10mm, text centered, node distance = 10mm, font=\large, line width=0.5mm} ,
+        LINE/.style={draw, -latex'},
+        DLINE/.style={draw, latex'-latex'}, 
+        BOX/.style={rounded corners=0.5mm, draw=#1, line width=0.5mm,inner sep=-0.70mm }
+    ]  
+    
+    \node[RECT] (network)           [text width=0.8\textwidth, yshift=1.0]{ \textbf{ \fcolorbox{black}{OrangeRed}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad network: visualization and data transmission } } ;
+    
+    \node[RECT] (explorer)          [text width=0.35\textwidth, below=of network, xshift=-0.225\textwidth, yshift=-0.0cm]{ \textbf{ \fcolorbox{black}{Goldenrod}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad exploration algorithm } } ;
+
+    %\path [line] (network.200) -- node [text width=2.5cm,midway,above ] {test} (explorer.north);
+    \path [LINE] ($ (explorer.north) + (-1.5, 0) $)  -- node [text width=21mm,midway, right] { $\text{target pose}^{\dagger \mathbf{p}}$ } ($ (explorer.north) + (-1.5, 1) $);
+        
+    \node[RECT] (path)     [text width=0.30\textwidth, below=of explorer, xshift=-0.025\textwidth ]{ \textbf{  \fcolorbox{black}{OliveGreen}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad path planning} } ;
+    
+    \node[RECT] (SLAM)              [text width=0.30\textwidth, right=of path, xshift=0.125\textwidth]{ \textbf{ \fcolorbox{black}{Emerald}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad SLAM} } ;
+
+    %\path [LINE] (SLAM.8) -- node [text width=22mm,midway, left] { current pose } (network.-8);
+    %\path [LINE] (SLAM.6) -- node [text width=10mm,midway, right] { map } (network.-6);
+    
+    \path [LINE] ($ (explorer.south) + (-1.5, 0) $) -- node [text width=25mm, midway, right] { target $\text{pose}^{\dagger \mathbf{p}}$ } ( $ (explorer.south) + (-1.5, -1) $ );
+    
+    \path [LINE] ($ (SLAM.north) + (-2.0, 0) $) |- node [text width=8mm, pos=0.75, below] { $\text{map}^{\dagger \mathbf{m}}$ } ($(explorer.east) + (0, -0.25)$);
+    \path [LINE] ($ (SLAM.north) + (-1.5, 0) $) |- node [text width=26mm, pos=0.75, above] { current $\text{pose}^{\dagger \mathbf{p}}$ }($(explorer.east) + (0, 0.25)$) ;  %(explorer.4);
+
+    \path [LINE] ($ (SLAM.north) + (0.5, 0) $) -- node [text width=12mm, pos=0.50, left] { $\text{map}^{\dagger \mathbf{m}}$ } ($(SLAM.north) + (0.5, 3)$);
+    \path [LINE] ($ (SLAM.north) + (1.0, 0) $) -- node [text width=12mm, pos=0.50, right] { current $\text{pose}^{\dagger \mathbf{p}}$ }($(SLAM.north) + (1.0, 3)$) ;  %(explorer.4);
+    
+    \path [LINE] ($(SLAM.west) + (0, +0.25)$) -- node [text width=25mm,pos=0.45, above] { current $\text{pose}^{\dagger \mathbf{p}}$ } ($ (path.east) + (0, 0.25) $);
+    \path [LINE] ($(SLAM.west) + (0, -0.25)$) -- node [text width=10mm,pos=0.45, below] { $\text{map}^{\dagger \mathbf{m}}$ } ($(path.east) + (0, -0.25)$);
+
+    \node[RECT] (automatique)              [text width=0.20\textwidth, below=of path, xshift=-0.050\textwidth]{ \textbf{ \fcolorbox{black}{RoyalPurple}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad control } } ;
+
+    %\path [LINE] ($(path.south) + (0, 0)$) -- node [text width=5mm,midway, left] { ${\omega}$ } ($(path.south) + (0, -1.0)$);
+
+    \path [LINE] ($(path.south) + (-1.50, 0)$) -- node [text width=20mm,midway, right] { $\text{references}^{\dagger \mathbf{r}}$ } ($(path.south) + (-1.50, -1.0)$);
+
+    \node[RECT] (odometre)              [text width=0.20\textwidth, right=of automatique, xshift=0.10\textwidth]{ \textbf{ \fcolorbox{black}{Fuchsia}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad odometer } } ;
+
+
+    \node[RECT] (motors)              [text width=0.20\textwidth, below=of automatique, 
+    xshift=0.0\textwidth]{ \textbf{ motors } } ;
+
+    \node[RECT] (encoders)              [text width=0.20\textwidth, below=of odometre, xshift=0.0\textwidth]{ \textbf{ encoders } } ;
+
+     \path [LINE] ($(encoders.north) + (+0.95, 0)$) -- node [text width=22mm,midway, left] { $\text{quadrature}^{\dagger \mathbf{q}}$  } ($(encoders.north) + (+0.95, 1.0)$);
+
+    \node[RECT] (LIDAR)              [text width=0.15\textwidth, below=of automatique, xshift=0.625\textwidth]{ \textbf{ LIDAR } } ;
+
+    \path [LINE] ($(LIDAR.north) + (-0.28, 0)$) -- node [text width=10mm,midway, right] { laser $\text{scan}^{\dagger \mathbf{l}}$  } ($(SLAM.south) + (1.0, 0)$);
+
+    \path [DLINE] ($(motors.east) + (-0, 0)$) -- node [text width=10mm,pos=0.4, below] { $\text{coupling}$ } ($(encoders.west) + (0.0, 0)$);
+
+    \path [LINE] ($(automatique.south) + (-0.65, 0)$) -- node [text width=20mm,midway, right] { $\text{voltages}^{\dagger \mathbf{v}} $ } ($(automatique.south) + (-0.65, -1.0)$);
+
+    \path [LINE] ($(odometre.west) + (0, 0)$) -- node [text width=20mm, pos=0.4, below] { $\text{ feedback }^{\dagger \mathbf{r}}$  } ($(automatique.east) + (0.0, 0.0)$);
+
+    \path [LINE] ($(odometre.north) + (+0.95, 0)$) -- node [text width=22mm, midway, right] { $\text{odometry}^{\dagger \mathbf{o}}$  } ($(odometre.north) + (+0.95, 1.0)$);
+
+
+    %\node[BOX] (n1) [color=Orange!100, fit=(network)] {} ;
+    %\node[BOX] (n2) [color=LimeGreen!100, fit=(explorer)] {} ;
+    %\node[BOX] (n3) [color=SeaGreen!100, fit=(path)] {} ;
+    %\node[BOX] (n4) [color=SkyBlue!100, fit=(SLAM)] {} ;
+    %\node[BOX] (n5) [color=NavyBlue!100, fit=(automatique)] {} ;
+    %\node[BOX] (n6) [color=Violet!100, fit=(odometre)] {} ;
+        
+    \end{tikzpicture}
+\end{center}
+
+\newlength\lefttab \setlength\lefttab {\dimexpr .35\textwidth }
+\newlength\righttab \setlength\righttab{\dimexpr .50\textwidth -1\tabcolsep}
+
+\vspace{10mm}
+\begin{tabular}{p{\lefttab}p{\righttab}}
+{
+Responsables : \par
+\begin{itemize}
+    \item \fcolorbox{black}{OrangeRed}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad : François G;
+    \item \fcolorbox{black}{Goldenrod}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad : Axel R;
+    \item \fcolorbox{black}{OliveGreen}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad : Gabriel G;
+    \item \fcolorbox{black}{Emerald}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad : Farouk M;
+    \item \fcolorbox{black}{RoyalPurple}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad : Nicolas C;
+    \item \fcolorbox{black}{Fuchsia}{\rule{0pt}{6pt}\rule{6pt}{0pt}}\quad : Cyriac B;
+\end{itemize}
+}
+
+& {
+Formats de données : \par
+\begin{itemize}
+    \item $\text{pose}^{\dagger \mathbf{p}}$ : 
+        \hfill $ \langle x, y, \theta \rangle $ ; \quad \quad \quad \quad \quad 
+    \item $\text{map}^{\dagger \mathbf{m}}$ :
+        \hfill $ \langle \text{\/OccupancyGrid.msg} \rangle $; \quad \quad \quad \quad \quad 
+    \item $\text{references}^{\dagger \mathbf{r}}$ : 
+        \hfill $ \langle \phi, \omega \rangle $ ; \quad \quad \quad \quad \quad 
+    \item $\text{voltages}^{\dagger \mathbf{v}}$ :
+        \hfill $ \langle v_{m1}, v_{m2} \rangle $ ; \quad \quad \quad \quad \quad 
+    \item $\text{quadrature}^{\dagger \mathbf{q}}$ : 
+        \hfill $ \langle a_{m1}, b_{m1}, a_{m2}, b_{m2} \rangle $ ; \quad \quad \quad \quad \quad 
+    \item $\text{odometry}^{\dagger \mathbf{o}}$ :
+        \hfill $ \langle {td}_{m1}, {td}_{m2} \rangle $ ; \quad \quad \quad \quad \quad 
+    \item $\text{laser scan}^{\dagger \mathbf{l}}$ :
+        \hfill $ \langle \text{\/LaserScan.msg} \rangle $ ; \quad \quad \quad 
+    
+    
+\end{itemize}
+
+}
+\end{tabular}
+
+
+
+\end{document}
+
