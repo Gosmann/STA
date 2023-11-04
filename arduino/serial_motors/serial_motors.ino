@@ -3,8 +3,8 @@
 
 // pins used by the motor drivers
 #define PWMB_1 12
-#define BI1_1 35
-#define BI2_1 34
+#define BI1_1 34
+#define BI2_1 35
 
 #define PWMB_2 8
 #define BI1_2 37
@@ -68,7 +68,7 @@ int drive_voltage( motor_t motor, float voltage ){
 }
 
 static motor_t powertrain = init_motor( 12, 35, 34 );
-static motor_t direction = init_motor( 8, 37, 36 );
+static motor_t direction = init_motor( 8, 36, 37 );
 
 // put your setup code here, to run once:
 void setup() {
