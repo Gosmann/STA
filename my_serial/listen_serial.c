@@ -61,7 +61,8 @@ int main(){
 			
 		}
 		
-		printf("> [%s] \n", buffer);
+		//printf("> [%s] \n", buffer);
+		printf("%s \n", buffer);
 		//sleep(1);
 	}
 	
