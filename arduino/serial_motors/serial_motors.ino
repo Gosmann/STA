@@ -67,7 +67,7 @@ int drive_voltage( motor_t motor, float voltage ){
   return 0;
 }
 
-static motor_t powertrain = init_motor( 12, 35, 34 );
+static motor_t powertrain = init_motor( 12, 34, 35 );
 static motor_t direction = init_motor( 8, 36, 37 );
 
 // put your setup code here, to run once:
@@ -76,7 +76,7 @@ void setup() {
   drive_voltage( powertrain, 0.0);
   drive_voltage( direction, 0.0);
 
-  Serial2.begin(9600);    // /dev/ttyS0     on rpi
+  Serial2.begin(115200);    // /dev/ttyS0     on rpi
 }
 
 // put your main code here, to run repeatedly:
@@ -102,11 +102,11 @@ void loop() {
   }
   else if( c == 'L' || c == 'a' ){
     drive_voltage( direction, 2.0);  
-    delay(DELAY_UP_DOWN);   
+    delay(DELAY_LEFT_RIGHT);   
   }
   else if( c == 'R' || c == 'd' ){
     drive_voltage( direction, -2.0);  
-    delay(DELAY_UP_DOWN);   
+    delay(DELAY_LEFT_RIGHT);   
   }
   
   

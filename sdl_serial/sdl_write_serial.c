@@ -30,8 +30,8 @@ int main(){
 	tcgetattr(serial_port, &tty) ;	
 	tty.c_cc[VTIME] = 0;		// no timeout delay	
 	tty.c_cc[VMIN] = 0;		// no timeout delay
-	cfsetispeed(&tty, B9600);	// define input speed
-	cfsetospeed(&tty, B9600);	// define output speed
+	cfsetispeed(&tty, B115200);	// define input speed
+	cfsetospeed(&tty, B115200);	// define output speed
 	
 	if(serial_port < 0){
 		printf("error oppening serial port \n" );
