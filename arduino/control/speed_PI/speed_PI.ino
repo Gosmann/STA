@@ -31,13 +31,15 @@ void setup() {
 // put your main code here, to run repeatedly:
 void loop() {
 
-    drive_voltage( powertrain, 0);
+    
     
     // shows sign of life
     digitalWrite(13, HIGH);
-	delay(200);
+    drive_voltage( powertrain, 9);
+	delay(5000);
     digitalWrite(13, LOW);
-    delay(200);
+    drive_voltage( powertrain, -9);
+    delay(5000);
     
 }
 
