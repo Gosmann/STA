@@ -20,7 +20,10 @@ int drive_voltage( motor_t motor, float voltage ){
 
   if( voltage > 12.0 ) voltage = 12.0 ;
   else if(voltage < -12.0) voltage = -12.0 ;
-    
+
+
+  if( abs(voltage) < 2.0) voltage = 0 ;		// friction correction
+  
   int pwm_value = abs(voltage) * VOLT_TO_PWM ;
 
   if(voltage < 0){

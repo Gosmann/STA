@@ -16,6 +16,7 @@ typedef struct encoder_t {
   uint8_t B ;           // holds the pin number for the B quadrature signal
   
   int32_t odom ;        // holds total distance ever travelled in encoder ticks
+  int32_t old_odom ;
 
   float omega ;         // holds the instant angular velocity of the wheels
   

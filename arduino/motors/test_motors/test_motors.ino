@@ -70,7 +70,7 @@ void setup() {
   const motor_t powertrain = init_motor( 12, 34, 35 );
   const motor_t direction = init_motor( 8, 36, 37 );
 
-  drive_voltage( powertrain, -10.0);
+  drive_voltage( powertrain, 0.0);
   drive_voltage( direction, 0.0);
 
 }
