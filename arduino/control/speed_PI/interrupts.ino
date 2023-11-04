@@ -31,6 +31,6 @@ void start_timer_interrupt(){
 void start_encoders_interrupt( ){
          
     attachInterrupt(digitalPinToInterrupt(power.A), power_isr, RISING);    
-    attachInterrupt(digitalPinToInterrupt(direc.A), direc_isr, RISING);    
+    attachInterrupt(digitalPinToInterrupt(direc.A), direc_isr, RISING);       
     
 }
