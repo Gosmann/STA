@@ -14,8 +14,8 @@
 int main(){
 
 	// int serial_port = open("/dev/ttyUSB0", O_RDWR); 	// usb port
-	//int serial_port = open("/dev/ttyS0", O_RDWR);	// GPIO pins
-	int serial_port = open("/dev/ttyACM0", O_RDWR);	// GPIO pins
+	int serial_port = open("/dev/ttyS0", O_RDWR);	// GPIO pins (Arduino mega Serial2)
+	//int serial_port = open("/dev/ttyACM0", O_RDWR);	// GPIO pins (LIDAR)
 	
 	char buffer[MAX_BUFFER] ;	// buffer that stores the commands
 
