@@ -1,9 +1,12 @@
 int led_state = 0;
+char buffer[100] = {0};
+int32_t counter = 0;
 
 void setup() {
 	// put your setup code here, to run once:
-
-	// put your setup code here, to run once:
+  Serial.begin(115200);       // /dev/ttyXXX    usb cable serial
+  //Serial2.begin(115200);    // /dev/ttyS0     gpios on rpi
+	
 	pinMode(13, OUTPUT);
 
 	cli();//stop interrupts
@@ -26,6 +29,10 @@ void setup() {
 	
 	TIMSK4 |= (1 << OCIE4A);	// enable timer compare interrupt
 
+  // print header
+  sprintf(buffer, "time [ms], voltage [V], encoders [pulses]");
+  Serial.print(buffer);  
+
 	sei();//allow interrupts
 
 }
@@ -35,11 +42,15 @@ void loop() {
 
 }
 
-//timer1 interrupt 1Hz toggles pin 13 (LED)
+//timer1 interrupt 10ms 
 ISR(TIMER4_COMPA_vect){
-
+  counter++;
+  
+  // toogles LED state
 	if(led_state) led_state = 0;
 	else led_state = 1;
 
 	digitalWrite(13, led_state);
+
+  sprintf(buffer, "%lf, %lf, %lf", (double)0.01*counter, 0, 0 );
 }
