@@ -166,11 +166,14 @@ void loop() {
 
 	dtostrf( time_counter, 6, 3, buffer_time);
 	dtostrf( voltage, 6, 3, buffer_voltage);
-	//dtostrf( omega, 6, 3, buffer_encoder);
-	dtostrf( theta, 6, 3, buffer_encoder); 
+	dtostrf( omega, 6, 3, buffer_encoder);
+	//dtostrf( theta, 6, 3, buffer_encoder); 
 	
 	sprintf(buffer, "%s, %s, %s \n", buffer_time, buffer_voltage, buffer_encoder );
-	Serial2.print(buffer) ;
+	if( time_counter < 12.0){
+		Serial2.print(buffer) ;		
+	}
+
 	delay(10);
 
 }
@@ -210,10 +213,10 @@ ISR(TIMER5_COMPA_vect){
 
 	drive_voltage( direction, voltage);
 
-	//delta = encoder_counter - old_encoder_counter ;
-	//old_encoder_counter = encoder_counter ;
+	delta = encoder_counter - old_encoder_counter ;
+	old_encoder_counter = encoder_counter ;
 
-	theta = (encoder_counter * 0.00243912625 );		// converts from delta encoder to theta
+	omega = (delta * 0.1495997 );		// converts from delta encoder to theta
 	// supposes delta_t = 10ms
 	// and gear ratio 2576
 	

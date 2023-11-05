@@ -41,24 +41,22 @@ void loop() {
 	if( time_counter < 2.0 ){
 		set_point = 0 ;
 	}
-	else if(time_counter < 7.0 ){
-		set_point = 0.5 ;
+	else if(time_counter < 4.0 ){
+		set_point = 3.1415 ;
 	}
-	else if(time_counter < 12.0 ){
-		set_point = 0 ;
-	}
-	else if(time_counter < 15.0 ){
+	else if(time_counter < 6.0 ){
 		set_point = 0 ;
 	}
 	else{
 		set_point = 0 ;
 	}
 	
+	
 }
 
 
 //timer4 interrupt 10ms 
-ISR(TIMER4_COMPA_vect){
+ISR(TIMER5_COMPA_vect){
 
 	float time_counter = (float)millis() * 0.001 ; 		// time_counter is in seconds
 
@@ -70,12 +68,12 @@ ISR(TIMER4_COMPA_vect){
             
   	// calculates instant speed
     //calculate_speed(&power);
-    float theta = direc.odom * 0.00243912625 ;
+    float theta = direc.odom * 0.010471976 ;
 
 	float error = set_point - theta ;
 
-	float kp = 8.461 ;
-	float ki = 0.295 ;
+	float kp = 20 ;
+	float ki = 0.2 ;
 
 	static float integrator = 0;
 
@@ -86,7 +84,7 @@ ISR(TIMER4_COMPA_vect){
 	
 	float pid = error * kp + integrator * ki ;
 
-	drive_voltage( powertrain, pid );
+	drive_voltage( direction, pid );
 
     dtostrf( time_counter, 6, 3, buffer_time_counter );
     dtostrf( set_point, 6, 3, buffer_set_point );

@@ -26,23 +26,30 @@ void calculate_speed( encoder_t * encoder ){
 
 // treats encoder interrupt service routine
 void power_isr() {
+	cli();//stop interrupts
+	
     //Serial2.println(" power isr ");
     
     if( digitalRead( power.B ) ){     // checks for polarity
-        power.odom++;
+        power.odom--;
     }
     else{
-        power.odom--;  
+        power.odom++;  
     }
+
+    sei();//stop interrupts
 }
 
 // treats encoder interrupt service routine
 void direc_isr() {
+    cli();//stop interrupts
     
     if( digitalRead( direc.B ) ){     // checks for polarity
-        direc.odom++;
+        direc.odom--;
     }
     else{
-        direc.odom--;  
+        direc.odom++;  
     }
+    
+    sei();//stop interrupts
 }
