@@ -78,15 +78,15 @@ private:
 
     // Turtle only exists in 2D, thus we get x and y translation
     // coordinates from the message and set the z coordinate to 0
-    t.transform.translation.x = msg->pose.pose.position.x;
-    t.transform.translation.y = msg->pose.pose.position.y;
+    t.transform.translation.x = msg->pose.pose.position.x + 0.5;
+    t.transform.translation.y = msg->pose.pose.position.y + 0.5;
     t.transform.translation.z = 0.0;
 
     // For the same reason, turtle can only rotate around one axis
     // and this why we set rotation in x and y to 0 and obtain
     // rotation in z axis from the message
     tf2::Quaternion q;
-    q.setRPY(0, 0, msg->pose.pose.orientation.x);
+    q.setRPY(0, 0, msg->pose.pose.orientation.x + 0.5);
     t.transform.rotation.x = q.x();
     t.transform.rotation.y = q.y();
     t.transform.rotation.z = q.z();
@@ -130,7 +130,9 @@ int main(int argc, char * argv[])
 
         msg_odom.child_frame_id = "base_link" ;
 
-        msg_odom.pose.pose.position.x += 0.0001 ;
+        //msg_odom.pose.pose.position.x += 0.0001 ;
+        msg_odom.pose.pose.orientation.x = 0 ;
+        msg_odom.pose.pose.position.x = 0 ;
 
         publisher->publish(msg_odom);
         

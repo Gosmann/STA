@@ -7,11 +7,7 @@
 # since a plain shell script can't determine its own path when being sourced
 # either use the provided COLCON_CURRENT_PREFIX
 # or fall back to the build time prefix (if it exists)
-<<<<<<< HEAD
-_colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX=/home/gosmann/ros2_ws/install
-=======
-_colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX=/home/pi/ros2_ws/install
->>>>>>> e43d5c5bfd703ad8984deaf28e34359871de2d69
+_colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX=/home/pi/documents/STA_github/ros2_ws/install
 if [ ! -z "$COLCON_CURRENT_PREFIX" ]; then
   _colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX="$COLCON_CURRENT_PREFIX"
 elif [ ! -d "$_colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX" ]; then
@@ -36,6 +32,10 @@ _colcon_prefix_chain_sh_source_script() {
 # source chained prefixes
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
 COLCON_CURRENT_PREFIX="/opt/ros/iron"
+_colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
+
+# setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
+COLCON_CURRENT_PREFIX="/home/pi/ros2_ws/install"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
 

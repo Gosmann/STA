@@ -29,11 +29,12 @@ void calculate_pid( control_t * control, float feedback ){
 
     control->error = control->set_point - feedback;
 
-	if( control == &control_direc_theta ){
-		if( abs(control->error) < 0.001 ){
-			control->error = 0;
+	//if( control == &control_direc_theta || control == &control_power_theta ){
+		if( abs(control->error) < 0.002 ){
+			control->error = 0 ;
+			//control->integrator = 0 ; 
 		}
-	}
+	//}
 
 	if( control == &control_power_omega ){
 		if( ( control->set_point ) > 2.5 ){
@@ -44,9 +45,19 @@ void calculate_pid( control_t * control, float feedback ){
 		}
 	}
 
+	if( control == &control_direc_omega ){
+		if( ( control->set_point ) > 0.5 ){
+			control->set_point = 0.5;
+		}
+		else if( ( control->set_point ) < -0.5 ){
+			control->set_point = -0.5;
+		}
+	}
+
     // anti wind-up
     if( abs( ( control->integrator + control->error ) * control->ki + control->error * control->kp ) < 12.0 ){
         control->integrator += control->error ;     // error * dt 
+        // control->integrator *= 0.95 ;
     }
 
     control->pid = control->kp * control->error + control->ki * control->integrator ;

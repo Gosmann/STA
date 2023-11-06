@@ -11,6 +11,8 @@
 #include "control.hpp"
 #include <stdio.h>
 
+#define BUFFER_SIZE 10
+
 char buffer[100] = {0};
 
 static motor_t motor_power = init_motor( 12, 34, 35 );
@@ -25,8 +27,8 @@ static control_t control_direc_theta = init_control( 2, 0) ;      // direction e
 static control_t control_power_omega = init_control( 5, 0.5) ;    // power internal speed control
 static control_t control_power_theta = init_control( 1, 0) ;      // power external position control 
 
-
 static float time_counter = 0;
+
 
 // put your setup code here, to run once:
 void setup() {
@@ -90,7 +92,7 @@ void loop() {
 				sprintf( buffer, "%1.5f \n", target) ;
 				//if( abs(target) <= 1.001){
 				if( 1 ){
-					Serial.print( target ) ;
+					Serial.println( target ) ;
 					control_power_theta.set_point += target ;	
 				}
 				else{
@@ -104,22 +106,37 @@ void loop() {
 
 	
 	
-	char buffer_time_counter[15] = {0} ;
-	char buffer_set_point[15] = {0} ;
-    char buffer_feedback[15] = {0} ;
-    char buffer_pid[15] = {0} ;
-    char buffer_odom[15] = {0} ;
-    char buffer_int[15] = {0} ;            
+	char buffer_time_counter[BUFFER_SIZE] = {0} ;
+	
+	char buffer_set_point[BUFFER_SIZE] = {0} ;
+    char buffer_feedback[BUFFER_SIZE] = {0} ;
+    char buffer_pid[BUFFER_SIZE] = {0} ;
+    char buffer_odom[BUFFER_SIZE] = {0} ;
+    char buffer_int[BUFFER_SIZE] = {0} ;            
+
+    char buffer_direc_set_point[BUFFER_SIZE] = {0} ;
+    char buffer_direc_feedback[BUFFER_SIZE] = {0} ;
+    char buffer_direc_pid[BUFFER_SIZE] = {0} ;
+    char buffer_direc_odom[BUFFER_SIZE] = {0} ;
+    
 
 	dtostrf( time_counter, 6, 3, buffer_time_counter );
     dtostrf( control_power_theta.set_point, 6, 3, buffer_set_point );
     dtostrf( encoder_power.theta, 6, 3, buffer_feedback );
-    dtostrf( control_power_theta.pid, 6, 3, buffer_pid );
+    dtostrf( control_power_omega.pid, 6, 3, buffer_pid );
     dtostrf( control_direc_omega.integrator, 6, 3, buffer_int );
-    dtostrf( encoder_direc.odom, 3, 0, buffer_odom );
+    dtostrf( encoder_power.odom, 6, 1, buffer_odom );
+
+	dtostrf( control_direc_theta.set_point, 6, 3, buffer_direc_set_point );
+    dtostrf( encoder_direc.theta, 6, 3, buffer_direc_feedback );
+    dtostrf( control_direc_omega.pid, 6, 3, buffer_direc_pid );
+    dtostrf( encoder_direc.odom, 6, 3, buffer_direc_odom );
     
-	sprintf(buffer, "%s , %s , %s, %s \n", 
-		buffer_time_counter, buffer_set_point, buffer_feedback, buffer_pid );
+	sprintf(buffer, "%s , %s , %s, %s, %s, %s, %s, %s, %s \n", 
+		buffer_time_counter,
+		buffer_set_point, buffer_feedback, buffer_pid, buffer_odom,
+		buffer_direc_set_point, buffer_direc_feedback, buffer_direc_pid, buffer_direc_odom
+	);
 
 	Serial2.print( buffer );
 	
