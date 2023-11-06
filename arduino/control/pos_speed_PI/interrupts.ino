@@ -30,7 +30,7 @@ void start_timer_interrupt(){
 
 void start_encoders_interrupt( ){
          
-    attachInterrupt(digitalPinToInterrupt(power.A), power_isr, RISING);    
-    attachInterrupt(digitalPinToInterrupt(direc.A), direc_isr, CHANGE);       
+    attachInterrupt(digitalPinToInterrupt(encoder_power.A), power_isr, CHANGE);    
+    attachInterrupt(digitalPinToInterrupt(encoder_direc.A), direc_isr, CHANGE);       
     
 }

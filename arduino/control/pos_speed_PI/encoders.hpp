@@ -12,13 +12,16 @@
 
 typedef struct encoder_t {
 
-  uint8_t A ;           // holds the pin number for the A quadrature signal
-  uint8_t B ;           // holds the pin number for the B quadrature signal
+  uint8_t A ;             // holds the pin number for the A quadrature signal
+  uint8_t B ;             // holds the pin number for the B quadrature signal
   
-  float odom ;        // holds total distance ever travelled in encoder ticks
-  float old_odom ;
+  float odom ;            // holds total distance ever travelled in encoder ticks
+  float old_odom ;        // holds odom since lasts measurement
 
-  float omega ;         // holds the instant angular velocity of the wheels
+  float theta ;           // holds instant position
+  
+  float omega ;           // holds the instant angular velocity of the wheels
+  float omega_mean ;      // holds the instant angular velocity of the wheels
   
 } encoder_t ;
 
