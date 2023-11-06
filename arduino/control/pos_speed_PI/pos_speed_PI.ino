@@ -11,7 +11,7 @@ static motor_t motor_direc = init_motor( 8, 37, 36 );
 static encoder_t encoder_power = init_encoder( 18, 31 );
 static encoder_t encoder_direc = init_encoder( 19, 38 );
 
-static control_t control_direc_omega = init_control(15, 2) ;      // direction internal speed control
+static control_t control_direc_omega = init_control(10, 1) ;      // direction internal speed control
 static control_t control_direc_theta = init_control( 2, 0) ;      // direction external position control 
 
 static float time_counter = 0;
@@ -38,11 +38,12 @@ void setup() {
 void loop() {
 
 	if( time_counter < 1.0 ){
-		control_direc_theta.set_point = 0 ;
+		//control_direc_theta.set_point = 0 ;
 	}
 	else if(time_counter < 5.0 ){
-		control_direc_theta.set_point = 0.5 ;
+		control_direc_theta.set_point = -0.1 ;
 	}
+	
     /*
 	else if(time_counter < 9.0 ){
 		set_point_theta = 0 ;
@@ -90,17 +91,17 @@ void loop() {
 		Serial2.print( buffer );	
 	}
 	else{
-		time_counter = 0;
+		//time_counter = 0;
 		
 		sprintf( buffer, "%s, \n", buffer_odom);    // TODO test without \n
-		Serial2.print( buffer );
+		//Serial2.print( buffer );
 		//time_counter = 0;	
 		//mean_omega = 0;
 		//integrator = 0;
 		//direc.odom = 0;
 	}
   	
-  	delay(10);
+  	delay(50);
 	
 }
 
@@ -110,6 +111,18 @@ ISR(TIMER5_COMPA_vect){
 		
 	time_counter += 0.010 ; 		// time_counter is in seconds
 
+	 {   // direc theta (position) control
+    
+        // calculates instant position [rad]
+        calculate_pos(&encoder_direc);
+
+        // calculates PID
+        calculate_pid(&control_direc_theta, encoder_direc.theta ) ;
+
+        // updates speed set point
+        control_direc_omega.set_point = control_direc_theta.pid ;
+    }  
+	
     {   // direc omega (speed) control
     
     	// calculates instant speed [rad/s]
@@ -122,16 +135,5 @@ ISR(TIMER5_COMPA_vect){
         drive_voltage( motor_direc, control_direc_omega.pid );
     }
 
-    {   // direc theta (position) control
-    
-        // calculates instant position [rad]
-        calculate_pos(&encoder_direc);
-
-        // calculates PID
-        calculate_pid(&control_direc_theta, encoder_direc.theta ) ;
-
-        // updates speed set point
-        control_direc_omega.set_point = control_direc_theta.pid ;
-    }        
-    
+        
 }

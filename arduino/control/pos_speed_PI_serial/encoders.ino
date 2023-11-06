@@ -53,7 +53,7 @@ void power_isr() {
         encoder_power.odom += 1.0000 ;
     }
     else{
-        encoder_power.odom -= 1.0185 ;  
+        encoder_power.odom -= 1.0500 ;  
     }
 
     sei();    // starts interrupts
@@ -68,7 +68,7 @@ void direc_isr() {
         encoder_direc.odom += 1.0000;
     }
     else{
-        encoder_direc.odom -= 1.0184;  
+        encoder_direc.odom -= 1.0185 ;  
     }
 
     sei();    //stop interrupts
