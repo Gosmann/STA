@@ -1,7 +1,7 @@
 //#include "encoders.hpp"
 
 // function to initialize the encoders
-encoder_t init_encoder( uint8_t A, uint8_t B ){
+encoder_t init_encoder( uint32_t A, uint32_t B ){
 
     encoder_t encoder = { A, B, 0, 0, 0, 0, 0} ;
     

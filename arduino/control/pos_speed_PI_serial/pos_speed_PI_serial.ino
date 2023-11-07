@@ -13,7 +13,19 @@
 
 #define BUFFER_SIZE 10
 
-char buffer[100] = {0};
+char buffer[128] = {0};
+
+typedef struct robot_t{
+
+	char msg[40];
+	encoder_t encoder_power ;
+	encoder_t encoder_direc ;
+	
+} robot_t ;
+
+
+//static robot_t ;
+static robot_t mobile_robot ;
 
 static motor_t motor_power = init_motor( 12, 34, 35 );
 static motor_t motor_direc = init_motor( 8, 37, 36 );
@@ -28,7 +40,7 @@ static control_t control_power_omega = init_control( 5, 0.5) ;    // power inter
 static control_t control_power_theta = init_control( 1, 0) ;      // power external position control 
 
 static float time_counter = 0;
-
+static uint32_t cnt = 0;
 
 // put your setup code here, to run once:
 void setup() {
@@ -110,35 +122,84 @@ void loop() {
 	
 	char buffer_set_point[BUFFER_SIZE] = {0} ;
     char buffer_feedback[BUFFER_SIZE] = {0} ;
+    char buffer_power_omega[BUFFER_SIZE] = {0} ;
     char buffer_pid[BUFFER_SIZE] = {0} ;
     char buffer_odom[BUFFER_SIZE] = {0} ;
     char buffer_int[BUFFER_SIZE] = {0} ;            
 
     char buffer_direc_set_point[BUFFER_SIZE] = {0} ;
     char buffer_direc_feedback[BUFFER_SIZE] = {0} ;
+    char buffer_direc_omega[BUFFER_SIZE] = {0} ;
     char buffer_direc_pid[BUFFER_SIZE] = {0} ;
     char buffer_direc_odom[BUFFER_SIZE] = {0} ;
     
-
-	dtostrf( time_counter, 6, 3, buffer_time_counter );
+	/*
+	dtostrf( time_counter, 10, 3, buffer_time_counter );
+	
     dtostrf( control_power_theta.set_point, 6, 3, buffer_set_point );
     dtostrf( encoder_power.theta, 6, 3, buffer_feedback );
+    dtostrf( encoder_power.omega_mean, 6, 3, buffer_power_omega );
     dtostrf( control_power_omega.pid, 6, 3, buffer_pid );
     dtostrf( control_direc_omega.integrator, 6, 3, buffer_int );
-    dtostrf( encoder_power.odom, 6, 1, buffer_odom );
+    dtostrf( encoder_power.odom, 10, 1, buffer_odom );
 
 	dtostrf( control_direc_theta.set_point, 6, 3, buffer_direc_set_point );
     dtostrf( encoder_direc.theta, 6, 3, buffer_direc_feedback );
+    dtostrf( encoder_direc.omega_mean, 6, 3, buffer_direc_omega );
     dtostrf( control_direc_omega.pid, 6, 3, buffer_direc_pid );
-    dtostrf( encoder_direc.odom, 6, 3, buffer_direc_odom );
-    
-	sprintf(buffer, "%s , %s , %s, %s, %s, %s, %s, %s, %s \n", 
-		buffer_time_counter,
-		buffer_set_point, buffer_feedback, buffer_pid, buffer_odom,
-		buffer_direc_set_point, buffer_direc_feedback, buffer_direc_pid, buffer_direc_odom
-	);
+    dtostrf( encoder_direc.odom, 10, 1, buffer_direc_odom );
 
-	Serial2.print( buffer );
+    /*
+	sprintf(buffer, "[%s] : %s , %s, %s, %s, %s, %s, %s, %s, %s, %s \n", 
+		buffer_time_counter,
+		buffer_set_point, buffer_feedback, buffer_pid, buffer_odom, buffer_power_omega,
+		buffer_direc_set_point, buffer_direc_feedback, buffer_direc_pid, buffer_direc_odom, buffer_direc_omega
+	);
+	*/
+	//sprintf(buffer, "$ [%5d] [%7.3f] ; \n", cnt, buffer_odom) ;
+	//sprintf(buffer, "$ [%010d] [%s] ; \n\0", cnt, buffer_odom) ;
+	
+	cnt++;
+	
+	/*
+	struct typedef robot_t{
+
+		motor_t motor_power ;
+		motor_t motor_direc ;
+	
+		encoder_t encoder_power ;
+		encoder_t encoder_direc ;
+	
+		control_t control_direc_omega ;
+		control_t control_direc_theta ;
+	
+		control_t control_power_omega ;
+		control_t control_power_theta ;
+		
+	} robot_t ;
+	*/
+
+	char msg_local[40] = {0} ;
+	sprintf(msg_local, "$ [%10d] Hello ; \0", cnt);
+	
+	mobile_robot.encoder_power = encoder_power ;
+	strcpy( mobile_robot.msg, msg_local);
+	
+	/*
+	sprintf(buffer, "$ [%010d] [%s] ; \n\0", cnt, (( uint8_t * ) &mobile_robot) ) ;
+	
+	memcpy(& buffer[16] , &mobile_robot, sizeof(mobile_robot)) ;
+	buffer[16 + sizeof(mobile_robot) + 1] = ']';
+	buffer[16 + sizeof(mobile_robot) + 2] = ';';
+	buffer[16 + sizeof(mobile_robot) + 3] = '\n';
+	buffer[16 + sizeof(mobile_robot) + 4] = '\0';
+	*/
+	
+	// sends bin data
+	Serial2.write( (byte *) &mobile_robot, sizeof(robot_t) );	
+	//Serial2.write( mobile_robot, sizeof(mobile_robot) );	
+	Serial.println( mobile_robot.encoder_power.theta );
+	//Serial.println( sizeof(robot_t));
 	
 	if(time_counter < 10.0){
 		//Serial2.print( buffer );	
@@ -155,7 +216,7 @@ void loop() {
 	}
 
   	digitalWrite(13, HIGH);
-  	delay(50);
+  	delay(100);
 	
 }
 

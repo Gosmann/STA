@@ -1,0 +1,16 @@
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/lib/mobile_robot/mobile_robot
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/environment/path.sh
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/environment/path.dsv
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/local_setup.bash
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/local_setup.sh
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/local_setup.zsh
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/local_setup.dsv
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/package.dsv
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake
+/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/package.xml

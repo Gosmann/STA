@@ -1,7 +1,7 @@
 //#include "motors.hpp"
 
 // function to initialize the motor
-motor_t init_motor( uint8_t pwm, uint8_t forward, uint8_t backward ){
+motor_t init_motor( uint32_t pwm, uint32_t forward, uint32_t backward ){
 
   motor_t motor = { pwm, forward, backward } ;
   

@@ -1,0 +1,50 @@
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:31:8:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Ktypedef[m[K’
+   31 | struct [01;31m[Ktypedef[m[K robot_t{
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:31:16:[m[K [01;31m[Kerror: [m[Ktypedef ‘[01m[Krobot_t[m[K’ is initialized (use ‘[01m[Kdecltype[m[K’ instead)
+   31 | struct typedef [01;31m[Krobot_t[m[K{
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:33:25:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kmotor_power[m[K’
+   33 |                 motor_t [01;31m[Kmotor_power[m[K ;
+      |                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:33:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kmotor_power[m[K’
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:31:23:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   31 | struct typedef robot_t[01;36m[K{[m[K
+      |                       [01;36m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:45:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   45 | [01;31m[K}[m[K robot_t ;
+      | [01;31m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:45:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_t[m[K’ does not name a type
+   45 | } [01;31m[Krobot_t[m[K ;
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:178:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_t[m[K’ was not declared in this scope
+  178 |         [01;31m[Krobot_t[m[K mobile_robot ;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:181:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmobile_robot[m[K’ was not declared in this scope
+  181 |         n = read(serial_port, &[01;31m[Kmobile_robot[m[K, sizeof(robot_t));
+      |                                [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:43[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:14[m[K:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:204:45:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+  204 |             RCLCPP_INFO(node->get_logger(), [01;35m[Kbuffer[m[K);
+      |                                             [01;35m[K^~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:174:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  174 |         int [01;35m[Kj[m[K, n ;
+      |             [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:148:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcounter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  148 |     int [01;35m[Kcounter[m[K = 0;
+      |         [01;35m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mobile_robot.dir/build.make:76: CMakeFiles/mobile_robot.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mobile_robot.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

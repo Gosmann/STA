@@ -1,0 +1,54 @@
+[1.377s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/mobile_robot -- -j4 -l4
+[1.615s] [35m[1mConsolidate compiler generated dependencies of target mobile_robot[0m
+[1.750s] [ 50%] [32mBuilding CXX object CMakeFiles/mobile_robot.dir/src/main.cpp.o[0m
+[14.900s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[14.901s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:202:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 3 has type ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[14.902s]   202 |             sprintf(buffer, "[01;35m[K%d[m[K, odom : %f \n" , [32m[Ksizeof(robot_t)[m[K, mobile_robot.encoder_power.odom ) ;
+[14.903s]       |                              [01;35m[K~^[m[K                  [32m[K~~~~~~~~~~~~~~~[m[K
+[14.903s]       |                               [01;35m[K|[m[K                  [32m[K|[m[K
+[14.904s]       |                               [01;35m[Kint[m[K                [32m[Klong unsigned int[m[K
+[14.904s]       |                              [32m[K%ld[m[K
+[14.905s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[14.905s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:43[m[K,
+[14.905s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[14.906s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[14.906s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.907s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.908s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.908s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.909s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.909s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.910s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[14.910s]                  from [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:14[m[K:
+[14.911s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:204:45:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+[14.911s]   204 |             RCLCPP_INFO(node->get_logger(), [01;35m[Kbuffer[m[K);
+[14.912s]       |                                             [01;35m[K^~~~~~[m[K
+[14.923s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:174:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.924s]   174 |         int [01;35m[Kj[m[K, n ;
+[14.924s]       |             [01;35m[K^[m[K
+[14.925s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:148:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcounter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.925s]   148 |     int [01;35m[Kcounter[m[K = 0;
+[14.926s]       |         [01;35m[K^~~~~~~[m[K
+[38.763s] [100%] [32m[1mLinking CXX executable mobile_robot[0m
+[41.186s] [100%] Built target mobile_robot
+[41.229s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/mobile_robot -- -j4 -l4
+[41.379s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/build/mobile_robot
+[41.409s] -- Install configuration: ""
+[41.410s] -- Installing: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/lib/mobile_robot/mobile_robot
+[41.454s] -- Set runtime path of "/home/pi/documents/STA_github/ros2_ws/install/mobile_robot/lib/mobile_robot/mobile_robot" to ""
+[41.455s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot
+[41.455s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot
+[41.456s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh
+[41.457s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv
+[41.457s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/path.sh
+[41.457s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/path.dsv
+[41.458s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.bash
+[41.458s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.sh
+[41.459s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.zsh
+[41.459s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.dsv
+[41.460s] -- Installing: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/package.dsv
+[41.460s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot
+[41.461s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake
+[41.461s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake
+[41.462s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/package.xml
+[41.468s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/build/mobile_robot

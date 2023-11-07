@@ -1,0 +1,84 @@
+[0.534s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/src/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/src/build/ydlidar_ros2_driver -- -j4 -l4
+[0.796s] [ 25%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o[0m
+[0.799s] [ 75%] Built target ydlidar_ros2_driver_client
+[13.130s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[13.130s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:158:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.131s]   158 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[13.131s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[13.132s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:159:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.132s]   159 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[13.132s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[13.133s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:160:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.133s]   160 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[13.134s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[13.203s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[13.204s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:168:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.204s]   168 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[13.205s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[13.205s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:169:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.205s]   169 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[13.206s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[13.206s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:170:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.207s]   170 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[13.207s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[23.177s] [100%] [32m[1mLinking CXX executable ydlidar_ros2_driver_node[0m
+[24.874s] [100%] Built target ydlidar_ros2_driver_node
+[24.924s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/src/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/src/build/ydlidar_ros2_driver -- -j4 -l4
+[25.119s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/src/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/src/build/ydlidar_ros2_driver
+[25.170s] -- Install configuration: ""
+[25.172s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+[25.199s] -- Set runtime path of "/home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node" to ""
+[25.200s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+[25.202s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch
+[25.204s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+[25.205s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_mod.py
+[25.206s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+[25.207s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__
+[25.208s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch_mod.cpython-310.pyc
+[25.212s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch.cpython-310.pyc
+[25.215s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+[25.216s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params
+[25.218s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/build
+[25.219s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/build/COLCON_IGNORE
+[25.221s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/build/.built_by
+[25.222s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install
+[25.224s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/COLCON_IGNORE
+[25.226s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.ps1
+[25.228s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/.colcon_install_layout
+[25.230s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/_local_setup_util_sh.py
+[25.230s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.zsh
+[25.231s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.bash
+[25.233s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.zsh
+[25.234s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/_local_setup_util_ps1.py
+[25.235s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.sh
+[25.236s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.bash
+[25.237s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.ps1
+[25.238s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.sh
+[25.240s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log
+[25.243s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/COLCON_IGNORE
+[25.245s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/latest_build
+[25.247s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/latest
+[25.248s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/build_2023-11-07_06-29-43
+[25.250s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/build_2023-11-07_06-29-43/events.log
+[25.251s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/build_2023-11-07_06-29-43/logger_all.log
+[25.253s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+[25.254s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup
+[25.255s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+[25.257s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config
+[25.259s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+[25.261s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+[25.262s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+[25.263s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+[25.265s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+[25.267s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+[25.269s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+[25.270s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+[25.272s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+[25.273s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+[25.274s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+[25.275s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+[25.276s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+[25.277s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+[25.277s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+[25.278s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml
+[25.280s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/src/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/src/build/ydlidar_ros2_driver

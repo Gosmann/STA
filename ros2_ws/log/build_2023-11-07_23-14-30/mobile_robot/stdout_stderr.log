@@ -1,0 +1,59 @@
+[35m[1mConsolidate compiler generated dependencies of target mobile_robot[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mobile_robot.dir/src/main.cpp.o[0m
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:201:32:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 3 has type ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  201 |             sprintf(buffer2, "[01;35m[K%d[m[K, odom : [%s] " , [32m[Ksizeof(robot_t)[m[K, buffer ) ;
+      |                               [01;35m[K~^[m[K                  [32m[K~~~~~~~~~~~~~~~[m[K
+      |                                [01;35m[K|[m[K                  [32m[K|[m[K
+      |                                [01;35m[Kint[m[K                [32m[Klong unsigned int[m[K
+      |                               [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:43[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:14[m[K:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:204:45:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+  204 |             RCLCPP_INFO(node->get_logger(), [01;35m[Kbuffer2[m[K);
+      |                                             [01;35m[K^~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:170:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  170 |         int [01;35m[Ki[m[K = 0 , j = 0 , n = 0 ;
+      |             [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:176:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksample[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  176 |         robot_t [01;35m[Ksample[m[K;
+      |                 [01;35m[K^~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:144:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcounter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  144 |     int [01;35m[Kcounter[m[K = 0;
+      |         [01;35m[K^~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:201:43:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive writing up to 127 bytes into a region of size 116 [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-overflow=-Wformat-overflow=]8;;[m[K]
+  201 |             sprintf(buffer2, "%d, odom : [[01;35m[K%s[m[K] " , sizeof(robot_t), [32m[Kbuffer[m[K ) ;
+      |                                           [01;35m[K^~[m[K                       [32m[K~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:201:20:[m[K [01;36m[Knote: [m[K‘[01m[Ksprintf[m[K’ output between 15 and 142 bytes into a destination of size 128
+  201 |             [01;36m[Ksprintf(buffer2, "%d, odom : [%s] " , sizeof(robot_t), buffer )[m[K ;
+      |             [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable mobile_robot[0m
+[100%] Built target mobile_robot
+-- Install configuration: ""
+-- Installing: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/lib/mobile_robot/mobile_robot
+-- Set runtime path of "/home/pi/documents/STA_github/ros2_ws/install/mobile_robot/lib/mobile_robot/mobile_robot" to ""
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/path.sh
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/path.dsv
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.bash
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.sh
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.zsh
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.dsv
+-- Installing: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/package.dsv
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake
+-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/package.xml

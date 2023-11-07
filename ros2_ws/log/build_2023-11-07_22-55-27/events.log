@@ -1,0 +1,563 @@
+[0.000000] (-) TimerEvent: {}
+[0.001185] (mobile_robot) JobQueued: {'identifier': 'mobile_robot', 'dependencies': OrderedDict()}
+[0.002198] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.002320] (mobile_robot) JobStarted: {'identifier': 'mobile_robot'}
+[0.099260] (-) TimerEvent: {}
+[0.199967] (-) TimerEvent: {}
+[0.301207] (-) TimerEvent: {}
+[0.360157] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.401453] (-) TimerEvent: {}
+[0.503249] (-) TimerEvent: {}
+[0.604103] (-) TimerEvent: {}
+[0.705373] (-) TimerEvent: {}
+[0.717268] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'cmake'}
+[0.720574] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'build'}
+[0.723482] (mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot', '--', '-j4', '-l4'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 38900 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '25'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 38900 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[0.740826] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[0.744013] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[0.745369] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 38900 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '25'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 38900 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[0.805599] (-) TimerEvent: {}
+[0.906393] (-) TimerEvent: {}
+[0.935766] (mobile_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mobile_robot\x1b[0m\n'}
+[1.006605] (-) TimerEvent: {}
+[1.036253] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target ydlidar_ros2_driver_client\n'}
+[1.061905] (mobile_robot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mobile_robot.dir/src/main.cpp.o\x1b[0m\n'}
+[1.070465] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_node\n'}
+[1.106962] (-) TimerEvent: {}
+[1.114976] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[1.207106] (-) TimerEvent: {}
+[1.276991] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[1.307324] (-) TimerEvent: {}
+[1.319632] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 38900 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '25'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 38900 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[1.356149] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.358261] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[1.360992] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[1.362890] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch\n'}
+[1.363832] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[1.364277] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_mod.py\n'}
+[1.364965] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[1.365443] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__\n'}
+[1.365823] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch_mod.cpython-310.pyc\n'}
+[1.366469] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch.cpython-310.pyc\n'}
+[1.367490] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[1.368458] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params\n'}
+[1.369834] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/build\n'}
+[1.370757] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/build/COLCON_IGNORE\n'}
+[1.371560] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/build/.built_by\n'}
+[1.372558] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install\n'}
+[1.373363] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/COLCON_IGNORE\n'}
+[1.374260] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.ps1\n'}
+[1.374930] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/.colcon_install_layout\n'}
+[1.375834] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/_local_setup_util_sh.py\n'}
+[1.376966] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.zsh\n'}
+[1.377611] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.bash\n'}
+[1.378123] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.zsh\n'}
+[1.378657] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/_local_setup_util_ps1.py\n'}
+[1.379366] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.sh\n'}
+[1.380341] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.bash\n'}
+[1.381520] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.ps1\n'}
+[1.382492] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.sh\n'}
+[1.383173] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log\n'}
+[1.383640] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/COLCON_IGNORE\n'}
+[1.384140] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/latest_build\n'}
+[1.385603] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/latest\n'}
+[1.386590] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/build_2023-11-07_06-29-43\n'}
+[1.387141] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/build_2023-11-07_06-29-43/events.log\n'}
+[1.387814] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/build_2023-11-07_06-29-43/logger_all.log\n'}
+[1.388442] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[1.389072] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup\n'}
+[1.389777] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[1.390904] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config\n'}
+[1.414681] (-) TimerEvent: {}
+[1.415996] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[1.417873] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[1.423207] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[1.424172] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[1.424823] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[1.425256] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[1.426481] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[1.428849] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[1.429954] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[1.430755] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[1.431595] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[1.432111] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[1.433069] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[1.433928] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[1.434787] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[1.435686] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[1.436184] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[1.515001] (-) TimerEvent: {}
+[1.615736] (-) TimerEvent: {}
+[1.716740] (-) TimerEvent: {}
+[1.817548] (-) TimerEvent: {}
+[1.918603] (-) TimerEvent: {}
+[2.019409] (-) TimerEvent: {}
+[2.120210] (-) TimerEvent: {}
+[2.223432] (-) TimerEvent: {}
+[2.326796] (-) TimerEvent: {}
+[2.427585] (-) TimerEvent: {}
+[2.528415] (-) TimerEvent: {}
+[2.629681] (-) TimerEvent: {}
+[2.731961] (-) TimerEvent: {}
+[2.746314] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[2.832180] (-) TimerEvent: {}
+[2.933054] (-) TimerEvent: {}
+[3.033799] (-) TimerEvent: {}
+[3.134625] (-) TimerEvent: {}
+[3.235963] (-) TimerEvent: {}
+[3.336750] (-) TimerEvent: {}
+[3.437502] (-) TimerEvent: {}
+[3.538250] (-) TimerEvent: {}
+[3.639024] (-) TimerEvent: {}
+[3.739897] (-) TimerEvent: {}
+[3.840787] (-) TimerEvent: {}
+[3.941703] (-) TimerEvent: {}
+[4.042587] (-) TimerEvent: {}
+[4.143359] (-) TimerEvent: {}
+[4.244195] (-) TimerEvent: {}
+[4.345036] (-) TimerEvent: {}
+[4.445788] (-) TimerEvent: {}
+[4.546638] (-) TimerEvent: {}
+[4.647454] (-) TimerEvent: {}
+[4.749118] (-) TimerEvent: {}
+[4.850583] (-) TimerEvent: {}
+[4.951966] (-) TimerEvent: {}
+[5.053447] (-) TimerEvent: {}
+[5.154810] (-) TimerEvent: {}
+[5.256192] (-) TimerEvent: {}
+[5.357745] (-) TimerEvent: {}
+[5.458553] (-) TimerEvent: {}
+[5.559817] (-) TimerEvent: {}
+[5.660959] (-) TimerEvent: {}
+[5.761822] (-) TimerEvent: {}
+[5.862604] (-) TimerEvent: {}
+[5.963514] (-) TimerEvent: {}
+[6.064361] (-) TimerEvent: {}
+[6.165273] (-) TimerEvent: {}
+[6.266152] (-) TimerEvent: {}
+[6.366969] (-) TimerEvent: {}
+[6.467836] (-) TimerEvent: {}
+[6.568714] (-) TimerEvent: {}
+[6.669684] (-) TimerEvent: {}
+[6.771637] (-) TimerEvent: {}
+[6.873508] (-) TimerEvent: {}
+[6.975674] (-) TimerEvent: {}
+[7.077721] (-) TimerEvent: {}
+[7.179286] (-) TimerEvent: {}
+[7.281017] (-) TimerEvent: {}
+[7.382361] (-) TimerEvent: {}
+[7.483176] (-) TimerEvent: {}
+[7.584684] (-) TimerEvent: {}
+[7.686291] (-) TimerEvent: {}
+[7.788057] (-) TimerEvent: {}
+[7.889853] (-) TimerEvent: {}
+[7.993538] (-) TimerEvent: {}
+[8.095706] (-) TimerEvent: {}
+[8.197810] (-) TimerEvent: {}
+[8.299659] (-) TimerEvent: {}
+[8.400416] (-) TimerEvent: {}
+[8.502236] (-) TimerEvent: {}
+[8.603300] (-) TimerEvent: {}
+[8.704231] (-) TimerEvent: {}
+[8.805872] (-) TimerEvent: {}
+[8.907188] (-) TimerEvent: {}
+[9.008108] (-) TimerEvent: {}
+[9.109021] (-) TimerEvent: {}
+[9.209905] (-) TimerEvent: {}
+[9.310827] (-) TimerEvent: {}
+[9.411716] (-) TimerEvent: {}
+[9.514316] (-) TimerEvent: {}
+[9.615270] (-) TimerEvent: {}
+[9.716224] (-) TimerEvent: {}
+[9.818061] (-) TimerEvent: {}
+[9.920832] (-) TimerEvent: {}
+[10.022712] (-) TimerEvent: {}
+[10.123442] (-) TimerEvent: {}
+[10.224209] (-) TimerEvent: {}
+[10.325187] (-) TimerEvent: {}
+[10.425965] (-) TimerEvent: {}
+[10.526721] (-) TimerEvent: {}
+[10.628458] (-) TimerEvent: {}
+[10.730139] (-) TimerEvent: {}
+[10.830918] (-) TimerEvent: {}
+[10.931751] (-) TimerEvent: {}
+[11.032493] (-) TimerEvent: {}
+[11.133329] (-) TimerEvent: {}
+[11.234146] (-) TimerEvent: {}
+[11.336243] (-) TimerEvent: {}
+[11.437496] (-) TimerEvent: {}
+[11.539298] (-) TimerEvent: {}
+[11.640188] (-) TimerEvent: {}
+[11.741244] (-) TimerEvent: {}
+[11.842340] (-) TimerEvent: {}
+[11.949320] (-) TimerEvent: {}
+[12.050331] (-) TimerEvent: {}
+[12.151779] (-) TimerEvent: {}
+[12.252592] (-) TimerEvent: {}
+[12.353411] (-) TimerEvent: {}
+[12.454338] (-) TimerEvent: {}
+[12.555133] (-) TimerEvent: {}
+[12.655880] (-) TimerEvent: {}
+[12.756665] (-) TimerEvent: {}
+[12.857533] (-) TimerEvent: {}
+[12.958305] (-) TimerEvent: {}
+[13.059065] (-) TimerEvent: {}
+[13.160071] (-) TimerEvent: {}
+[13.260959] (-) TimerEvent: {}
+[13.362590] (-) TimerEvent: {}
+[13.463339] (-) TimerEvent: {}
+[13.564100] (-) TimerEvent: {}
+[13.664937] (-) TimerEvent: {}
+[13.765728] (-) TimerEvent: {}
+[13.866563] (-) TimerEvent: {}
+[13.967339] (-) TimerEvent: {}
+[14.068123] (-) TimerEvent: {}
+[14.168913] (-) TimerEvent: {}
+[14.269649] (-) TimerEvent: {}
+[14.370378] (-) TimerEvent: {}
+[14.471176] (-) TimerEvent: {}
+[14.571930] (-) TimerEvent: {}
+[14.672669] (-) TimerEvent: {}
+[14.773390] (-) TimerEvent: {}
+[14.874138] (-) TimerEvent: {}
+[14.974883] (-) TimerEvent: {}
+[15.075661] (-) TimerEvent: {}
+[15.176418] (-) TimerEvent: {}
+[15.277254] (-) TimerEvent: {}
+[15.377993] (-) TimerEvent: {}
+[15.478769] (-) TimerEvent: {}
+[15.579486] (-) TimerEvent: {}
+[15.679909] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.680869] (-) TimerEvent: {}
+[15.681446] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:199:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 3 has type \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.682672] (mobile_robot) StderrLine: {'line': b'  199 |             sprintf(buffer, "\x1b[01;35m\x1b[K%d\x1b[m\x1b[K, odom : [%s] " , \x1b[32m\x1b[Ksizeof(robot_t)\x1b[m\x1b[K, buffer ) ;\n'}
+[15.683356] (mobile_robot) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K~^\x1b[m\x1b[K                  \x1b[32m\x1b[K~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.684034] (mobile_robot) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K|\x1b[m\x1b[K                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[15.684668] (mobile_robot) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[Kint\x1b[m\x1b[K                \x1b[32m\x1b[Klong unsigned int\x1b[m\x1b[K\n'}
+[15.685259] (mobile_robot) StderrLine: {'line': b'      |                              \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[15.685850] (mobile_robot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[15.686408] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:43\x1b[m\x1b[K,\n'}
+[15.686955] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[15.687631] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[15.688288] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[15.689004] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[15.689758] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[15.690348] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[15.690975] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[15.691580] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[15.692200] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167\x1b[m\x1b[K,\n'}
+[15.692926] (mobile_robot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:14\x1b[m\x1b[K:\n'}
+[15.693733] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:202:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat not a string literal and no format arguments [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security\x07-Wformat-security\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.694425] (mobile_robot) StderrLine: {'line': b'  202 |             RCLCPP_INFO(node->get_logger(), \x1b[01;35m\x1b[Kbuffer\x1b[m\x1b[K);\n'}
+[15.695146] (mobile_robot) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[15.704199] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:170:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.705629] (mobile_robot) StderrLine: {'line': b'  170 |         int \x1b[01;35m\x1b[Ki\x1b[m\x1b[K = 0 , j = 0 , n = 0 ;\n'}
+[15.706776] (mobile_robot) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[15.707789] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:175:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksample\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.708568] (mobile_robot) StderrLine: {'line': b'  175 |         robot_t \x1b[01;35m\x1b[Ksample\x1b[m\x1b[K;\n'}
+[15.709510] (mobile_robot) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[15.710227] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:144:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcounter\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.710888] (mobile_robot) StderrLine: {'line': b'  144 |     int \x1b[01;35m\x1b[Kcounter\x1b[m\x1b[K = 0;\n'}
+[15.711638] (mobile_robot) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[15.781067] (-) TimerEvent: {}
+[15.881847] (-) TimerEvent: {}
+[15.982609] (-) TimerEvent: {}
+[16.083415] (-) TimerEvent: {}
+[16.184231] (-) TimerEvent: {}
+[16.285058] (-) TimerEvent: {}
+[16.385851] (-) TimerEvent: {}
+[16.486683] (-) TimerEvent: {}
+[16.587547] (-) TimerEvent: {}
+[16.688357] (-) TimerEvent: {}
+[16.789202] (-) TimerEvent: {}
+[16.890118] (-) TimerEvent: {}
+[16.993825] (-) TimerEvent: {}
+[17.094584] (-) TimerEvent: {}
+[17.195386] (-) TimerEvent: {}
+[17.296241] (-) TimerEvent: {}
+[17.397055] (-) TimerEvent: {}
+[17.497813] (-) TimerEvent: {}
+[17.598571] (-) TimerEvent: {}
+[17.699322] (-) TimerEvent: {}
+[17.800092] (-) TimerEvent: {}
+[17.900905] (-) TimerEvent: {}
+[18.001653] (-) TimerEvent: {}
+[18.102458] (-) TimerEvent: {}
+[18.203204] (-) TimerEvent: {}
+[18.303941] (-) TimerEvent: {}
+[18.404741] (-) TimerEvent: {}
+[18.505491] (-) TimerEvent: {}
+[18.606250] (-) TimerEvent: {}
+[18.707033] (-) TimerEvent: {}
+[18.807799] (-) TimerEvent: {}
+[18.908669] (-) TimerEvent: {}
+[19.009400] (-) TimerEvent: {}
+[19.110210] (-) TimerEvent: {}
+[19.211018] (-) TimerEvent: {}
+[19.311778] (-) TimerEvent: {}
+[19.412563] (-) TimerEvent: {}
+[19.513319] (-) TimerEvent: {}
+[19.614146] (-) TimerEvent: {}
+[19.714948] (-) TimerEvent: {}
+[19.815678] (-) TimerEvent: {}
+[19.916414] (-) TimerEvent: {}
+[20.017247] (-) TimerEvent: {}
+[20.118132] (-) TimerEvent: {}
+[20.218872] (-) TimerEvent: {}
+[20.319622] (-) TimerEvent: {}
+[20.420360] (-) TimerEvent: {}
+[20.521167] (-) TimerEvent: {}
+[20.621906] (-) TimerEvent: {}
+[20.722640] (-) TimerEvent: {}
+[20.823373] (-) TimerEvent: {}
+[20.924141] (-) TimerEvent: {}
+[21.024924] (-) TimerEvent: {}
+[21.125662] (-) TimerEvent: {}
+[21.226403] (-) TimerEvent: {}
+[21.327187] (-) TimerEvent: {}
+[21.428127] (-) TimerEvent: {}
+[21.529053] (-) TimerEvent: {}
+[21.629788] (-) TimerEvent: {}
+[21.730658] (-) TimerEvent: {}
+[21.831540] (-) TimerEvent: {}
+[21.932297] (-) TimerEvent: {}
+[22.033298] (-) TimerEvent: {}
+[22.134216] (-) TimerEvent: {}
+[22.235103] (-) TimerEvent: {}
+[22.335853] (-) TimerEvent: {}
+[22.436616] (-) TimerEvent: {}
+[22.537427] (-) TimerEvent: {}
+[22.638168] (-) TimerEvent: {}
+[22.738941] (-) TimerEvent: {}
+[22.839706] (-) TimerEvent: {}
+[22.940442] (-) TimerEvent: {}
+[23.041265] (-) TimerEvent: {}
+[23.142151] (-) TimerEvent: {}
+[23.242891] (-) TimerEvent: {}
+[23.343640] (-) TimerEvent: {}
+[23.444382] (-) TimerEvent: {}
+[23.545154] (-) TimerEvent: {}
+[23.645856] (-) TimerEvent: {}
+[23.746546] (-) TimerEvent: {}
+[23.847250] (-) TimerEvent: {}
+[23.947963] (-) TimerEvent: {}
+[23.976121] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:199:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 directive writing up to 127 bytes into a region of size 116 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-overflow=\x07-Wformat-overflow=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.977081] (mobile_robot) StderrLine: {'line': b'  199 |             sprintf(buffer, "%d, odom : [\x1b[01;35m\x1b[K%s\x1b[m\x1b[K] " , sizeof(robot_t), \x1b[32m\x1b[Kbuffer\x1b[m\x1b[K ) ;\n'}
+[23.977655] (mobile_robot) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K^~\x1b[m\x1b[K                       \x1b[32m\x1b[K~~~~~~\x1b[m\x1b[K\n'}
+[23.978083] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:199:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksprintf\x1b[m\x1b[K\xe2\x80\x99 output between 15 and 142 bytes into a destination of size 128\n'}
+[23.978506] (mobile_robot) StderrLine: {'line': b'  199 |             \x1b[01;36m\x1b[Ksprintf(buffer, "%d, odom : [%s] " , sizeof(robot_t), buffer )\x1b[m\x1b[K ;\n'}
+[23.978923] (mobile_robot) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.979324] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:199:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksprintf\x1b[m\x1b[K\xe2\x80\x99 argument 4 overlaps destination object \xe2\x80\x98\x1b[01m\x1b[Kbuffer\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wrestrict\x07-Wrestrict\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.979754] (mobile_robot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:172:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdestination object referenced by \xe2\x80\x98\x1b[01m\x1b[Krestrict\x1b[m\x1b[K\xe2\x80\x99-qualified argument 1 was declared here\n'}
+[23.980165] (mobile_robot) StderrLine: {'line': b'  172 |         char \x1b[01;36m\x1b[Kbuffer\x1b[m\x1b[K[128] = {0} ;        // buffer that stores the commands\n'}
+[23.980630] (mobile_robot) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[24.048184] (-) TimerEvent: {}
+[24.149141] (-) TimerEvent: {}
+[24.249897] (-) TimerEvent: {}
+[24.350653] (-) TimerEvent: {}
+[24.451409] (-) TimerEvent: {}
+[24.552186] (-) TimerEvent: {}
+[24.653037] (-) TimerEvent: {}
+[24.753811] (-) TimerEvent: {}
+[24.854581] (-) TimerEvent: {}
+[24.955336] (-) TimerEvent: {}
+[25.056074] (-) TimerEvent: {}
+[25.156866] (-) TimerEvent: {}
+[25.257750] (-) TimerEvent: {}
+[25.358847] (-) TimerEvent: {}
+[25.459833] (-) TimerEvent: {}
+[25.560756] (-) TimerEvent: {}
+[25.661495] (-) TimerEvent: {}
+[25.762223] (-) TimerEvent: {}
+[25.862953] (-) TimerEvent: {}
+[25.963688] (-) TimerEvent: {}
+[26.064423] (-) TimerEvent: {}
+[26.165153] (-) TimerEvent: {}
+[26.265892] (-) TimerEvent: {}
+[26.366635] (-) TimerEvent: {}
+[26.467371] (-) TimerEvent: {}
+[26.568099] (-) TimerEvent: {}
+[26.668850] (-) TimerEvent: {}
+[26.769597] (-) TimerEvent: {}
+[26.870344] (-) TimerEvent: {}
+[26.971103] (-) TimerEvent: {}
+[27.071925] (-) TimerEvent: {}
+[27.172697] (-) TimerEvent: {}
+[27.273430] (-) TimerEvent: {}
+[27.374159] (-) TimerEvent: {}
+[27.475020] (-) TimerEvent: {}
+[27.575782] (-) TimerEvent: {}
+[27.676646] (-) TimerEvent: {}
+[27.777453] (-) TimerEvent: {}
+[27.878262] (-) TimerEvent: {}
+[27.978975] (-) TimerEvent: {}
+[28.079718] (-) TimerEvent: {}
+[28.180616] (-) TimerEvent: {}
+[28.281530] (-) TimerEvent: {}
+[28.382518] (-) TimerEvent: {}
+[28.483252] (-) TimerEvent: {}
+[28.583976] (-) TimerEvent: {}
+[28.684703] (-) TimerEvent: {}
+[28.785439] (-) TimerEvent: {}
+[28.886194] (-) TimerEvent: {}
+[28.986904] (-) TimerEvent: {}
+[29.087631] (-) TimerEvent: {}
+[29.188365] (-) TimerEvent: {}
+[29.289153] (-) TimerEvent: {}
+[29.389907] (-) TimerEvent: {}
+[29.490743] (-) TimerEvent: {}
+[29.591457] (-) TimerEvent: {}
+[29.692179] (-) TimerEvent: {}
+[29.792953] (-) TimerEvent: {}
+[29.893737] (-) TimerEvent: {}
+[29.994502] (-) TimerEvent: {}
+[30.095257] (-) TimerEvent: {}
+[30.195969] (-) TimerEvent: {}
+[30.296679] (-) TimerEvent: {}
+[30.397385] (-) TimerEvent: {}
+[30.498125] (-) TimerEvent: {}
+[30.598865] (-) TimerEvent: {}
+[30.699637] (-) TimerEvent: {}
+[30.800393] (-) TimerEvent: {}
+[30.901193] (-) TimerEvent: {}
+[31.001935] (-) TimerEvent: {}
+[31.102803] (-) TimerEvent: {}
+[31.203711] (-) TimerEvent: {}
+[31.304671] (-) TimerEvent: {}
+[31.406057] (-) TimerEvent: {}
+[31.506791] (-) TimerEvent: {}
+[31.607531] (-) TimerEvent: {}
+[31.708254] (-) TimerEvent: {}
+[31.809019] (-) TimerEvent: {}
+[31.909753] (-) TimerEvent: {}
+[32.010506] (-) TimerEvent: {}
+[32.111238] (-) TimerEvent: {}
+[32.211975] (-) TimerEvent: {}
+[32.312690] (-) TimerEvent: {}
+[32.413427] (-) TimerEvent: {}
+[32.514152] (-) TimerEvent: {}
+[32.614890] (-) TimerEvent: {}
+[32.715625] (-) TimerEvent: {}
+[32.816399] (-) TimerEvent: {}
+[32.917185] (-) TimerEvent: {}
+[33.017942] (-) TimerEvent: {}
+[33.118708] (-) TimerEvent: {}
+[33.219474] (-) TimerEvent: {}
+[33.320264] (-) TimerEvent: {}
+[33.421052] (-) TimerEvent: {}
+[33.521933] (-) TimerEvent: {}
+[33.622731] (-) TimerEvent: {}
+[33.723544] (-) TimerEvent: {}
+[33.824354] (-) TimerEvent: {}
+[33.925240] (-) TimerEvent: {}
+[34.026094] (-) TimerEvent: {}
+[34.127233] (-) TimerEvent: {}
+[34.228102] (-) TimerEvent: {}
+[34.328966] (-) TimerEvent: {}
+[34.429784] (-) TimerEvent: {}
+[34.530626] (-) TimerEvent: {}
+[34.631380] (-) TimerEvent: {}
+[34.732181] (-) TimerEvent: {}
+[34.832959] (-) TimerEvent: {}
+[34.933722] (-) TimerEvent: {}
+[35.034448] (-) TimerEvent: {}
+[35.135143] (-) TimerEvent: {}
+[35.235872] (-) TimerEvent: {}
+[35.336608] (-) TimerEvent: {}
+[35.437338] (-) TimerEvent: {}
+[35.538055] (-) TimerEvent: {}
+[35.638804] (-) TimerEvent: {}
+[35.739612] (-) TimerEvent: {}
+[35.840646] (-) TimerEvent: {}
+[35.941724] (-) TimerEvent: {}
+[36.042832] (-) TimerEvent: {}
+[36.143631] (-) TimerEvent: {}
+[36.244327] (-) TimerEvent: {}
+[36.345089] (-) TimerEvent: {}
+[36.446008] (-) TimerEvent: {}
+[36.546762] (-) TimerEvent: {}
+[36.647640] (-) TimerEvent: {}
+[36.748452] (-) TimerEvent: {}
+[36.849197] (-) TimerEvent: {}
+[36.950020] (-) TimerEvent: {}
+[37.050880] (-) TimerEvent: {}
+[37.151611] (-) TimerEvent: {}
+[37.252402] (-) TimerEvent: {}
+[37.353156] (-) TimerEvent: {}
+[37.453922] (-) TimerEvent: {}
+[37.554658] (-) TimerEvent: {}
+[37.655438] (-) TimerEvent: {}
+[37.756143] (-) TimerEvent: {}
+[37.856913] (-) TimerEvent: {}
+[37.957626] (-) TimerEvent: {}
+[38.058342] (-) TimerEvent: {}
+[38.159072] (-) TimerEvent: {}
+[38.259774] (-) TimerEvent: {}
+[38.360605] (-) TimerEvent: {}
+[38.461532] (-) TimerEvent: {}
+[38.562884] (-) TimerEvent: {}
+[38.663630] (-) TimerEvent: {}
+[38.764449] (-) TimerEvent: {}
+[38.865502] (-) TimerEvent: {}
+[38.966330] (-) TimerEvent: {}
+[39.066891] (mobile_robot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mobile_robot\x1b[0m\n'}
+[39.067537] (-) TimerEvent: {}
+[39.168317] (-) TimerEvent: {}
+[39.269402] (-) TimerEvent: {}
+[39.370508] (-) TimerEvent: {}
+[39.471793] (-) TimerEvent: {}
+[39.573048] (-) TimerEvent: {}
+[39.674325] (-) TimerEvent: {}
+[39.775597] (-) TimerEvent: {}
+[39.876629] (-) TimerEvent: {}
+[39.977801] (-) TimerEvent: {}
+[40.078619] (-) TimerEvent: {}
+[40.179542] (-) TimerEvent: {}
+[40.280575] (-) TimerEvent: {}
+[40.381837] (-) TimerEvent: {}
+[40.483030] (-) TimerEvent: {}
+[40.583829] (-) TimerEvent: {}
+[40.684752] (-) TimerEvent: {}
+[40.785843] (-) TimerEvent: {}
+[40.886719] (-) TimerEvent: {}
+[40.987391] (-) TimerEvent: {}
+[41.088130] (-) TimerEvent: {}
+[41.189097] (-) TimerEvent: {}
+[41.290017] (-) TimerEvent: {}
+[41.390697] (-) TimerEvent: {}
+[41.479938] (mobile_robot) StdoutLine: {'line': b'[100%] Built target mobile_robot\n'}
+[41.490871] (-) TimerEvent: {}
+[41.521495] (mobile_robot) CommandEnded: {'returncode': 0}
+[41.591077] (-) TimerEvent: {}
+[41.664383] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'install'}
+[41.668618] (mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 38900 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '25'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 38900 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[41.691259] (-) TimerEvent: {}
+[41.703252] (mobile_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[41.704836] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/lib/mobile_robot/mobile_robot\n'}
+[41.747218] (mobile_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/documents/STA_github/ros2_ws/install/mobile_robot/lib/mobile_robot/mobile_robot" to ""\n'}
+[41.747874] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot\n'}
+[41.748352] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot\n'}
+[41.748882] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh\n'}
+[41.749416] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv\n'}
+[41.749868] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/path.sh\n'}
+[41.750343] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/path.dsv\n'}
+[41.750786] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.bash\n'}
+[41.751308] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.sh\n'}
+[41.751734] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.zsh\n'}
+[41.752141] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.dsv\n'}
+[41.752544] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/package.dsv\n'}
+[41.753765] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot\n'}
+[41.754264] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake\n'}
+[41.754733] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake\n'}
+[41.755228] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/package.xml\n'}
+[41.760890] (mobile_robot) CommandEnded: {'returncode': 0}
+[41.791510] (-) TimerEvent: {}
+[41.892808] (-) TimerEvent: {}
+[41.993827] (-) TimerEvent: {}
+[42.095422] (-) TimerEvent: {}
+[42.196357] (-) TimerEvent: {}
+[42.297423] (-) TimerEvent: {}
+[42.398725] (-) TimerEvent: {}
+[42.499383] (-) TimerEvent: {}
+[42.524616] (mobile_robot) JobEnded: {'identifier': 'mobile_robot', 'rc': 0}
+[42.528426] (-) EventReactorShutdown: {}

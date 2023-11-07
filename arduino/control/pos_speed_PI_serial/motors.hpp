@@ -15,16 +15,16 @@
 
 typedef struct motor_t {
 
-  uint8_t pwm ;          // holds the pin number for the pwm
-  uint8_t forward ;     // holds the pin number for moving forwards
-  uint8_t backward ;    // holds the pin number for moving backwards
+  uint32_t pwm ;          // holds the pin number for the pwm
+  uint32_t forward ;     // holds the pin number for moving forwards
+  uint32_t backward ;    // holds the pin number for moving backwards
   
 } motor_t ;
 
 // functions declaration
 
 // function to initialize the motor
-motor_t init_motor( uint8_t pwm, uint8_t forward, uint8_t backward );
+motor_t init_motor( uint32_t pwm, uint32_t forward, uint32_t backward );
 
 // function to apply voltage to the motors
 int drive_voltage( motor_t motor, float voltage );  

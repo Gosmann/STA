@@ -1,0 +1,96 @@
+[0.833s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake /home/pi/documents/STA_github/ros2_ws/src/mobile_robot -DCMAKE_INSTALL_PREFIX=/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot
+[2.083s] -- The C compiler identification is GNU 11.4.0
+[3.054s] -- The CXX compiler identification is GNU 11.4.0
+[3.086s] -- Detecting C compiler ABI info
+[3.617s] -- Detecting C compiler ABI info - done
+[3.649s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.651s] -- Detecting C compile features
+[3.654s] -- Detecting C compile features - done
+[3.674s] -- Detecting CXX compiler ABI info
+[4.253s] -- Detecting CXX compiler ABI info - done
+[4.285s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.287s] -- Detecting CXX compile features
+[4.289s] -- Detecting CXX compile features - done
+[4.328s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[5.338s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[6.129s] -- Found rclcpp: 21.0.3 (/opt/ros/iron/share/rclcpp/cmake)
+[6.661s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[6.791s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[6.953s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.130s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.130s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[8.167s] -- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[9.001s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.291s] -- Found FastRTPS: /opt/ros/iron/include  
+[9.771s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.778s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[10.965s] -- Found nav_msgs: 5.0.0 (/opt/ros/iron/share/nav_msgs/cmake)
+[11.754s] -- Found tf2_ros: 0.31.5 (/opt/ros/iron/share/tf2_ros/cmake)
+[14.158s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[14.687s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.688s] -- Configured cppcheck include dirs: 
+[14.688s] -- Configured cppcheck exclude dirs and/or files: 
+[14.693s] -- Added test 'lint_cmake' to check CMake code style
+[14.702s] -- Added test 'uncrustify' to check C / C++ code style
+[14.703s] -- Configured uncrustify additional arguments: 
+[14.706s] -- Added test 'xmllint' to check XML markup files
+[14.716s] -- Configuring done
+[14.808s] -- Generating done
+[14.817s] -- Build files have been written to: /home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot
+[14.858s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake /home/pi/documents/STA_github/ros2_ws/src/mobile_robot -DCMAKE_INSTALL_PREFIX=/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot
+[14.867s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot -- -j4 -l4
+[15.113s] [ 50%] [32mBuilding CXX object CMakeFiles/mobile_robot.dir/src/main.cpp.o[0m
+[31.524s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[31.525s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:210:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 3 has type ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[31.527s]   210 |             sprintf(buffer, "[01;35m[K%d[m[K, odom : [%f] " , [32m[Ksizeof(robot_t)[m[K, mobile_robot.encoder_power.theta * 0.0666 * 0.5 ) ;
+[31.528s]       |                              [01;35m[K~^[m[K                  [32m[K~~~~~~~~~~~~~~~[m[K
+[31.529s]       |                               [01;35m[K|[m[K                  [32m[K|[m[K
+[31.530s]       |                               [01;35m[Kint[m[K                [32m[Klong unsigned int[m[K
+[31.531s]       |                              [32m[K%ld[m[K
+[31.532s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[31.533s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:43[m[K,
+[31.534s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[31.535s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[31.536s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[31.537s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[31.538s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[31.539s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[31.540s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[31.541s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[31.542s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[31.543s]                  from [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:14[m[K:
+[31.544s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:212:45:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+[31.545s]   212 |             RCLCPP_INFO(node->get_logger(), [01;35m[Kbuffer[m[K);
+[31.546s]       |                                             [01;35m[K^~~~~~[m[K
+[31.547s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:218:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[31.548s]   218 |             for(i = 0 ; [01;35m[Ki < (sizeof(robot_t) - n)[m[K ; i++){
+[31.549s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[31.559s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:153:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcounter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[31.561s]   153 |     int [01;35m[Kcounter[m[K = 0;
+[31.562s]       |         [01;35m[K^~~~~~~[m[K
+[31.563s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:177:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[31.564s]   177 |     int i, [01;35m[Kj[m[K, n ;
+[31.565s]       |            [01;35m[K^[m[K
+[59.168s] [100%] [32m[1mLinking CXX executable mobile_robot[0m
+[61.623s] [100%] Built target mobile_robot
+[61.665s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot -- -j4 -l4
+[61.819s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot
+[61.849s] -- Install configuration: ""
+[61.849s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/lib/mobile_robot/mobile_robot
+[61.891s] -- Set runtime path of "/home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/lib/mobile_robot/mobile_robot" to ""
+[61.892s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot
+[61.894s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot
+[61.896s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh
+[61.897s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv
+[61.898s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/environment/path.sh
+[61.900s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/environment/path.dsv
+[61.901s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/local_setup.bash
+[61.903s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/local_setup.sh
+[61.904s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/local_setup.zsh
+[61.905s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/local_setup.dsv
+[61.907s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/package.dsv
+[61.908s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot
+[61.910s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake
+[61.911s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake
+[61.913s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/mobile_robot/share/mobile_robot/package.xml
+[61.919s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/src/build/mobile_robot
