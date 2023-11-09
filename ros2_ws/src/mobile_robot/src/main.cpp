@@ -29,6 +29,9 @@ using namespace std::chrono_literals;
 #define PI 3.14159265478
 #define MAX_BUFFER 128
 
+#define WHEEL_D 0.0650          // diameter of the wheel in meters
+#define L 0.3                   // distance between axis
+
 typedef struct robot_t{
         
         char msg[40] ;
@@ -102,15 +105,35 @@ private:
 
     // Turtle only exists in 2D, thus we get x and y translation
     // coordinates from the message and set the z coordinate to 0
-    t.transform.translation.x = msg->pose.pose.position.x + ( mobile_robot.encoder_power.theta * 0.0666 * 0.5 )  ;
-    t.transform.translation.y = msg->pose.pose.position.y + 0;
+
+    static robot_t old_robot = mobile_robot;
+    
+    float delta_odom_m = ( mobile_robot.encoder_power.theta - old_robot.encoder_power.theta ) * WHEEL_D * 0.5 ;
+    
+    old_robot = mobile_robot ;
+    
+    static float x_robot = 0 ;
+    static float y_robot = 0 ;
+    static float phi_robot = 0 ;
+
+    x_robot += ( delta_odom_m * cos( phi_robot ) ) ;
+    y_robot += ( delta_odom_m * sin( phi_robot ) ) ;
+    
+    printf("%f \n", x_robot);    
+        
+    t.transform.translation.x = msg->pose.pose.position.x + x_robot  ;
+    t.transform.translation.y = msg->pose.pose.position.y + y_robot  ;
     t.transform.translation.z = 0.0;
 
     // For the same reason, turtle can only rotate around one axis
     // and this why we set rotation in x and y to 0 and obtain
     // rotation in z axis from the message
     tf2::Quaternion q;
-    q.setRPY(0, 0, msg->pose.pose.orientation.x + 0 ) ;
+    static float phi = 0 ;  // pose of the robot with respect to odom
+    
+    phi_robot += ( delta_odom_m / L ) * tan( mobile_robot.encoder_direc.theta) ; 
+    
+    q.setRPY(0, 0, msg->pose.pose.orientation.x + phi_robot ) ;
     t.transform.rotation.x = q.x();
     t.transform.rotation.y = q.y();
     t.transform.rotation.z = q.z();
@@ -201,7 +224,7 @@ int main(int argc, char * argv[])
             memcpy(&mobile_robot, &buffer, sizeof(robot_t) );
             
             //buffer[n-1] = '\0';
-            sprintf(buffer2, "%d, odom : [%s] [%f] " , sizeof(robot_t), mobile_robot.msg, mobile_robot.encoder_power.theta * 0.666 * 0.5 ) ;  
+            sprintf(buffer2, "%d, odom : [%s] [%f] [%f] " , sizeof(robot_t), mobile_robot.msg, mobile_robot.encoder_power.theta * WHEEL_D * 0.5, mobile_robot.encoder_direc.theta ) ;  
             //sprintf(buffer, "%d, odom : [%s] " , sizeof(robot_t), mobile_robot.encoder_power.theta * 0.0666 * 0.5 ) ;  
             //printf("%d : %s \n", n, buffer) ;
             RCLCPP_INFO(node->get_logger(), buffer2);

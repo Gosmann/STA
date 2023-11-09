@@ -1,0 +1,23 @@
+[1.045s] Invoking command in '/home/pi/documents/STA_github/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/build/mobile_robot -- -j4 -l4
+[1.290s] [35m[1mConsolidate compiler generated dependencies of target mobile_robot[0m
+[1.407s] [100%] Built target mobile_robot
+[1.457s] Invoked command in '/home/pi/documents/STA_github/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/build/mobile_robot -- -j4 -l4
+[1.666s] Invoking command in '/home/pi/documents/STA_github/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/build/mobile_robot
+[1.734s] -- Install configuration: ""
+[1.750s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/lib/mobile_robot/mobile_robot
+[1.762s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot
+[1.768s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot
+[1.774s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh
+[1.777s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv
+[1.780s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/environment/path.sh
+[1.784s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/environment/path.dsv
+[1.786s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/local_setup.bash
+[1.787s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/local_setup.sh
+[1.789s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/local_setup.zsh
+[1.792s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/local_setup.dsv
+[1.794s] -- Installing: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/package.dsv
+[1.794s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot
+[1.795s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake
+[1.796s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake
+[1.799s] -- Up-to-date: /home/pi/documents/STA_github/install/mobile_robot/share/mobile_robot/package.xml
+[2.085s] Invoked command in '/home/pi/documents/STA_github/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/build/mobile_robot

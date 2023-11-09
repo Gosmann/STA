@@ -45,7 +45,7 @@ static uint32_t cnt = 0;
 // put your setup code here, to run once:
 void setup() {
 	
-  	Serial.begin(115200);         // /dev/ttyUSB0   usb cable serial
+  	Serial.begin(115200);        	// /dev/ttyUSB0   usb cable serial
   	Serial2.begin(115200);          // /dev/ttyS0     gpios on rpi
 	
 	pinMode(13, OUTPUT);            // blue LED
@@ -87,6 +87,7 @@ void loop() {
 
 				sprintf( buffer, "%1.5f \n", target) ;
 				if( abs(target) <= 1.001){
+				//if( 1 ){
 					Serial.print( target ) ;
 					control_direc_theta.set_point = target ;	
 				}
@@ -96,7 +97,7 @@ void loop() {
 				
 				
 			}
-			else if( buffer_serial[2] == 'p' ){		// set the direction 
+			else if( buffer_serial[2] == 'p' ){		// set the direction	 
 				
 				float target ;
 				sscanf( &buffer_serial[3], "%f", &target ) ;
@@ -183,6 +184,7 @@ void loop() {
 	sprintf(msg_local, "$ [%10d] Hello ; \0", cnt);
 	
 	mobile_robot.encoder_power = encoder_power ;
+	mobile_robot.encoder_direc = encoder_direc ;
 	strcpy( mobile_robot.msg, msg_local);
 	
 	/*
@@ -216,7 +218,7 @@ void loop() {
 	}
 
   	digitalWrite(13, HIGH);
-  	delay(100);
+  	delay(80);
 	
 }
 

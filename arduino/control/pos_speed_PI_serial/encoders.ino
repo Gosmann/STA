@@ -49,11 +49,11 @@ void power_isr() {
     
     cli();    // stops interrupts
     
-    if( digitalRead( encoder_power.B )  == digitalRead( encoder_power.A ) ){     // checks for polarity
+    if( digitalRead( encoder_power.B ) == digitalRead( encoder_power.A ) ){     // checks for polarity
         encoder_power.odom += 1.0000 ;
     }
     else{
-        encoder_power.odom -= 1.0500 ;  
+        encoder_power.odom -= 1.0600 ;  
     }
 
     sei();    // starts interrupts
@@ -65,10 +65,10 @@ void direc_isr() {
     cli();    // stops interrupts
     
     if( digitalRead( encoder_direc.B ) == digitalRead( encoder_direc.A ) ){     // checks for polarity
-        encoder_direc.odom += 1.0000;
+        encoder_direc.odom += 1.0000 * 0.82 ;
     }
     else{
-        encoder_direc.odom -= 1.0185 ;  
+        encoder_direc.odom -= (1.0000 + 0.0018) * 0.82 ;  
     }
 
     sei();    //stop interrupts

@@ -18,10 +18,10 @@ void calculate_speed( encoder_t * encoder ){
 	
     // converts from delta encoder to omega [rad/s]
     if( encoder == &encoder_power){
-        encoder->omega = ( (float)delta * 0.243912473 * 0.5 );     
+        encoder->omega = ( (float)delta * 0.243912473 );     
     }
     else if( encoder == &encoder_direc){
-      encoder->omega = ( (float)delta * 0.14959965 * 0.5 );     
+      encoder->omega = ( (float)delta * 0.14959965 );     
     }
     // supposes delta_t = 10ms
     // and gear ratio 2576
@@ -36,10 +36,10 @@ void calculate_pos( encoder_t * encoder){
 
     // converts from delta encoder to omega [rad/s]
     if( encoder == &encoder_power){
-        encoder->theta = ( encoder->odom * 0.00243912473 * 0.5 );     
+        encoder->theta = ( encoder->odom * 0.00243912473 );     
     }
     else if( encoder == &encoder_direc){
-        encoder->theta = ( encoder->odom * 0.0014959965 * 0.5 );     
+        encoder->theta = ( encoder->odom * 0.0014959965 );     
     }
     
 }
@@ -49,7 +49,7 @@ void power_isr() {
     
     cli();    // stops interrupts
     
-    if( digitalRead( encoder_power.B )  == digitalRead( encoder_power.A ) ){     // checks for polarity
+    if( digitalRead( encoder_power.B ) ){     // checks for polarity
         encoder_power.odom += 1.0000 ;
     }
     else{
@@ -64,11 +64,11 @@ void direc_isr() {
   
     cli();    // stops interrupts
     
-    if( digitalRead( encoder_direc.B ) == digitalRead( encoder_direc.A ) ){     // checks for polarity
-        encoder_direc.odom += 1.0000;
+    if( digitalRead( encoder_direc.B ) ){     // checks for polarity
+        encoder_direc.odom += 1.0000 * 0.82;
     }
     else{
-        encoder_direc.odom -= 1.0184;  
+        encoder_direc.odom -= (1.0000 + 0.0018 ) * 0.82;  
     }
 
     sei();    //stop interrupts

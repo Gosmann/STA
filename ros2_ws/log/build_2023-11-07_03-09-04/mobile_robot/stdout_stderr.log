@@ -1,5 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target mobile_robot[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/mobile_robot.dir/src/main.cpp.o[0m
-gmake[2]: *** [CMakeFiles/mobile_robot.dir/build.make:76: CMakeFiles/mobile_robot.dir/src/main.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mobile_robot.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

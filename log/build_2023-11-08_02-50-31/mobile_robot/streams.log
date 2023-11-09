@@ -1,0 +1,7 @@
+[1.500s] Invoking command in '/home/pi/documents/STA_github/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/build/mobile_robot -- -j4 -l4
+[1.758s] [35m[1mConsolidate compiler generated dependencies of target mobile_robot[0m
+[1.897s] [ 50%] [32mBuilding CXX object CMakeFiles/mobile_robot.dir/src/main.cpp.o[0m
+[10.420s] gmake[2]: *** [CMakeFiles/mobile_robot.dir/build.make:76: CMakeFiles/mobile_robot.dir/src/main.cpp.o] Interrupt
+[10.422s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mobile_robot.dir/all] Interrupt
+[10.425s] gmake: *** [Makefile:146: all] Interrupt
+[10.464s] Invoked command in '/home/pi/documents/STA_github/build/mobile_robot' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/build/mobile_robot -- -j4 -l4

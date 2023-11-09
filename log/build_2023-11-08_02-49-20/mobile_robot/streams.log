@@ -1,0 +1,60 @@
+[1.093s] Invoking command in '/home/pi/documents/STA_github/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/build/mobile_robot -- -j4 -l4
+[1.326s] [35m[1mConsolidate compiler generated dependencies of target mobile_robot[0m
+[1.450s] [ 50%] [32mBuilding CXX object CMakeFiles/mobile_robot.dir/src/main.cpp.o[0m
+[14.830s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:[m[K In member function ‘[01m[Kvoid FramePublisher::handle_turtle_pose(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >)[m[K’:
+[14.831s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:115:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[14.831s]   115 |     static float x_robot = ( delta_odom_m * cos( mobile_robot.encoder_direc.theta ) [01;31m[K;[m[K
+[14.832s]       |                                                                                     [01;31m[K^[m[K
+[14.833s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:115:28:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[14.834s]   115 |     static float x_robot = [01;36m[K([m[K delta_odom_m * cos( mobile_robot.encoder_direc.theta ) ;
+[14.834s]       |                            [01;36m[K^[m[K
+[14.835s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:116:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[14.835s]   116 |     static float y_robot = ( delta_odom_m * sin( mobile_robot.encoder_direc.theta ) [01;31m[K;[m[K
+[14.835s]       |                                                                                     [01;31m[K^[m[K
+[14.836s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:116:28:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[14.837s]   116 |     static float y_robot = [01;36m[K([m[K delta_odom_m * sin( mobile_robot.encoder_direc.theta ) ;
+[14.837s]       |                            [01;36m[K^[m[K
+[14.838s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:118:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+[14.838s]   118 |     t.transform.translation.x = msg->pose.pose.position.x + x_robot [01;31m[K)[m[K ;
+[14.838s]       |                                                                     [01;31m[K^[m[K
+[14.839s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:119:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+[14.839s]   119 |     t.transform.translation.y = msg->pose.pose.position.y + y_robot [01;31m[K)[m[K ;
+[14.840s]       |                                                                     [01;31m[K^[m[K
+[14.862s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[14.862s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:204:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[14.862s]   204 |             while( [01;35m[Kj < (sizeof(robot_t) - 1)[m[K ){
+[14.863s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.864s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:221:32:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 3 has type ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[14.865s]   221 |             sprintf(buffer2, "[01;35m[K%d[m[K, odom : [%s] [%f] " , [32m[Ksizeof(robot_t)[m[K, mobile_robot.msg, mobile_robot.encoder_power.theta * 0.666 * 0.5 ) ;
+[14.865s]       |                               [01;35m[K~^[m[K                       [32m[K~~~~~~~~~~~~~~~[m[K
+[14.866s]       |                                [01;35m[K|[m[K                       [32m[K|[m[K
+[14.866s]       |                                [01;35m[Kint[m[K                     [32m[Klong unsigned int[m[K
+[14.867s]       |                               [32m[K%ld[m[K
+[14.867s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[14.868s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:43[m[K,
+[14.868s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[14.869s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[14.869s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.870s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.870s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.871s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.871s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.871s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.872s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[14.873s]                  from [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:14[m[K:
+[14.873s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:224:45:[m[K [01;35m[Kwarning: [m[Kformat not a string literal and no format arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-security-Wformat-security]8;;[m[K]
+[14.873s]   224 |             RCLCPP_INFO(node->get_logger(), [01;35m[Kbuffer2[m[K);
+[14.874s]       |                                             [01;35m[K^~~~~~~[m[K
+[14.882s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:188:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.882s]   188 |         int [01;35m[Ki[m[K = 0 , j = 0 , n = 0 ;
+[14.883s]       |             [01;35m[K^[m[K
+[14.884s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:194:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksample[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.884s]   194 |         robot_t [01;35m[Ksample[m[K;
+[14.885s]       |                 [01;35m[K^~~~~~[m[K
+[14.885s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/mobile_robot/src/main.cpp:162:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcounter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.886s]   162 |     int [01;35m[Kcounter[m[K = 0;
+[14.886s]       |         [01;35m[K^~~~~~~[m[K
+[23.908s] gmake[2]: *** [CMakeFiles/mobile_robot.dir/build.make:76: CMakeFiles/mobile_robot.dir/src/main.cpp.o] Error 1
+[23.909s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mobile_robot.dir/all] Error 2
+[23.911s] gmake: *** [Makefile:146: all] Error 2
+[23.919s] Invoked command in '/home/pi/documents/STA_github/build/mobile_robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/build/mobile_robot -- -j4 -l4

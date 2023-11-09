@@ -180,7 +180,30 @@ CMakeFiles/mobile_robot.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/fcntl.h \
+ /usr/include/aarch64-linux-gnu/bits/fcntl.h \
+ /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/aarch64-linux-gnu/bits/stat.h \
+ /usr/include/aarch64-linux-gnu/bits/struct_stat.h /usr/include/termios.h \
+ /usr/include/aarch64-linux-gnu/bits/termios.h \
+ /usr/include/aarch64-linux-gnu/bits/termios-struct.h \
+ /usr/include/aarch64-linux-gnu/bits/termios-c_cc.h \
+ /usr/include/aarch64-linux-gnu/bits/termios-c_iflag.h \
+ /usr/include/aarch64-linux-gnu/bits/termios-c_oflag.h \
+ /usr/include/aarch64-linux-gnu/bits/termios-baud.h \
+ /usr/include/aarch64-linux-gnu/bits/termios-c_cflag.h \
+ /usr/include/aarch64-linux-gnu/bits/termios-c_lflag.h \
+ /usr/include/aarch64-linux-gnu/bits/termios-tcflow.h \
+ /usr/include/aarch64-linux-gnu/bits/termios-misc.h \
+ /usr/include/aarch64-linux-gnu/sys/ttydefaults.h /usr/include/unistd.h \
+ /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+ /usr/include/aarch64-linux-gnu/bits/environments.h \
+ /usr/include/aarch64-linux-gnu/bits/confname.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+ /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
  /opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
@@ -215,14 +238,7 @@ CMakeFiles/mobile_robot.dir/src/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/procfs-prregset.h \
  /usr/include/aarch64-linux-gnu/bits/procfs-extra.h \
  /usr/include/aarch64-linux-gnu/bits/sigstack.h \
- /usr/include/aarch64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
- /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
+ /usr/include/aarch64-linux-gnu/bits/sigstksz.h \
  /usr/include/aarch64-linux-gnu/bits/ss_flags.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/aarch64-linux-gnu/bits/sigthread.h \
@@ -716,4 +732,8 @@ CMakeFiles/mobile_robot.dir/src/main.cpp.o: \
  /opt/ros/iron/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
  /opt/ros/iron/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
  /opt/ros/iron/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
- /opt/ros/iron/include/tf2_ros/tf2_ros/qos.hpp
+ /opt/ros/iron/include/tf2_ros/tf2_ros/qos.hpp \
+ /home/pi/documents/STA_github/arduino/control/pos_speed_PI_serial/control.hpp \
+ /home/pi/documents/STA_github/arduino/control/pos_speed_PI_serial/encoders.hpp \
+ /home/pi/documents/STA_github/arduino/control/pos_speed_PI_serial/interrupts.hpp \
+ /home/pi/documents/STA_github/arduino/control/pos_speed_PI_serial/motors.hpp
