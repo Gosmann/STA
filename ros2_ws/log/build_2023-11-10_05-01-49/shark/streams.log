@@ -1,0 +1,113 @@
+[1.622s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4
+[1.825s] [35m[1mConsolidate compiler generated dependencies of target shark[0m
+[1.943s] [ 50%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[4.624s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:100:16:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+[4.624s]   100 |         printf([01;35m[K"[m[Kcalculating new pose!!!! \n);
+[4.625s]       |                [01;35m[K^[m[K
+[4.625s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:100:16:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+[4.626s]   100 |         printf([01;31m[K"calculating new pose!!!! \n);[m[K
+[4.627s]       |                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.045s] In file included from [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:18[m[K:
+[15.046s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:6:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kcreate_window[m[K’ declared void
+[15.046s]     6 | void [01;31m[Kcreate_window[m[K( SDL_Window ** window,  SDL_Renderer ** renderer);
+[15.047s]       |      [01;31m[K^~~~~~~~~~~~~[m[K
+[15.064s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:6:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_Window[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_min[m[K’?
+[15.065s]     6 | void create_window( [01;31m[KSDL_Window[m[K ** window,  SDL_Renderer ** renderer);
+[15.065s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[15.066s]       |                     [32m[KSDL_min[m[K
+[15.079s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:6:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kwindow[m[K’ was not declared in this scope
+[15.080s]     6 | void create_window( SDL_Window ** [01;31m[Kwindow[m[K,  SDL_Renderer ** renderer);
+[15.081s]       |                                   [01;31m[K^~~~~~[m[K
+[15.100s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:6:44:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_Renderer[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_render_h_[m[K’?
+[15.101s]     6 | void create_window( SDL_Window ** window,  [01;31m[KSDL_Renderer[m[K ** renderer);
+[15.101s]       |                                            [01;31m[K^~~~~~~~~~~~[m[K
+[15.102s]       |                                            [32m[KSDL_render_h_[m[K
+[15.118s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:6:60:[m[K [01;31m[Kerror: [m[K‘[01m[Krenderer[m[K’ was not declared in this scope
+[15.118s]     6 | void create_window( SDL_Window ** window,  SDL_Renderer ** [01;31m[Krenderer[m[K);
+[15.119s]       |                                                            [01;31m[K^~~~~~~~[m[K
+[15.119s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:8:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kdraw_row[m[K’ declared void
+[15.120s]     8 | void [01;31m[Kdraw_row[m[K(SDL_Renderer * renderer, uint32_t row, SDL_Color color);
+[15.120s]       |      [01;31m[K^~~~~~~~[m[K
+[15.138s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:8:15:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_Renderer[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_render_h_[m[K’?
+[15.139s]     8 | void draw_row([01;31m[KSDL_Renderer[m[K * renderer, uint32_t row, SDL_Color color);
+[15.139s]       |               [01;31m[K^~~~~~~~~~~~[m[K
+[15.140s]       |               [32m[KSDL_render_h_[m[K
+[15.232s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:8:30:[m[K [01;31m[Kerror: [m[K‘[01m[Krenderer[m[K’ was not declared in this scope
+[15.234s]     8 | void draw_row(SDL_Renderer * [01;31m[Krenderer[m[K, uint32_t row, SDL_Color color);
+[15.234s]       |                              [01;31m[K^~~~~~~~[m[K
+[15.235s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:8:49:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Krow[m[K’
+[15.235s]     8 | void draw_row(SDL_Renderer * renderer, uint32_t [01;31m[Krow[m[K, SDL_Color color);
+[15.236s]       |                                                 [01;31m[K^~~[m[K
+[15.237s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:8:54:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_Color[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_Colour[m[K’?
+[15.237s]     8 | void draw_row(SDL_Renderer * renderer, uint32_t row, [01;31m[KSDL_Color[m[K color);
+[15.238s]       |                                                      [01;31m[K^~~~~~~~~[m[K
+[15.238s]       |                                                      [32m[KSDL_Colour[m[K
+[15.239s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:10:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kdraw_point[m[K’ declared void
+[15.239s]    10 | void [01;31m[Kdraw_point[m[K( SDL_Renderer * renderer, uint32_t x, uint32_t y );
+[15.239s]       |      [01;31m[K^~~~~~~~~~[m[K
+[15.240s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:10:18:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_Renderer[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_render_h_[m[K’?
+[15.240s]    10 | void draw_point( [01;31m[KSDL_Renderer[m[K * renderer, uint32_t x, uint32_t y );
+[15.241s]       |                  [01;31m[K^~~~~~~~~~~~[m[K
+[15.241s]       |                  [32m[KSDL_render_h_[m[K
+[15.242s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:10:33:[m[K [01;31m[Kerror: [m[K‘[01m[Krenderer[m[K’ was not declared in this scope
+[15.243s]    10 | void draw_point( SDL_Renderer * [01;31m[Krenderer[m[K, uint32_t x, uint32_t y );
+[15.243s]       |                                 [01;31m[K^~~~~~~~[m[K
+[15.244s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:10:52:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kx[m[K’
+[15.244s]    10 | void draw_point( SDL_Renderer * renderer, uint32_t [01;31m[Kx[m[K, uint32_t y );
+[15.245s]       |                                                    [01;31m[K^[m[K
+[15.245s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:10:64:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Ky[m[K’
+[15.245s]    10 | void draw_point( SDL_Renderer * renderer, uint32_t x, uint32_t [01;31m[Ky[m[K );
+[15.246s]       |                                                                [01;31m[K^[m[K
+[15.246s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:12:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kclose_window[m[K’ declared void
+[15.247s]    12 | void [01;31m[Kclose_window[m[K( SDL_Window * window);
+[15.247s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[15.247s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:12:20:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_Window[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_min[m[K’?
+[15.248s]    12 | void close_window( [01;31m[KSDL_Window[m[K * window);
+[15.248s]       |                    [01;31m[K^~~~~~~~~~[m[K
+[15.248s]       |                    [32m[KSDL_min[m[K
+[15.249s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/display.h:12:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kwindow[m[K’ was not declared in this scope
+[15.249s]    12 | void close_window( SDL_Window * [01;31m[Kwindow[m[K);
+[15.249s]       |                                 [01;31m[K^~~~~~[m[K
+[17.177s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:26:16:[m[K [01;31m[Kerror: [m[Kusing typedef-name ‘[01m[Kpose_t[m[K’ after ‘[01m[Kstruct[m[K’
+[17.178s]    26 | typedef struct [01;31m[Kpose_t[m[K {
+[17.178s]       |                [01;31m[K^~~~~~[m[K
+[17.179s] In file included from [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:19[m[K:
+[17.180s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.h:25:3:[m[K [01;36m[Knote: [m[K‘[01m[Kpose_t[m[K’ has a previous declaration here
+[17.180s]    25 | } [01;36m[Kpose_t[m[K, *p_pose_t;
+[17.181s]       |   [01;36m[K^~~~~~[m[K
+[17.181s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:30:3:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Ktypedef int pose_t[m[K’
+[17.182s]    30 | } [01;31m[Kpose_t[m[K ;
+[17.182s]       |   [01;31m[K^~~~~~[m[K
+[17.183s] In file included from [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:19[m[K:
+[17.183s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.h:25:3:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Ktypedef struct pose_t pose_t[m[K’
+[17.184s]    25 | } [01;36m[Kpose_t[m[K, *p_pose_t;
+[17.184s]       |   [01;36m[K^~~~~~[m[K
+[17.184s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:32:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.185s]    32 | pose_t robot = {0[01;35m[K}[m[K ;
+[17.185s]       |                  [01;35m[K^[m[K
+[17.186s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:32:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.186s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:33:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.187s]    33 | pose_t origin = {0[01;35m[K}[m[K ;
+[17.187s]       |                   [01;35m[K^[m[K
+[17.188s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:33:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.438s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[17.439s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:94:82:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[17.439s]    94 |     printf("heigth : %d, width : %d, origin [x, y, theta] :  \n", heigth, width, [01;31m[K)[m[K;
+[17.440s]       |                                                                                  [01;31m[K^[m[K
+[17.440s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:102:16:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kstart[m[K’
+[17.441s]   102 |         node_t [01;31m[Kstart[m[K = { { { 0, 0, 0 }, 0, 0, 1 }, 0, 1e3, 0, 1e3, {0}, NULL };
+[17.441s]       |                [01;31m[K^~~~~[m[K
+[17.474s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:103:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_node[m[K’ was not declared in this scope
+[17.475s]   103 |         [01;31m[Kbest_node[m[K = &start ;
+[17.476s]       |         [01;31m[K^~~~~~~~~[m[K
+[17.501s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:103:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart[m[K’ was not declared in this scope
+[17.501s]   103 |         best_node = &[01;31m[Kstart[m[K ;
+[17.502s]       |                      [01;31m[K^~~~~[m[K
+[17.531s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:117:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ka_star[m[K’ was not declared in this scope; did you mean ‘[01m[Kva_start[m[K’?
+[17.531s]   117 |         node_t * final = [01;31m[Ka_star[m[K( &start, dt );
+[17.532s]       |                          [01;31m[K^~~~~~[m[K
+[17.533s]       |                          [32m[Kva_start[m[K
+[24.732s] gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+[24.733s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+[24.734s] gmake: *** [Makefile:146: all] Error 2
+[24.741s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/shark' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4

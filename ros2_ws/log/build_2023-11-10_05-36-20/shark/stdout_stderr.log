@@ -1,0 +1,42 @@
+[35m[1mConsolidate compiler generated dependencies of target shark[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   27 | pose_t robot = {0[01;35m[K}[m[K ;
+      |                  [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   28 | pose_t origin = {0[01;35m[K}[m[K ;
+      |                   [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In member function ‘[01m[Kvoid MapSubscriber::topic_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:70:20:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >[m[K’} to ‘[01m[Kint8_t*[m[K’ {aka ‘[01m[Ksigned char*[m[K’} in assignment
+   70 |     map_now = [01;31m[Kmsg->data[m[K ;
+      |               [01;31m[K~~~~~^~~~[m[K
+      |                    [01;31m[K|[m[K
+      |                    [01;31m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >::_data_type {aka std::vector<signed char, std::allocator<signed char> >}[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Knode_t* a_star(node_t*, double)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:154:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  154 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+      |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                   [01;35m[K|[m[K                       [32m[K|[m[K
+      |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:160:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  160 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+      |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                   [01;35m[K|[m[K                       [32m[K|[m[K
+      |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:225:24:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+  225 |                 printf([01;35m[K"%d %d %d %d %d \n"[m[K, map_now[0], map_now[1], map_now[2], map_now[3], map_now[4], map_now[5] );
+      |                        [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:236:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  236 |         printf("[01;35m[K%p[m[K \n", [32m[Kstart.children[0][m[K) ;
+      |                 [01;35m[K~^[m[K      [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                  [01;35m[K|[m[K                      [32m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K                  [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:223:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  223 |                 int [01;35m[Ki[m[K;
+      |                     [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

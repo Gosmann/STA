@@ -1,0 +1,25 @@
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   27 | pose_t robot = {0[01;35m[K}[m[K ;
+      |                  [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   28 | pose_t origin = {0[01;35m[K}[m[K ;
+      |                   [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Knode_t* a_star(node_t*, double)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:162:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  162 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+      |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                   [01;35m[K|[m[K                       [32m[K|[m[K
+      |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:168:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  168 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+      |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                   [01;35m[K|[m[K                       [32m[K|[m[K
+      |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:252:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  252 |         printf("[01;35m[K%p[m[K \n", [32m[Kstart.children[0][m[K) ;
+      |                 [01;35m[K~^[m[K      [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                  [01;35m[K|[m[K                      [32m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K                  [32m[Knode_t*[m[K

@@ -1,0 +1,43 @@
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   27 | pose_t robot = {0[01;35m[K}[m[K ;
+      |                  [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   28 | pose_t origin = {0[01;35m[K}[m[K ;
+      |                   [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Knode_t* a_star(node_t*, double)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:150:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  150 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+      |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                   [01;35m[K|[m[K                       [32m[K|[m[K
+      |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:156:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  156 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+      |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                   [01;35m[K|[m[K                       [32m[K|[m[K
+      |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:225:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  225 |         printf("[01;35m[K%p[m[K \n", [32m[Kstart.children[0][m[K) ;
+      |                 [01;35m[K~^[m[K      [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                  [01;35m[K|[m[K                      [32m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K                  [32m[Knode_t*[m[K
+/usr/bin/ld: CMakeFiles/shark.dir/src/shark.cpp.o: in function `expand_node(node_t*, double)':
+shark.cpp:(.text+0x184): undefined reference to `simulate(node_t*, double, actions)'
+/usr/bin/ld: shark.cpp:(.text+0x1bc): undefined reference to `simulate(node_t*, double, actions)'
+/usr/bin/ld: shark.cpp:(.text+0x1f0): undefined reference to `simulate(node_t*, double, actions)'
+/usr/bin/ld: shark.cpp:(.text+0x224): undefined reference to `simulate(node_t*, double, actions)'
+/usr/bin/ld: shark.cpp:(.text+0x25c): undefined reference to `simulate(node_t*, double, actions)'
+/usr/bin/ld: CMakeFiles/shark.dir/src/shark.cpp.o:shark.cpp:(.text+0x294): more undefined references to `simulate(node_t*, double, actions)' follow
+/usr/bin/ld: CMakeFiles/shark.dir/src/shark.cpp.o: in function `a_star(node_t*, double)':
+shark.cpp:(.text+0x4e8): undefined reference to `print_node(node_t)'
+/usr/bin/ld: shark.cpp:(.text+0x56c): undefined reference to `print_node(node_t)'
+/usr/bin/ld: shark.cpp:(.text+0x5c0): undefined reference to `print_node(node_t)'
+/usr/bin/ld: CMakeFiles/shark.dir/src/shark.cpp.o: in function `main':
+shark.cpp:(.text+0x7e8): undefined reference to `print_node(node_t)'
+/usr/bin/ld: shark.cpp:(.text+0x860): undefined reference to `print_node(node_t)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/shark.dir/build.make:220: shark] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

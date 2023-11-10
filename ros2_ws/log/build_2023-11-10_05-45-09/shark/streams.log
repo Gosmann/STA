@@ -1,0 +1,51 @@
+[1.063s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4
+[1.336s] [35m[1mConsolidate compiler generated dependencies of target shark[0m
+[1.501s] [ 33%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[16.813s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[16.814s]    27 | pose_t robot = {0[01;35m[K}[m[K ;
+[16.815s]       |                  [01;35m[K^[m[K
+[16.816s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[16.817s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[16.819s]    28 | pose_t origin = {0[01;35m[K}[m[K ;
+[16.820s]       |                   [01;35m[K^[m[K
+[16.820s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.059s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Knode_t* a_star(node_t*, double)[m[K’:
+[17.059s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:162:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[17.060s]   162 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+[17.060s]       |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+[17.061s]       |                   [01;35m[K|[m[K                       [32m[K|[m[K
+[17.061s]       |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[17.063s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:168:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[17.063s]   168 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+[17.064s]       |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+[17.064s]       |                   [01;35m[K|[m[K                       [32m[K|[m[K
+[17.065s]       |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[17.079s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[17.080s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:252:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[17.082s]   252 |         printf("[01;35m[K%p[m[K \n", [32m[Kstart.children[0][m[K) ;
+[17.083s]       |                 [01;35m[K~^[m[K      [32m[K~~~~~~~~~~~~~~~~~[m[K
+[17.084s]       |                  [01;35m[K|[m[K                      [32m[K|[m[K
+[17.085s]       |                  [01;35m[Kvoid*[m[K                  [32m[Knode_t*[m[K
+[37.305s] [ 66%] [32m[1mLinking CXX executable shark[0m
+[40.731s] [100%] Built target shark
+[40.772s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/shark' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4
+[40.952s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/build/shark
+[40.999s] -- Install configuration: ""
+[41.003s] -- Installing: /home/pi/documents/STA_github/ros2_ws/install/shark/lib/shark/shark
+[41.072s] -- Set runtime path of "/home/pi/documents/STA_github/ros2_ws/install/shark/lib/shark/shark" to ""
+[41.073s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/ament_index/resource_index/package_run_dependencies/shark
+[41.074s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/ament_index/resource_index/parent_prefix_path/shark
+[41.074s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/ament_prefix_path.sh
+[41.075s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/ament_prefix_path.dsv
+[41.076s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/path.sh
+[41.076s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/path.dsv
+[41.077s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.bash
+[41.078s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.sh
+[41.079s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.zsh
+[41.080s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.dsv
+[41.080s] -- Installing: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/package.dsv
+[41.083s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/ament_index/resource_index/packages/shark
+[41.083s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/cmake/sharkConfig.cmake
+[41.084s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/cmake/sharkConfig-version.cmake
+[41.085s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/package.xml
+[41.093s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/shark' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/build/shark

@@ -1,0 +1,41 @@
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:26:16:[m[K [01;31m[Kerror: [m[Kusing typedef-name ‘[01m[Kpose_t[m[K’ after ‘[01m[Kstruct[m[K’
+   26 | typedef struct [01;31m[Kpose_t[m[K {
+      |                [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:19[m[K:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.h:25:3:[m[K [01;36m[Knote: [m[K‘[01m[Kpose_t[m[K’ has a previous declaration here
+   25 | } [01;36m[Kpose_t[m[K, *p_pose_t;
+      |   [01;36m[K^~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:30:3:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Ktypedef int pose_t[m[K’
+   30 | } [01;31m[Kpose_t[m[K ;
+      |   [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:19[m[K:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.h:25:3:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Ktypedef struct pose_t pose_t[m[K’
+   25 | } [01;36m[Kpose_t[m[K, *p_pose_t;
+      |   [01;36m[K^~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:32:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   32 | pose_t robot = {0[01;35m[K}[m[K ;
+      |                  [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:32:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:33:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   33 | pose_t origin = {0[01;35m[K}[m[K ;
+      |                   [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:33:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:94:82:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   94 |     printf("heigth : %d, width : %d, origin [x, y, theta] :  \n", heigth, width, [01;31m[K)[m[K;
+      |                                                                                  [01;31m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:103:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbest_node[m[K’ was not declared in this scope
+  103 |         [01;31m[Kbest_node[m[K = &start ;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:110:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  110 |         printf("[01;35m[K%p[m[K \n", [32m[Kstart.children[0][m[K) ;
+      |                 [01;35m[K~^[m[K      [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                  [01;35m[K|[m[K                      [32m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K                  [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:117:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ka_star[m[K’ was not declared in this scope; did you mean ‘[01m[Kva_start[m[K’?
+  117 |         node_t * final = [01;31m[Ka_star[m[K( &start, dt );
+      |                          [01;31m[K^~~~~~[m[K
+      |                          [32m[Kva_start[m[K
+gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

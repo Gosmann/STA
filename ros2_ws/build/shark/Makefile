@@ -210,6 +210,30 @@ shark/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shark.dir/build.make CMakeFiles/shark.dir/build
 .PHONY : shark/fast
 
+src/kinematics.o: src/kinematics.cpp.o
+.PHONY : src/kinematics.o
+
+# target to build an object file
+src/kinematics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shark.dir/build.make CMakeFiles/shark.dir/src/kinematics.cpp.o
+.PHONY : src/kinematics.cpp.o
+
+src/kinematics.i: src/kinematics.cpp.i
+.PHONY : src/kinematics.i
+
+# target to preprocess a source file
+src/kinematics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shark.dir/build.make CMakeFiles/shark.dir/src/kinematics.cpp.i
+.PHONY : src/kinematics.cpp.i
+
+src/kinematics.s: src/kinematics.cpp.s
+.PHONY : src/kinematics.s
+
+# target to generate assembly for a file
+src/kinematics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shark.dir/build.make CMakeFiles/shark.dir/src/kinematics.cpp.s
+.PHONY : src/kinematics.cpp.s
+
 src/shark.o: src/shark.cpp.o
 .PHONY : src/shark.o
 
@@ -250,6 +274,9 @@ help:
 	@echo "... shark_uninstall"
 	@echo "... uninstall"
 	@echo "... shark"
+	@echo "... src/kinematics.o"
+	@echo "... src/kinematics.i"
+	@echo "... src/kinematics.s"
 	@echo "... src/shark.o"
 	@echo "... src/shark.i"
 	@echo "... src/shark.s"

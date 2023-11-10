@@ -1,0 +1,31 @@
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Knode_t* simulate(node_t*, double, actions)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:55:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   55 |     for(int i = 0 ; [01;35m[Ki < node->depth[m[K ; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Kvoid show_path(SDL_Renderer*, std::vector<pose_t>)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:107:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pose_t>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  107 |     for(i = 0 ; [01;35m[Ki < path.size() - 1[m[K ; i++){
+      |                 [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Kvoid print_node(node_t)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:126:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  126 |     for(j = 0 ; [01;35m[Kj < node.depth[m[K ; j++){
+      |                 [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:134:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  134 |     for(j = 0 ; [01;35m[Kj < node.depth[m[K ; j++)
+      |                 [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Kvoid print_all_children(node_t*)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:150:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  150 |     int i, [01;35m[Kj[m[K;
+      |            [01;35m[K^[m[K
+/usr/bin/ld: CMakeFiles/shark.dir/src/kinematics.cpp.o: in function `show_position(SDL_Renderer*, pose_t)':
+kinematics.cpp:(.text+0x5b0): undefined reference to `SDL_SetRenderDrawColor'
+/usr/bin/ld: kinematics.cpp:(.text+0x61c): undefined reference to `SDL_RenderDrawPoint'
+/usr/bin/ld: kinematics.cpp:(.text+0x624): undefined reference to `SDL_RenderPresent'
+/usr/bin/ld: CMakeFiles/shark.dir/src/kinematics.cpp.o: in function `show_path(SDL_Renderer*, std::vector<pose_t, std::allocator<pose_t> >)':
+kinematics.cpp:(.text+0x660): undefined reference to `SDL_SetRenderDrawColor'
+/usr/bin/ld: kinematics.cpp:(.text+0x778): undefined reference to `SDL_RenderDrawLine'
+/usr/bin/ld: kinematics.cpp:(.text+0x7b0): undefined reference to `SDL_RenderPresent'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/shark.dir/build.make:236: shark] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

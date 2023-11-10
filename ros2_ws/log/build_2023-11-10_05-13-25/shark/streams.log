@@ -1,0 +1,48 @@
+[0.993s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4
+[1.230s] [35m[1mConsolidate compiler generated dependencies of target shark[0m
+[1.352s] [ 50%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[16.901s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[16.902s]    27 | pose_t robot = {0[01;35m[K}[m[K ;
+[16.902s]       |                  [01;35m[K^[m[K
+[16.903s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:27:18:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[16.903s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[16.904s]    28 | pose_t origin = {0[01;35m[K}[m[K ;
+[16.904s]       |                   [01;35m[K^[m[K
+[16.905s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.147s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Knode_t* a_star(node_t*, double)[m[K’:
+[17.147s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:150:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[17.148s]   150 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+[17.148s]       |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+[17.149s]       |                   [01;35m[K|[m[K                       [32m[K|[m[K
+[17.149s]       |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[17.150s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:156:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[17.151s]   156 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+[17.151s]       |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+[17.152s]       |                   [01;35m[K|[m[K                       [32m[K|[m[K
+[17.152s]       |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[17.167s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[17.168s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:225:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[17.168s]   225 |         printf("[01;35m[K%p[m[K \n", [32m[Kstart.children[0][m[K) ;
+[17.169s]       |                 [01;35m[K~^[m[K      [32m[K~~~~~~~~~~~~~~~~~[m[K
+[17.170s]       |                  [01;35m[K|[m[K                      [32m[K|[m[K
+[17.170s]       |                  [01;35m[Kvoid*[m[K                  [32m[Knode_t*[m[K
+[37.617s] [100%] [32m[1mLinking CXX executable shark[0m
+[40.670s] /usr/bin/ld: CMakeFiles/shark.dir/src/shark.cpp.o: in function `expand_node(node_t*, double)':
+[40.671s] shark.cpp:(.text+0x184): undefined reference to `simulate(node_t*, double, actions)'
+[40.672s] /usr/bin/ld: shark.cpp:(.text+0x1bc): undefined reference to `simulate(node_t*, double, actions)'
+[40.674s] /usr/bin/ld: shark.cpp:(.text+0x1f0): undefined reference to `simulate(node_t*, double, actions)'
+[40.676s] /usr/bin/ld: shark.cpp:(.text+0x224): undefined reference to `simulate(node_t*, double, actions)'
+[40.678s] /usr/bin/ld: shark.cpp:(.text+0x25c): undefined reference to `simulate(node_t*, double, actions)'
+[40.680s] /usr/bin/ld: CMakeFiles/shark.dir/src/shark.cpp.o:shark.cpp:(.text+0x294): more undefined references to `simulate(node_t*, double, actions)' follow
+[40.683s] /usr/bin/ld: CMakeFiles/shark.dir/src/shark.cpp.o: in function `a_star(node_t*, double)':
+[40.683s] shark.cpp:(.text+0x4e8): undefined reference to `print_node(node_t)'
+[40.684s] /usr/bin/ld: shark.cpp:(.text+0x56c): undefined reference to `print_node(node_t)'
+[40.686s] /usr/bin/ld: shark.cpp:(.text+0x5c0): undefined reference to `print_node(node_t)'
+[40.689s] /usr/bin/ld: CMakeFiles/shark.dir/src/shark.cpp.o: in function `main':
+[40.690s] shark.cpp:(.text+0x7e8): undefined reference to `print_node(node_t)'
+[40.691s] /usr/bin/ld: shark.cpp:(.text+0x860): undefined reference to `print_node(node_t)'
+[40.991s] collect2: error: ld returned 1 exit status
+[40.996s] gmake[2]: *** [CMakeFiles/shark.dir/build.make:220: shark] Error 1
+[40.998s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+[40.999s] gmake: *** [Makefile:146: all] Error 2
+[41.007s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/shark' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4

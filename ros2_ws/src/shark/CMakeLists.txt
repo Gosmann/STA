@@ -19,7 +19,7 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
-add_executable(shark src/shark.cpp)
+add_executable(shark src/shark.cpp src/kinematics.cpp)
 ament_target_dependencies(shark rclcpp std_msgs nav_msgs tf2_ros tf2 geometry_msgs )
 
 install(TARGETS

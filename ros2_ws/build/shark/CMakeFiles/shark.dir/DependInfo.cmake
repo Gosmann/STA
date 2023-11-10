@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp" "CMakeFiles/shark.dir/src/kinematics.cpp.o" "gcc" "CMakeFiles/shark.dir/src/kinematics.cpp.o.d"
   "/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp" "CMakeFiles/shark.dir/src/shark.cpp.o" "gcc" "CMakeFiles/shark.dir/src/shark.cpp.o.d"
   )
 
