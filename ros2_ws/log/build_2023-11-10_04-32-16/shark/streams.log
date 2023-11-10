@@ -1,0 +1,14 @@
+[0.914s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4
+[1.134s] [35m[1mConsolidate compiler generated dependencies of target shark[0m
+[1.259s] [ 50%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[14.583s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In member function ‘[01m[Kvoid MapSubscriber::topic_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.583s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:75:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kinfo[m[K’
+[14.584s]    75 |     width = msg.[01;31m[Kinfo[m[K.width ;
+[14.584s]       |                 [01;31m[K^~~~[m[K
+[14.585s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:76:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kinfo[m[K’
+[14.585s]    76 |     heigth = msg.[01;31m[Kinfo[m[K.height;
+[14.586s]       |                  [01;31m[K^~~~[m[K
+[22.655s] gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+[22.657s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+[22.658s] gmake: *** [Makefile:146: all] Error 2
+[22.665s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/shark' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4

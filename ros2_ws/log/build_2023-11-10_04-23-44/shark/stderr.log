@@ -1,0 +1,7 @@
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In constructor ‘[01m[KMapSubscriber::MapSubscriber()[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_map[m[K’ was not declared in this scope
+   60 |     [01;31m[Ksubscription_map[m[K = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,10 @@
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/uninstall.dir
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/shark_uninstall.dir
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/shark.dir
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/test.dir
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/edit_cache.dir
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/rebuild_cache.dir
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/list_install_components.dir
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/install.dir
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/install/local.dir
+/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles/install/strip.dir

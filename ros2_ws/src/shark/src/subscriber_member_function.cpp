@@ -214,6 +214,10 @@ int main(int argc, char * argv[])
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<MapSubscriber>());
   
+  while(1){
+    printf("heigth : %d, width : %d \n", heigth, width);
+  }
+  
   rclcpp::shutdown();
   return 0;
 }

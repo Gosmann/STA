@@ -1,0 +1,609 @@
+[0.000000] (-) TimerEvent: {}
+[0.002008] (mobile_robot) JobQueued: {'identifier': 'mobile_robot', 'dependencies': OrderedDict()}
+[0.002995] (shark) JobQueued: {'identifier': 'shark', 'dependencies': OrderedDict()}
+[0.003266] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.003742] (mobile_robot) JobStarted: {'identifier': 'mobile_robot'}
+[0.098938] (-) TimerEvent: {}
+[0.199804] (-) TimerEvent: {}
+[0.300742] (-) TimerEvent: {}
+[0.402337] (-) TimerEvent: {}
+[0.418804] (shark) JobStarted: {'identifier': 'shark'}
+[0.502649] (-) TimerEvent: {}
+[0.603614] (-) TimerEvent: {}
+[0.704654] (-) TimerEvent: {}
+[0.805945] (-) TimerEvent: {}
+[0.829284] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.909161] (-) TimerEvent: {}
+[1.010081] (-) TimerEvent: {}
+[1.111163] (-) TimerEvent: {}
+[1.212788] (-) TimerEvent: {}
+[1.244025] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'cmake'}
+[1.247539] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'build'}
+[1.250418] (mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot', '--', '-j4', '-l4'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 58670 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/documents/STA_github/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install:/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '15'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 58670 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[1.263905] (shark) JobProgress: {'identifier': 'shark', 'progress': 'cmake'}
+[1.267163] (shark) JobProgress: {'identifier': 'shark', 'progress': 'build'}
+[1.268494] (shark) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/documents/STA_github/ros2_ws/build/shark', '--', '-j4', '-l4'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/shark', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 58670 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/documents/STA_github/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install:/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '15'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/shark'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 58670 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[1.289020] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[1.293347] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[1.295467] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 58670 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/documents/STA_github/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install:/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '15'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 58670 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[1.313124] (-) TimerEvent: {}
+[1.399291] (shark) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[1.413348] (-) TimerEvent: {}
+[1.514206] (-) TimerEvent: {}
+[1.540545] (mobile_robot) StdoutLine: {'line': b'[100%] Built target mobile_robot\n'}
+[1.583071] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target ydlidar_ros2_driver_node\n'}
+[1.592092] (mobile_robot) CommandEnded: {'returncode': 0}
+[1.614428] (-) TimerEvent: {}
+[1.622767] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_client\n'}
+[1.668304] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[1.714615] (-) TimerEvent: {}
+[1.736670] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'install'}
+[1.778922] (mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 58670 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/documents/STA_github/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install:/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '15'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/mobile_robot'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 58670 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[1.810249] (mobile_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.812038] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/lib/mobile_robot/mobile_robot\n'}
+[1.813965] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot\n'}
+[1.814835] (-) TimerEvent: {}
+[1.817766] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot\n'}
+[1.818545] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh\n'}
+[1.819037] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv\n'}
+[1.819503] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/path.sh\n'}
+[1.819975] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/environment/path.dsv\n'}
+[1.820504] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.bash\n'}
+[1.820888] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.sh\n'}
+[1.821594] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.zsh\n'}
+[1.822241] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/local_setup.dsv\n'}
+[1.823566] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/package.dsv\n'}
+[1.824174] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot\n'}
+[1.824814] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake\n'}
+[1.825967] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake\n'}
+[1.826720] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/mobile_robot/share/mobile_robot/package.xml\n'}
+[1.830858] (mobile_robot) CommandEnded: {'returncode': 0}
+[1.915273] (-) TimerEvent: {}
+[2.016581] (-) TimerEvent: {}
+[2.118373] (-) TimerEvent: {}
+[2.198415] (shark) StdoutLine: {'line': b'-- Found rclcpp: 21.0.3 (/opt/ros/iron/share/rclcpp/cmake)\n'}
+[2.211161] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[2.212384] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 58670 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/documents/STA_github/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install:/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '15'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 58670 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[2.220459] (-) TimerEvent: {}
+[2.250995] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.253972] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[2.257471] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[2.259757] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch\n'}
+[2.261460] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[2.262469] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_mod.py\n'}
+[2.263217] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[2.264234] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__\n'}
+[2.264882] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch_mod.cpython-310.pyc\n'}
+[2.265796] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/__pycache__/ydlidar_launch.cpython-310.pyc\n'}
+[2.266714] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[2.268657] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params\n'}
+[2.270129] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/build\n'}
+[2.272191] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/build/COLCON_IGNORE\n'}
+[2.273465] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/build/.built_by\n'}
+[2.274578] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install\n'}
+[2.275611] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/COLCON_IGNORE\n'}
+[2.277623] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.ps1\n'}
+[2.278760] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/.colcon_install_layout\n'}
+[2.279699] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/_local_setup_util_sh.py\n'}
+[2.280369] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.zsh\n'}
+[2.280878] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.bash\n'}
+[2.282384] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.zsh\n'}
+[2.283241] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/_local_setup_util_ps1.py\n'}
+[2.283754] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/local_setup.sh\n'}
+[2.284186] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.bash\n'}
+[2.284832] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.ps1\n'}
+[2.285633] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/install/setup.sh\n'}
+[2.286460] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log\n'}
+[2.290404] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/COLCON_IGNORE\n'}
+[2.291465] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/latest_build\n'}
+[2.292640] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/latest\n'}
+[2.293194] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/build_2023-11-07_06-29-43\n'}
+[2.294594] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/build_2023-11-07_06-29-43/events.log\n'}
+[2.295166] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/log/build_2023-11-07_06-29-43/logger_all.log\n'}
+[2.296423] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[2.297423] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup\n'}
+[2.297964] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[2.298775] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config\n'}
+[2.299644] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[2.300197] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[2.301706] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[2.302363] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[2.302701] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[2.303011] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[2.303316] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[2.303691] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[2.304542] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[2.305149] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[2.306548] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[2.307564] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[2.308207] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[2.309893] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[2.311257] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[2.311883] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[2.312911] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[2.320791] (-) TimerEvent: {}
+[2.422413] (-) TimerEvent: {}
+[2.423655] (shark) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[2.467935] (shark) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[2.522662] (-) TimerEvent: {}
+[2.533676] (shark) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.616037] (shark) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.622864] (-) TimerEvent: {}
+[2.724377] (-) TimerEvent: {}
+[2.826075] (-) TimerEvent: {}
+[2.927117] (-) TimerEvent: {}
+[3.019107] (mobile_robot) JobEnded: {'identifier': 'mobile_robot', 'rc': 0}
+[3.027469] (-) TimerEvent: {}
+[3.128171] (-) TimerEvent: {}
+[3.229173] (-) TimerEvent: {}
+[3.330049] (-) TimerEvent: {}
+[3.346510] (shark) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[3.355229] (shark) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.408306] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[3.430234] (-) TimerEvent: {}
+[3.530860] (-) TimerEvent: {}
+[3.631492] (-) TimerEvent: {}
+[3.732266] (-) TimerEvent: {}
+[3.833022] (-) TimerEvent: {}
+[3.933707] (-) TimerEvent: {}
+[4.034346] (-) TimerEvent: {}
+[4.134971] (-) TimerEvent: {}
+[4.235718] (-) TimerEvent: {}
+[4.336456] (-) TimerEvent: {}
+[4.437159] (-) TimerEvent: {}
+[4.464997] (shark) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.537329] (-) TimerEvent: {}
+[4.638023] (-) TimerEvent: {}
+[4.738707] (-) TimerEvent: {}
+[4.839358] (-) TimerEvent: {}
+[4.940015] (-) TimerEvent: {}
+[5.040672] (-) TimerEvent: {}
+[5.141426] (-) TimerEvent: {}
+[5.186012] (shark) StdoutLine: {'line': b'-- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)\n'}
+[5.241580] (-) TimerEvent: {}
+[5.322930] (shark) StdoutLine: {'line': b'-- Found nav_msgs: 5.0.0 (/opt/ros/iron/share/nav_msgs/cmake)\n'}
+[5.341738] (-) TimerEvent: {}
+[5.442373] (-) TimerEvent: {}
+[5.543009] (-) TimerEvent: {}
+[5.643643] (-) TimerEvent: {}
+[5.744329] (-) TimerEvent: {}
+[5.844980] (-) TimerEvent: {}
+[5.945761] (-) TimerEvent: {}
+[6.008161] (shark) StdoutLine: {'line': b'-- Found tf2_ros: 0.31.5 (/opt/ros/iron/share/tf2_ros/cmake)\n'}
+[6.045915] (-) TimerEvent: {}
+[6.146551] (-) TimerEvent: {}
+[6.247198] (-) TimerEvent: {}
+[6.347849] (-) TimerEvent: {}
+[6.448495] (-) TimerEvent: {}
+[6.549189] (-) TimerEvent: {}
+[6.649829] (-) TimerEvent: {}
+[6.750502] (-) TimerEvent: {}
+[6.851146] (-) TimerEvent: {}
+[6.951804] (-) TimerEvent: {}
+[7.052466] (-) TimerEvent: {}
+[7.153152] (-) TimerEvent: {}
+[7.253807] (-) TimerEvent: {}
+[7.354455] (-) TimerEvent: {}
+[7.455076] (-) TimerEvent: {}
+[7.555748] (-) TimerEvent: {}
+[7.656405] (-) TimerEvent: {}
+[7.757231] (-) TimerEvent: {}
+[7.823373] (shark) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[7.857381] (-) TimerEvent: {}
+[7.958075] (-) TimerEvent: {}
+[8.058718] (-) TimerEvent: {}
+[8.149656] (shark) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[8.150346] (shark) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[8.150743] (shark) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[8.154052] (shark) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.158837] (-) TimerEvent: {}
+[8.161759] (shark) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[8.162357] (shark) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[8.163858] (shark) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.168143] (shark) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.251728] (shark) StdoutLine: {'line': b'-- Generating done\n'}
+[8.259022] (-) TimerEvent: {}
+[8.261640] (shark) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/documents/STA_github/ros2_ws/build/shark\n'}
+[8.359233] (-) TimerEvent: {}
+[8.424799] (shark) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o\x1b[0m\n'}
+[8.459440] (-) TimerEvent: {}
+[8.560272] (-) TimerEvent: {}
+[8.660990] (-) TimerEvent: {}
+[8.761688] (-) TimerEvent: {}
+[8.862384] (-) TimerEvent: {}
+[8.963063] (-) TimerEvent: {}
+[9.063730] (-) TimerEvent: {}
+[9.164409] (-) TimerEvent: {}
+[9.265091] (-) TimerEvent: {}
+[9.365763] (-) TimerEvent: {}
+[9.466441] (-) TimerEvent: {}
+[9.567134] (-) TimerEvent: {}
+[9.667802] (-) TimerEvent: {}
+[9.768465] (-) TimerEvent: {}
+[9.869160] (-) TimerEvent: {}
+[9.969828] (-) TimerEvent: {}
+[10.070542] (-) TimerEvent: {}
+[10.171201] (-) TimerEvent: {}
+[10.271875] (-) TimerEvent: {}
+[10.372580] (-) TimerEvent: {}
+[10.473243] (-) TimerEvent: {}
+[10.573898] (-) TimerEvent: {}
+[10.674571] (-) TimerEvent: {}
+[10.775359] (-) TimerEvent: {}
+[10.876080] (-) TimerEvent: {}
+[10.976813] (-) TimerEvent: {}
+[11.077571] (-) TimerEvent: {}
+[11.178298] (-) TimerEvent: {}
+[11.279024] (-) TimerEvent: {}
+[11.379739] (-) TimerEvent: {}
+[11.480502] (-) TimerEvent: {}
+[11.581236] (-) TimerEvent: {}
+[11.682000] (-) TimerEvent: {}
+[11.782727] (-) TimerEvent: {}
+[11.883534] (-) TimerEvent: {}
+[11.984269] (-) TimerEvent: {}
+[12.085009] (-) TimerEvent: {}
+[12.185775] (-) TimerEvent: {}
+[12.286555] (-) TimerEvent: {}
+[12.387275] (-) TimerEvent: {}
+[12.488025] (-) TimerEvent: {}
+[12.588745] (-) TimerEvent: {}
+[12.689585] (-) TimerEvent: {}
+[12.790290] (-) TimerEvent: {}
+[12.891017] (-) TimerEvent: {}
+[12.991764] (-) TimerEvent: {}
+[13.092504] (-) TimerEvent: {}
+[13.193317] (-) TimerEvent: {}
+[13.294243] (-) TimerEvent: {}
+[13.394946] (-) TimerEvent: {}
+[13.495697] (-) TimerEvent: {}
+[13.596517] (-) TimerEvent: {}
+[13.697256] (-) TimerEvent: {}
+[13.797962] (-) TimerEvent: {}
+[13.898661] (-) TimerEvent: {}
+[13.999408] (-) TimerEvent: {}
+[14.100119] (-) TimerEvent: {}
+[14.200829] (-) TimerEvent: {}
+[14.301593] (-) TimerEvent: {}
+[14.402302] (-) TimerEvent: {}
+[14.503025] (-) TimerEvent: {}
+[14.603755] (-) TimerEvent: {}
+[14.704524] (-) TimerEvent: {}
+[14.805261] (-) TimerEvent: {}
+[14.906085] (-) TimerEvent: {}
+[15.006880] (-) TimerEvent: {}
+[15.107618] (-) TimerEvent: {}
+[15.208362] (-) TimerEvent: {}
+[15.309113] (-) TimerEvent: {}
+[15.409812] (-) TimerEvent: {}
+[15.510519] (-) TimerEvent: {}
+[15.611231] (-) TimerEvent: {}
+[15.711981] (-) TimerEvent: {}
+[15.812703] (-) TimerEvent: {}
+[15.913458] (-) TimerEvent: {}
+[16.014174] (-) TimerEvent: {}
+[16.114887] (-) TimerEvent: {}
+[16.215644] (-) TimerEvent: {}
+[16.316361] (-) TimerEvent: {}
+[16.417055] (-) TimerEvent: {}
+[16.517789] (-) TimerEvent: {}
+[16.618490] (-) TimerEvent: {}
+[16.719204] (-) TimerEvent: {}
+[16.819929] (-) TimerEvent: {}
+[16.920640] (-) TimerEvent: {}
+[17.021454] (-) TimerEvent: {}
+[17.122201] (-) TimerEvent: {}
+[17.222936] (-) TimerEvent: {}
+[17.323647] (-) TimerEvent: {}
+[17.424370] (-) TimerEvent: {}
+[17.525154] (-) TimerEvent: {}
+[17.625849] (-) TimerEvent: {}
+[17.726551] (-) TimerEvent: {}
+[17.827264] (-) TimerEvent: {}
+[17.927993] (-) TimerEvent: {}
+[18.028779] (-) TimerEvent: {}
+[18.129620] (-) TimerEvent: {}
+[18.230336] (-) TimerEvent: {}
+[18.331050] (-) TimerEvent: {}
+[18.431857] (-) TimerEvent: {}
+[18.532611] (-) TimerEvent: {}
+[18.633360] (-) TimerEvent: {}
+[18.734062] (-) TimerEvent: {}
+[18.834767] (-) TimerEvent: {}
+[18.935483] (-) TimerEvent: {}
+[19.036225] (-) TimerEvent: {}
+[19.136937] (-) TimerEvent: {}
+[19.237684] (-) TimerEvent: {}
+[19.338375] (-) TimerEvent: {}
+[19.439095] (-) TimerEvent: {}
+[19.539831] (-) TimerEvent: {}
+[19.640537] (-) TimerEvent: {}
+[19.741271] (-) TimerEvent: {}
+[19.841970] (-) TimerEvent: {}
+[19.942689] (-) TimerEvent: {}
+[20.043421] (-) TimerEvent: {}
+[20.144132] (-) TimerEvent: {}
+[20.244884] (-) TimerEvent: {}
+[20.345636] (-) TimerEvent: {}
+[20.446335] (-) TimerEvent: {}
+[20.448915] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:14:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktypedef\x1b[m\x1b[K\xe2\x80\x99 was ignored in this declaration\n'}
+[20.449686] (shark) StderrLine: {'line': b'   14 | \x1b[01;35m\x1b[Ktypedef\x1b[m\x1b[K struct Robot{\n'}
+[20.450134] (shark) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[20.546520] (-) TimerEvent: {}
+[20.647260] (-) TimerEvent: {}
+[20.748010] (-) TimerEvent: {}
+[20.829338] (shark) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:1\x1b[m\x1b[K:\n'}
+[20.830020] (shark) StderrLine: {'line': b'/usr/include/c++/11/functional: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_check_arity<void (MapSubscriber::*)(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const, MapSubscriber*, const std::_Placeholder<1>&>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.830532] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:768:12:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_helper<false, void (MapSubscriber::*)(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const, MapSubscriber*, const std::_Placeholder<1>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.830956] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:789:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (MapSubscriber::*)(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const; _BoundArgs = {MapSubscriber*, const std::_Placeholder<1>&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.831344] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:33:27:\x1b[m\x1b[K   required from here\n'}
+[20.831722] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Wrong number of arguments for pointer-to-member\n'}
+[20.832101] (shark) StderrLine: {'line': b'  755 |       static_assert(_Varargs::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K\n'}
+[20.832506] (shark) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[20.832872] (shark) StderrLine: {'line': b'  756 | \x1b[01;31m\x1b[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1\x1b[m\x1b[K\n'}
+[20.833313] (shark) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.833686] (shark) StderrLine: {'line': b'  757 | \x1b[01;31m\x1b[K                    : sizeof...(_BoundArgs) == _Arity::value + 1\x1b[m\x1b[K,\n'}
+[20.834051] (shark) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.834414] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K(false ? (2 >= (((long unsigned int)std::integral_constant<long unsigned int, 2>::value) + 1)) : (2 == (((long unsigned int)std::integral_constant<long unsigned int, 2>::value) + 1)))\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[20.848193] (-) TimerEvent: {}
+[20.948968] (-) TimerEvent: {}
+[21.049831] (-) TimerEvent: {}
+[21.150555] (-) TimerEvent: {}
+[21.251289] (-) TimerEvent: {}
+[21.352052] (-) TimerEvent: {}
+[21.452766] (-) TimerEvent: {}
+[21.553547] (-) TimerEvent: {}
+[21.654258] (-) TimerEvent: {}
+[21.755006] (-) TimerEvent: {}
+[21.855753] (-) TimerEvent: {}
+[21.956492] (-) TimerEvent: {}
+[22.057223] (-) TimerEvent: {}
+[22.157939] (-) TimerEvent: {}
+[22.258672] (-) TimerEvent: {}
+[22.359455] (-) TimerEvent: {}
+[22.460236] (-) TimerEvent: {}
+[22.560992] (-) TimerEvent: {}
+[22.661823] (-) TimerEvent: {}
+[22.762674] (-) TimerEvent: {}
+[22.863446] (-) TimerEvent: {}
+[22.964185] (-) TimerEvent: {}
+[23.064910] (-) TimerEvent: {}
+[23.165693] (-) TimerEvent: {}
+[23.266403] (-) TimerEvent: {}
+[23.367138] (-) TimerEvent: {}
+[23.467871] (-) TimerEvent: {}
+[23.570069] (-) TimerEvent: {}
+[23.670797] (-) TimerEvent: {}
+[23.771522] (-) TimerEvent: {}
+[23.872280] (-) TimerEvent: {}
+[23.973006] (-) TimerEvent: {}
+[23.999396] (shark) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/subscription_base.hpp:32\x1b[m\x1b[K,\n'}
+[24.000196] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:29\x1b[m\x1b[K,\n'}
+[24.000621] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[24.001858] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[24.002851] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[24.003177] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[24.003482] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[24.003782] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[24.004084] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[24.004380] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167\x1b[m\x1b[K,\n'}
+[24.004677] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:4\x1b[m\x1b[K:\n'}
+[24.004972] (shark) StderrLine: {'line': b'/opt/ros/iron/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.005629] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.006273] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/create_subscription.hpp:122:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.007216] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/create_subscription.hpp:191:76:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.007815] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node_impl.hpp:99:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.008363] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:32:79:\x1b[m\x1b[K   required from here\n'}
+[24.008813] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/any_subscription_callback.hpp:394:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&)>::function(std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.009511] (shark) StderrLine: {'line': b'  394 |       callback_variant_ = \x1b[01;31m\x1b[Kstatic_cast<typename scbth::callback_type>(callback)\x1b[m\x1b[K;\n'}
+[24.009991] (shark) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.010429] (shark) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:59\x1b[m\x1b[K,\n'}
+[24.010878] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:1\x1b[m\x1b[K:\n'}
+[24.011328] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:435:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor, class _Constraints> std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = _Functor; _Constraints = _Constraints; _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.011835] (shark) StderrLine: {'line': b'  435 |         \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(_Functor&& __f)\n'}
+[24.012255] (shark) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.012667] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:435:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[24.013126] (shark) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:57\x1b[m\x1b[K,\n'}
+[24.013582] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_function.h:60\x1b[m\x1b[K,\n'}
+[24.014000] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:49\x1b[m\x1b[K,\n'}
+[24.014411] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:1\x1b[m\x1b[K:\n'}
+[24.014830] (shark) StderrLine: {'line': b'/usr/include/c++/11/type_traits: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = void]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.015251] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:353:8:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _ArgTypes> template<class _Cond, class _Tp> using _Requires = std::__enable_if_t<_Cond::value, _Tp> [with _Cond = std::function<void(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&)>::_Callable<std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>&, std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>, std::__invoke_result<std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>&, const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&> >; _Tp = void; _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.015840] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:434:9:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.016366] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.016911] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/create_subscription.hpp:122:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.017668] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/create_subscription.hpp:191:76:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.018247] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node_impl.hpp:99:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.018949] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:32:79:\x1b[m\x1b[K   required from here\n'}
+[24.019378] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2205:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.019775] (shark) StderrLine: {'line': b' 2205 |     using \x1b[01;31m\x1b[K__enable_if_t\x1b[m\x1b[K = typename enable_if<_Cond, _Tp>::type;\n'}
+[24.020171] (shark) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.020560] (shark) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:59\x1b[m\x1b[K,\n'}
+[24.020943] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:1\x1b[m\x1b[K:\n'}
+[24.021428] (shark) StderrLine: {'line': b'/opt/ros/iron/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.021928] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.022411] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/create_subscription.hpp:122:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.022859] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/create_subscription.hpp:191:76:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.023345] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node_impl.hpp:99:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::OccupancyGrid_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.023814] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:32:79:\x1b[m\x1b[K   required from here\n'}
+[24.024196] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:404:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.024590] (shark) StderrLine: {'line': b'  404 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(function&& __x) noexcept\n'}
+[24.024950] (shark) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.025363] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:404:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&)>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.025820] (shark) StderrLine: {'line': b'  404 |       function(\x1b[01;36m\x1b[Kfunction&& __x\x1b[m\x1b[K) noexcept\n'}
+[24.026205] (shark) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[24.026569] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:386:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.026957] (shark) StderrLine: {'line': b'  386 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(const function& __x)\n'}
+[24.027390] (shark) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.027763] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:386:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<void(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&)>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.028208] (shark) StderrLine: {'line': b'  386 |       function(\x1b[01;36m\x1b[Kconst function& __x\x1b[m\x1b[K)\n'}
+[24.028581] (shark) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[24.028950] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:375:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(std::nullptr_t) [with _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}; std::nullptr_t = std::nullptr_t]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.029489] (shark) StderrLine: {'line': b'  375 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(nullptr_t) noexcept\n'}
+[24.029878] (shark) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.030251] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:375:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.030688] (shark) StderrLine: {'line': b'  375 |       function(\x1b[01;36m\x1b[Knullptr_t\x1b[m\x1b[K) noexcept\n'}
+[24.031061] (shark) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[24.031435] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:368:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function() [with _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.031845] (shark) StderrLine: {'line': b'  368 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K() noexcept\n'}
+[24.032215] (shark) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.032589] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:368:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[24.073227] (-) TimerEvent: {}
+[24.101393] (shark) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/subscription_base.hpp:32\x1b[m\x1b[K,\n'}
+[24.102555] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:29\x1b[m\x1b[K,\n'}
+[24.103008] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[24.103498] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[24.103931] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[24.104407] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[24.104830] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[24.105294] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[24.105726] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[24.106143] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167\x1b[m\x1b[K,\n'}
+[24.106541] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:4\x1b[m\x1b[K:\n'}
+[24.106933] (shark) StderrLine: {'line': b'/opt/ros/iron/include/rclcpp/rclcpp/any_subscription_callback.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.107398] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.107825] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/create_subscription.hpp:122:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.108514] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/create_subscription.hpp:191:76:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.109044] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/node_impl.hpp:99:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.109568] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:34:97:\x1b[m\x1b[K   required from here\n'}
+[24.109975] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/any_subscription_callback.hpp:394:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&)>::function(std::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.110488] (shark) StderrLine: {'line': b'  394 |       callback_variant_ = \x1b[01;31m\x1b[Kstatic_cast<typename scbth::callback_type>(callback)\x1b[m\x1b[K;\n'}
+[24.110880] (shark) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.111249] (shark) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:59\x1b[m\x1b[K,\n'}
+[24.111598] (shark) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:1\x1b[m\x1b[K:\n'}
+[24.111976] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:435:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor, class _Constraints> std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = _Functor; _Constraints = _Constraints; _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.112421] (shark) StderrLine: {'line': b'  435 |         \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(_Functor&& __f)\n'}
+[24.112795] (shark) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.113289] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:435:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[24.113721] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:404:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.114104] (shark) StderrLine: {'line': b'  404 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(function&& __x) noexcept\n'}
+[24.114476] (shark) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.114837] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:404:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&)>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.115278] (shark) StderrLine: {'line': b'  404 |       function(\x1b[01;36m\x1b[Kfunction&& __x\x1b[m\x1b[K) noexcept\n'}
+[24.115649] (shark) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[24.116015] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:386:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.116406] (shark) StderrLine: {'line': b'  386 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(const function& __x)\n'}
+[24.116815] (shark) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.117224] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:386:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<void(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&)>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.117637] (shark) StderrLine: {'line': b'  386 |       function(\x1b[01;36m\x1b[Kconst function& __x\x1b[m\x1b[K)\n'}
+[24.117997] (shark) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[24.118398] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:375:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(std::nullptr_t) [with _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}; std::nullptr_t = std::nullptr_t]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.118785] (shark) StderrLine: {'line': b'  375 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(nullptr_t) noexcept\n'}
+[24.119153] (shark) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.119521] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:375:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (MapSubscriber::*(MapSubscriber*, std::_Placeholder<1>))(const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&) const>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.119958] (shark) StderrLine: {'line': b'  375 |       function(\x1b[01;36m\x1b[Knullptr_t\x1b[m\x1b[K) noexcept\n'}
+[24.120356] (shark) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[24.120743] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:368:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function() [with _Res = void; _ArgTypes = {const std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&, const std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.121200] (shark) StderrLine: {'line': b'  368 |       \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K() noexcept\n'}
+[24.121651] (shark) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.122038] (shark) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:368:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[24.173394] (-) TimerEvent: {}
+[24.274141] (-) TimerEvent: {}
+[24.374877] (-) TimerEvent: {}
+[24.475623] (-) TimerEvent: {}
+[24.576401] (-) TimerEvent: {}
+[24.677197] (-) TimerEvent: {}
+[24.777919] (-) TimerEvent: {}
+[24.878666] (-) TimerEvent: {}
+[24.979401] (-) TimerEvent: {}
+[25.080138] (-) TimerEvent: {}
+[25.180883] (-) TimerEvent: {}
+[25.281651] (-) TimerEvent: {}
+[25.382393] (-) TimerEvent: {}
+[25.483113] (-) TimerEvent: {}
+[25.583831] (-) TimerEvent: {}
+[25.684586] (-) TimerEvent: {}
+[25.785319] (-) TimerEvent: {}
+[25.886032] (-) TimerEvent: {}
+[25.986805] (-) TimerEvent: {}
+[26.087524] (-) TimerEvent: {}
+[26.188275] (-) TimerEvent: {}
+[26.289037] (-) TimerEvent: {}
+[26.389834] (-) TimerEvent: {}
+[26.490537] (-) TimerEvent: {}
+[26.591258] (-) TimerEvent: {}
+[26.692024] (-) TimerEvent: {}
+[26.792739] (-) TimerEvent: {}
+[26.893482] (-) TimerEvent: {}
+[26.994190] (-) TimerEvent: {}
+[27.094896] (-) TimerEvent: {}
+[27.195614] (-) TimerEvent: {}
+[27.296329] (-) TimerEvent: {}
+[27.397051] (-) TimerEvent: {}
+[27.497788] (-) TimerEvent: {}
+[27.598502] (-) TimerEvent: {}
+[27.699241] (-) TimerEvent: {}
+[27.799964] (-) TimerEvent: {}
+[27.900694] (-) TimerEvent: {}
+[28.001506] (-) TimerEvent: {}
+[28.102383] (-) TimerEvent: {}
+[28.203231] (-) TimerEvent: {}
+[28.303949] (-) TimerEvent: {}
+[28.404670] (-) TimerEvent: {}
+[28.505410] (-) TimerEvent: {}
+[28.607543] (-) TimerEvent: {}
+[28.708307] (-) TimerEvent: {}
+[28.809031] (-) TimerEvent: {}
+[28.909789] (-) TimerEvent: {}
+[29.010584] (-) TimerEvent: {}
+[29.111304] (-) TimerEvent: {}
+[29.212100] (-) TimerEvent: {}
+[29.312768] (-) TimerEvent: {}
+[29.413491] (-) TimerEvent: {}
+[29.514177] (-) TimerEvent: {}
+[29.614972] (-) TimerEvent: {}
+[29.716366] (-) TimerEvent: {}
+[29.817133] (-) TimerEvent: {}
+[29.917859] (-) TimerEvent: {}
+[30.018624] (-) TimerEvent: {}
+[30.119352] (-) TimerEvent: {}
+[30.220129] (-) TimerEvent: {}
+[30.320877] (-) TimerEvent: {}
+[30.421651] (-) TimerEvent: {}
+[30.522528] (-) TimerEvent: {}
+[30.623388] (-) TimerEvent: {}
+[30.724042] (-) TimerEvent: {}
+[30.824685] (-) TimerEvent: {}
+[30.925446] (-) TimerEvent: {}
+[31.026243] (-) TimerEvent: {}
+[31.127067] (-) TimerEvent: {}
+[31.227973] (-) TimerEvent: {}
+[31.328737] (-) TimerEvent: {}
+[31.429566] (-) TimerEvent: {}
+[31.530418] (-) TimerEvent: {}
+[31.632338] (-) TimerEvent: {}
+[31.734390] (-) TimerEvent: {}
+[31.837778] (-) TimerEvent: {}
+[31.950285] (-) TimerEvent: {}
+[32.053114] (-) TimerEvent: {}
+[32.157308] (-) TimerEvent: {}
+[32.263170] (-) TimerEvent: {}
+[32.367273] (-) TimerEvent: {}
+[32.470362] (-) TimerEvent: {}
+[32.572846] (-) TimerEvent: {}
+[32.681891] (-) TimerEvent: {}
+[32.783765] (-) TimerEvent: {}
+[32.885142] (-) TimerEvent: {}
+[32.986617] (-) TimerEvent: {}
+[33.088170] (-) TimerEvent: {}
+[33.189032] (-) TimerEvent: {}
+[33.293226] (-) TimerEvent: {}
+[33.394362] (-) TimerEvent: {}
+[33.495541] (-) TimerEvent: {}
+[33.596881] (-) TimerEvent: {}
+[33.703139] (-) TimerEvent: {}
+[33.803881] (-) TimerEvent: {}
+[33.904624] (-) TimerEvent: {}
+[34.006097] (-) TimerEvent: {}
+[34.051113] (shark) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1\n'}
+[34.051960] (shark) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2\n'}
+[34.052928] (shark) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[34.059148] (shark) CommandEnded: {'returncode': 2}
+[34.106357] (-) TimerEvent: {}
+[34.207475] (-) TimerEvent: {}
+[34.308720] (-) TimerEvent: {}
+[34.409656] (-) TimerEvent: {}
+[34.510691] (-) TimerEvent: {}
+[34.601621] (shark) JobEnded: {'identifier': 'shark', 'rc': 2}
+[34.610903] (-) TimerEvent: {}
+[34.613464] (-) EventReactorShutdown: {}

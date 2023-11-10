@@ -1,0 +1,29 @@
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:35:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+   35 | [01;31m[Kros[m[K::Publisher map_pub;
+      | [01;31m[K^~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:37:34:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ in namespace ‘[01m[Knav_msgs[m[K’ does not name a type
+   37 | void mapCallback(const nav_msgs::[01;31m[KOccupancyGrid[m[K::ConstPtr& msg){
+      |                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:37:57:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   37 | void mapCallback(const nav_msgs::OccupancyGrid::ConstPtr[01;31m[K&[m[K msg){
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:37:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   37 | void mapCallback[34m[K([m[Kconst nav_msgs::OccupancyGrid::ConstPtr[01;31m[K&[m[K msg){
+      |                 [34m[K~[m[K                                       [01;31m[K^[m[K
+      |                                                         [32m[K)[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:37:59:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+   37 | void mapCallback(const nav_msgs::OccupancyGrid::ConstPtr& [01;31m[Kmsg[m[K){
+      |                                                           [01;31m[K^~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:94:11:[m[K [01;31m[Kerror: [m[K‘[01m[KNodeHandle[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+   94 |   rclcpp::[01;31m[KNodeHandle[m[K n;
+      |           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:97:11:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriber[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+   97 |   rclcpp::[01;31m[KSubscriber[m[K map_sub = n.subscribe("map",10,mapCallback);
+      |           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:99:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   99 |   [01;31m[Kros[m[K::spin();
+      |   [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

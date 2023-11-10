@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target shark[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In member function ‘[01m[Kvoid MapSubscriber::topic_callback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:75:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kinfo[m[K’
+   75 |     width = msg.[01;31m[Kinfo[m[K.width ;
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:76:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kinfo[m[K’
+   76 |     heigth = msg.[01;31m[Kinfo[m[K.height;
+      |                  [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

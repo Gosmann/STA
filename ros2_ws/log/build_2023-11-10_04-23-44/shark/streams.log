@@ -1,0 +1,11 @@
+[1.154s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4
+[1.365s] [35m[1mConsolidate compiler generated dependencies of target shark[0m
+[1.522s] [ 50%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[14.411s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In constructor ‘[01m[KMapSubscriber::MapSubscriber()[m[K’:
+[14.411s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_map[m[K’ was not declared in this scope
+[14.412s]    60 |     [01;31m[Ksubscription_map[m[K = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+[14.412s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[22.202s] gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+[22.204s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+[22.204s] gmake: *** [Makefile:146: all] Error 2
+[22.214s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/shark' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4

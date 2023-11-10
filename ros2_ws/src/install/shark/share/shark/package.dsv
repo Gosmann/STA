@@ -1,0 +1,5 @@
+source;share/shark/local_setup.bash
+source;share/shark/local_setup.dsv
+source;share/shark/local_setup.ps1
+source;share/shark/local_setup.sh
+source;share/shark/local_setup.zsh

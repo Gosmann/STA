@@ -1,0 +1,16 @@
+/home/pi/documents/STA_github/ros2_ws/install/shark/lib/shark/shark
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/ament_index/resource_index/package_run_dependencies/shark
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/ament_index/resource_index/parent_prefix_path/shark
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/ament_prefix_path.sh
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/ament_prefix_path.dsv
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/path.sh
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/path.dsv
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.bash
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.sh
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.zsh
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.dsv
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/package.dsv
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/ament_index/resource_index/packages/shark
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/cmake/sharkConfig.cmake
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/cmake/sharkConfig-version.cmake
+/home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/package.xml

@@ -1,0 +1,79 @@
+[0.917s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4
+[1.397s] [35m[1mConsolidate compiler generated dependencies of target shark[0m
+[1.505s] [ 50%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[14.278s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:71:39:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ in namespace ‘[01m[Knav_msgs[m[K’ does not name a type
+[14.279s]    71 |   void topic_callback(const nav_msgs::[01;31m[KOccupancyGrid[m[K::SharedPtr & msg) const
+[14.280s]       |                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[14.280s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:71:64:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[14.281s]    71 |   void topic_callback(const nav_msgs::OccupancyGrid::SharedPtr [01;31m[K&[m[K msg) const
+[14.282s]       |                                                                [01;31m[K^[m[K
+[14.282s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:71:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[14.283s]    71 |   void topic_callback[34m[K([m[Kconst nav_msgs::OccupancyGrid::SharedPtr[01;31m[K [m[K[32m[K&[m[K msg) const
+[14.284s]       |                      [34m[K~[m[K                                        [01;31m[K^[m[K[32m[K~[m[K
+[14.285s]       |                                                               [32m[K)[m[K
+[14.286s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:71:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[14.286s]    71 |   void topic_callback(const nav_msgs::OccupancyGrid::SharedPtr [01;31m[K&[m[K msg) const
+[14.287s]       |                                                                [01;31m[K^[m[K
+[14.288s]       |                                                                 [32m[K;[m[K
+[14.289s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:71:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[14.289s]    71 |   void topic_callback(const nav_msgs::OccupancyGrid::SharedPtr & [01;31m[Kmsg[m[K) const
+[14.289s]       |                                                                  [01;31m[K^~~[m[K
+[14.290s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:82:34:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ is not a member of ‘[01m[Knav_msgs[m[K’; did you mean ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’?
+[14.290s]    82 |   rclcpp::Subscription<nav_msgs::[01;31m[KOccupancyGrid[m[K>::SharedPtr subscription_map;
+[14.291s]       |                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[14.291s] In file included from [01m[K/opt/ros/iron/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp:7[m[K,
+[14.291s]                  from [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:10[m[K:
+[14.292s] [01m[K/opt/ros/iron/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:147:7:[m[K [01;36m[Knote: [m[K‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ declared here
+[14.292s]   147 | using [01;36m[KOccupancyGrid[m[K =
+[14.292s]       |       [01;36m[K^~~~~~~~~~~~~[m[K
+[14.293s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:82:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.293s]    82 |   rclcpp::Subscription<nav_msgs::OccupancyGrid[01;31m[K>[m[K::SharedPtr subscription_map;
+[14.294s]       |                                               [01;31m[K^[m[K
+[14.294s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:82:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[14.295s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:82:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[14.295s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:82:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[14.295s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:82:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[14.296s]    82 |   rclcpp::Subscription<nav_msgs::OccupancyGrid>::[01;31m[KSharedPtr[m[K subscription_map;
+[14.296s]       |                                                  [01;31m[K^~~~~~~~~[m[K
+[14.297s]       |                                                           [32m[K;[m[K
+[14.298s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:82:60:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_map[m[K’ does not name a type
+[14.299s]    82 |   rclcpp::Subscription<nav_msgs::OccupancyGrid>::SharedPtr [01;31m[Ksubscription_map[m[K;
+[14.300s]       |                                                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[14.340s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In constructor ‘[01m[KMapSubscriber::MapSubscriber()[m[K’:
+[14.341s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_map[m[K’ was not declared in this scope
+[14.342s]    61 |     [01;31m[Ksubscription_map[m[K = this->create_subscription<nav_msgs::OccupancyGrid>(
+[14.342s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[14.343s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:61:60:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ is not a member of ‘[01m[Knav_msgs[m[K’; did you mean ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’?
+[14.343s]    61 |     subscription_map = this->create_subscription<nav_msgs::[01;31m[KOccupancyGrid[m[K>(
+[14.344s]       |                                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[14.344s] In file included from [01m[K/opt/ros/iron/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp:7[m[K,
+[14.345s]                  from [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:10[m[K:
+[14.345s] [01m[K/opt/ros/iron/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:147:7:[m[K [01;36m[Knote: [m[K‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ declared here
+[14.346s]   147 | using [01;36m[KOccupancyGrid[m[K =
+[14.346s]       |       [01;36m[K^~~~~~~~~~~~~[m[K
+[14.365s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:61:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMapSubscriber::create_subscription<<expression error> >(const char [4], int, std::_Bind_helper<false, void (MapSubscriber::*)(...) &, MapSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+[14.366s]    61 |     subscription_map = [01;31m[Kthis->create_subscription<nav_msgs::OccupancyGrid>([m[K
+[14.366s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[14.367s]    62 | [01;31m[K      "map", 10, std::bind(&MapSubscriber::topic_callback, this, _1))[m[K;
+[14.367s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K     
+[14.368s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[14.368s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[14.369s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[14.369s]                  from [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:6[m[K:
+[14.370s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:220:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[14.370s]   220 |   [01;36m[Kcreate_subscription[m[K(
+[14.371s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[14.371s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:220:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.372s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:61:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.372s]    61 |     subscription_map = [01;31m[Kthis->create_subscription<nav_msgs::OccupancyGrid>([m[K
+[14.372s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[14.373s]    62 | [01;31m[K      "map", 10, std::bind(&MapSubscriber::topic_callback, this, _1))[m[K;
+[14.373s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K     
+[14.374s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K At global scope:
+[14.374s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:86:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K/[m[K’ token
+[14.375s]    86 | *[01;31m[K/[m[K
+[14.375s]       |  [01;31m[K^[m[K
+[17.603s] gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+[17.604s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+[17.605s] gmake: *** [Makefile:146: all] Error 2
+[17.612s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/shark' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4

@@ -1,0 +1,51 @@
+[0.923s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4
+[1.300s] [35m[1mConsolidate compiler generated dependencies of target shark[0m
+[1.417s] [ 50%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[14.193s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:35:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[14.194s]    35 | [01;31m[Kros[m[K::Publisher map_pub;
+[14.195s]       | [01;31m[K^~~[m[K
+[14.196s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:37:34:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ in namespace ‘[01m[Knav_msgs[m[K’ does not name a type
+[14.200s]    37 | void mapCallback(const nav_msgs::[01;31m[KOccupancyGrid[m[K::ConstPtr& msg){
+[14.201s]       |                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[14.202s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:37:57:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[14.204s]    37 | void mapCallback(const nav_msgs::OccupancyGrid::ConstPtr[01;31m[K&[m[K msg){
+[14.204s]       |                                                         [01;31m[K^[m[K
+[14.205s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:37:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[14.206s]    37 | void mapCallback[34m[K([m[Kconst nav_msgs::OccupancyGrid::ConstPtr[01;31m[K&[m[K msg){
+[14.207s]       |                 [34m[K~[m[K                                       [01;31m[K^[m[K
+[14.208s]       |                                                         [32m[K)[m[K
+[14.210s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:37:59:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[14.211s]    37 | void mapCallback(const nav_msgs::OccupancyGrid::ConstPtr& [01;31m[Kmsg[m[K){
+[14.213s]       |                                                           [01;31m[K^~~[m[K
+[14.215s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[14.216s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:93:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[14.217s]    93 |   [01;31m[Kros[m[K::NodeHandle n;
+[14.218s]       |   [01;31m[K^~~[m[K
+[14.220s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:95:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_pub[m[K’ was not declared in this scope
+[14.221s]    95 |   [01;31m[Kmap_pub[m[K = n.advertise<nav_msgs::OccupancyGrid>("map_out",10);
+[14.222s]       |   [01;31m[K^~~~~~~[m[K
+[14.225s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:95:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kn[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+[14.227s]    95 |   map_pub = [01;31m[Kn[m[K.advertise<nav_msgs::OccupancyGrid>("map_out",10);
+[14.228s]       |             [01;31m[K^[m[K
+[14.229s]       |             [32m[Kyn[m[K
+[14.229s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:95:35:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ is not a member of ‘[01m[Knav_msgs[m[K’; did you mean ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’?
+[14.230s]    95 |   map_pub = n.advertise<nav_msgs::[01;31m[KOccupancyGrid[m[K>("map_out",10);
+[14.231s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[14.233s] In file included from [01m[K/opt/ros/iron/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp:7[m[K,
+[14.233s]                  from [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:10[m[K:
+[14.234s] [01m[K/opt/ros/iron/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:147:7:[m[K [01;36m[Knote: [m[K‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ declared here
+[14.236s]   147 | using [01;36m[KOccupancyGrid[m[K =
+[14.237s]       |       [01;36m[K^~~~~~~~~~~~~[m[K
+[14.238s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:95:50:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[14.238s]    95 |   map_pub = n.advertise<nav_msgs::OccupancyGrid>([01;35m[K"map_out"[m[K,10);
+[14.239s]       |                                                  [01;35m[K^~~~~~~~~[m[K
+[14.241s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:96:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[14.242s]    96 |   [01;31m[Kros[m[K::Subscriber map_sub = n.subscribe("map",10,mapCallback);
+[14.243s]       |   [01;31m[K^~~[m[K
+[14.244s] [01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:98:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[14.245s]    98 |   [01;31m[Kros[m[K::spin();
+[14.246s]       |   [01;31m[K^~~[m[K
+[17.451s] gmake[2]: *** [CMakeFiles/shark.dir/build.make:76: CMakeFiles/shark.dir/src/shark.cpp.o] Error 1
+[17.453s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shark.dir/all] Error 2
+[17.453s] gmake: *** [Makefile:146: all] Error 2
+[17.460s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/build/shark' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/build/shark -- -j4 -l4
