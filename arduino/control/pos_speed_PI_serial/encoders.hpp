@@ -15,8 +15,8 @@ typedef struct encoder_t {
   uint32_t A ;             // holds the pin number for the A quadrature signal
   uint32_t B ;             // holds the pin number for the B quadrature signal
   
-  float odom ;            // holds total distance ever travelled in encoder ticks
-  float old_odom ;        // holds odom since lasts measurement
+  int32_t odom ;           // holds total distance ever travelled in encoder ticks
+  int32_t old_odom ;       // holds odom since lasts measurement
 
   float theta ;           // holds instant position
   

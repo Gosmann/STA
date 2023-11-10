@@ -29,8 +29,8 @@ using namespace std::chrono_literals;
 #define PI 3.14159265478
 #define MAX_BUFFER 128
 
-#define WHEEL_D 0.0650          // diameter of the wheel in meters
-#define L 0.3                   // distance between axis
+#define WHEEL_D 0.062666        // diameter of the wheel in meters
+#define L 0.2                   // distance between axis
 
 typedef struct robot_t{
         

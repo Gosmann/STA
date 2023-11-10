@@ -29,8 +29,10 @@ void start_timer_interrupt(){
 }
 
 void start_encoders_interrupt( ){
-         
-    attachInterrupt(digitalPinToInterrupt(encoder_power.A), power_isr, CHANGE);    
-    attachInterrupt(digitalPinToInterrupt(encoder_direc.A), direc_isr, CHANGE);       
+    //EncoderInterrupt.begin( &encoder_lib_power );
+    //EncoderInterrupt.begin( &encoder_lib_direc );
+    
+    //attachInterrupt(digitalPinToInterrupt(encoder_power.A), power_isr, CHANGE);    
+    //attachInterrupt(digitalPinToInterrupt(encoder_direc.A), direc_isr, CHANGE);       
     
 }

@@ -27,32 +27,42 @@ control_t init_control( float kp, float ki){
 
 void calculate_pid( control_t * control, float feedback ){
 
+	float max_speed_omega = 2.5 ;
+	
 	if( control == &control_power_omega ){
-		if( ( control->set_point ) > 2.5 ){
-			control->set_point = 2.5;
+		if( ( control->set_point ) > max_speed_omega ){
+			control->set_point = max_speed_omega;
 		}
-		else if( ( control->set_point ) < - 2.5 ){
-			control->set_point = -2.5;
+		else if( ( control->set_point ) < - max_speed_omega ){
+			control->set_point = -max_speed_omega ;
 		}
 	}
 
+	float max_speed_direc = 0.10 ;
+	
 	if( control == &control_direc_omega ){
-		if( ( control->set_point ) > 0.5 ){
-			control->set_point = 0.5;
+		if( ( control->set_point ) > max_speed_direc ){
+			control->set_point = max_speed_direc ;
 		}
-		else if( ( control->set_point ) < -0.5 ){
-			control->set_point = -0.5;
+		else if( ( control->set_point ) < -1 * max_speed_direc ){
+			control->set_point = -1 * max_speed_direc ;
 		}
 	}
 
 	control->error = control->set_point - feedback;
 
-	//if( control == &control_direc_theta || control == &control_power_theta ){
-		if( abs(control->error) < 0.002 ){
+	if( control == &control_direc_theta ){
+		if( abs(control->error) < 0.000609781 ){
 			control->error = 0 ;
 			//control->integrator = 0 ; 
 		}
-	//}
+	}
+	else if( control == &control_power_theta ){
+		if( abs(control->error) < 0.00029088 ){
+			control->error = 0 ;
+			//control->integrator = 0 ; 
+		}
+	}
 
     // anti wind-up
     if( abs( ( control->integrator + control->error ) * control->ki + control->error * control->kp ) < 12.0 ){
