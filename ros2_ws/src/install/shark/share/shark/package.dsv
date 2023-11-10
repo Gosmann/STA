@@ -1,3 +1,6 @@
+source;share/shark/hook/cmake_prefix_path.ps1
+source;share/shark/hook/cmake_prefix_path.dsv
+source;share/shark/hook/cmake_prefix_path.sh
 source;share/shark/local_setup.bash
 source;share/shark/local_setup.dsv
 source;share/shark/local_setup.ps1

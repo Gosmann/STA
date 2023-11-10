@@ -83,17 +83,156 @@ CMakeFiles/shark.dir/src/shark.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shark.dir/src/shark.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp -o CMakeFiles/shark.dir/src/shark.cpp.s
 
+CMakeFiles/shark.dir/src/kinematics.cpp.o: CMakeFiles/shark.dir/flags.make
+CMakeFiles/shark.dir/src/kinematics.cpp.o: /home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp
+CMakeFiles/shark.dir/src/kinematics.cpp.o: CMakeFiles/shark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shark.dir/src/kinematics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shark.dir/src/kinematics.cpp.o -MF CMakeFiles/shark.dir/src/kinematics.cpp.o.d -o CMakeFiles/shark.dir/src/kinematics.cpp.o -c /home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp
+
+CMakeFiles/shark.dir/src/kinematics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shark.dir/src/kinematics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp > CMakeFiles/shark.dir/src/kinematics.cpp.i
+
+CMakeFiles/shark.dir/src/kinematics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shark.dir/src/kinematics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp -o CMakeFiles/shark.dir/src/kinematics.cpp.s
+
 # Object files for target shark
 shark_OBJECTS = \
-"CMakeFiles/shark.dir/src/shark.cpp.o"
+"CMakeFiles/shark.dir/src/shark.cpp.o" \
+"CMakeFiles/shark.dir/src/kinematics.cpp.o"
 
 # External object files for target shark
 shark_EXTERNAL_OBJECTS =
 
 shark: CMakeFiles/shark.dir/src/shark.cpp.o
+shark: CMakeFiles/shark.dir/src/kinematics.cpp.o
 shark: CMakeFiles/shark.dir/build.make
+shark: /opt/ros/iron/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/libnav_msgs__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libnav_msgs__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/libstatic_transform_broadcaster_node.so
+shark: /opt/ros/iron/lib/libnav_msgs__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/libnav_msgs__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/libtf2_ros.so
+shark: /opt/ros/iron/lib/libtf2.so
+shark: /opt/ros/iron/lib/libmessage_filters.so
+shark: /opt/ros/iron/lib/librclcpp_action.so
+shark: /opt/ros/iron/lib/librclcpp.so
+shark: /opt/ros/iron/lib/liblibstatistics_collector.so
+shark: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/librosgraph_msgs__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/librosgraph_msgs__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libstatistics_msgs__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/libstatistics_msgs__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/librcl_action.so
+shark: /opt/ros/iron/lib/librcl.so
+shark: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/librcl_interfaces__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/librcl_interfaces__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/librcl_yaml_param_parser.so
+shark: /opt/ros/iron/lib/libtracetools.so
+shark: /opt/ros/iron/lib/librcl_logging_interface.so
+shark: /opt/ros/iron/lib/librmw_implementation.so
+shark: /opt/ros/iron/lib/libament_index_cpp.so
+shark: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/librosidl_typesupport_fastrtps_c.so
+shark: /opt/ros/iron/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/librosidl_typesupport_fastrtps_cpp.so
+shark: /opt/ros/iron/lib/libfastcdr.so.1.0.27
+shark: /opt/ros/iron/lib/librmw.so
+shark: /opt/ros/iron/lib/librosidl_dynamic_typesupport.so
+shark: /opt/ros/iron/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/librosidl_typesupport_introspection_cpp.so
+shark: /opt/ros/iron/lib/librosidl_typesupport_introspection_c.so
+shark: /opt/ros/iron/lib/libtf2_msgs__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libaction_msgs__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/librosidl_typesupport_cpp.so
+shark: /opt/ros/iron/lib/libtf2_msgs__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/libgeometry_msgs__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/libstd_msgs__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/libtf2_msgs__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/libgeometry_msgs__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/libtf2_msgs__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/libgeometry_msgs__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/libstd_msgs__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/libaction_msgs__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/libservice_msgs__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_generator_py.so
+shark: /opt/ros/iron/lib/libaction_msgs__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/libaction_msgs__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/libservice_msgs__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/libunique_identifier_msgs__rosidl_generator_py.so
+shark: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+shark: /opt/ros/iron/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/librosidl_typesupport_c.so
+shark: /opt/ros/iron/lib/librcpputils.so
+shark: /opt/ros/iron/lib/libunique_identifier_msgs__rosidl_generator_c.so
+shark: /opt/ros/iron/lib/librosidl_runtime_c.so
+shark: /opt/ros/iron/lib/librcutils.so
 shark: CMakeFiles/shark.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable shark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable shark"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shark.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

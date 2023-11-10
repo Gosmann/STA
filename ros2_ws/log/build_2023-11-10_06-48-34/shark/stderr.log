@@ -1,0 +1,15 @@
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Knode_t* simulate(node_t*, double, actions)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:55:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   55 |     for(int i = 0 ; [01;35m[Ki < node->depth[m[K ; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Kvoid print_node(node_t)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:128:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  128 |     for(j = 0 ; [01;35m[Kj < node.depth[m[K ; j++){
+      |                 [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:136:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  136 |     for(j = 0 ; [01;35m[Kj < node.depth[m[K ; j++)
+      |                 [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Kvoid print_all_children(node_t*)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:152:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  152 |     int i, [01;35m[Kj[m[K;
+      |            [01;35m[K^[m[K

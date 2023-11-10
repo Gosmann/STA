@@ -604,3 +604,97 @@
 [46.895682] (-) TimerEvent: {}
 [46.996593] (-) TimerEvent: {}
 [47.098012] (-) TimerEvent: {}
+[47.199199] (-) TimerEvent: {}
+[47.300518] (-) TimerEvent: {}
+[47.401874] (-) TimerEvent: {}
+[47.502855] (-) TimerEvent: {}
+[47.604096] (-) TimerEvent: {}
+[47.705127] (-) TimerEvent: {}
+[47.805867] (-) TimerEvent: {}
+[47.906755] (-) TimerEvent: {}
+[48.007772] (-) TimerEvent: {}
+[48.109238] (-) TimerEvent: {}
+[48.210597] (-) TimerEvent: {}
+[48.311782] (-) TimerEvent: {}
+[48.412511] (-) TimerEvent: {}
+[48.513278] (-) TimerEvent: {}
+[48.614000] (-) TimerEvent: {}
+[48.714724] (-) TimerEvent: {}
+[48.815604] (-) TimerEvent: {}
+[48.916961] (-) TimerEvent: {}
+[49.017949] (-) TimerEvent: {}
+[49.118693] (-) TimerEvent: {}
+[49.219467] (-) TimerEvent: {}
+[49.320574] (-) TimerEvent: {}
+[49.423713] (-) TimerEvent: {}
+[49.525404] (-) TimerEvent: {}
+[49.626734] (-) TimerEvent: {}
+[49.728004] (-) TimerEvent: {}
+[49.766596] (shark) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable shark\x1b[0m\n'}
+[49.828169] (-) TimerEvent: {}
+[49.928865] (-) TimerEvent: {}
+[50.029727] (-) TimerEvent: {}
+[50.130740] (-) TimerEvent: {}
+[50.232003] (-) TimerEvent: {}
+[50.333306] (-) TimerEvent: {}
+[50.434241] (-) TimerEvent: {}
+[50.535099] (-) TimerEvent: {}
+[50.636052] (-) TimerEvent: {}
+[50.737235] (-) TimerEvent: {}
+[50.838094] (-) TimerEvent: {}
+[50.938959] (-) TimerEvent: {}
+[51.040264] (-) TimerEvent: {}
+[51.141870] (-) TimerEvent: {}
+[51.243347] (-) TimerEvent: {}
+[51.345075] (-) TimerEvent: {}
+[51.446707] (-) TimerEvent: {}
+[51.548065] (-) TimerEvent: {}
+[51.649209] (-) TimerEvent: {}
+[51.750395] (-) TimerEvent: {}
+[51.851803] (-) TimerEvent: {}
+[51.953076] (-) TimerEvent: {}
+[52.056088] (-) TimerEvent: {}
+[52.156844] (-) TimerEvent: {}
+[52.258362] (-) TimerEvent: {}
+[52.360267] (-) TimerEvent: {}
+[52.462387] (-) TimerEvent: {}
+[52.563087] (-) TimerEvent: {}
+[52.663915] (-) TimerEvent: {}
+[52.756219] (shark) StdoutLine: {'line': b'[100%] Built target shark\n'}
+[52.764270] (-) TimerEvent: {}
+[52.798941] (shark) CommandEnded: {'returncode': 0}
+[52.864398] (-) TimerEvent: {}
+[52.965240] (-) TimerEvent: {}
+[52.967807] (shark) JobProgress: {'identifier': 'shark', 'progress': 'install'}
+[52.971824] (shark) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/documents/STA_github/ros2_ws/build/shark'], 'cwd': '/home/pi/documents/STA_github/ros2_ws/build/shark', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.0.104 58670 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/documents/STA_github/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install:/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '15'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/documents/STA_github/ros2_ws/build/shark'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.104 58670 192.168.0.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/documents/STA_github/ros2_ws/install/shark:/home/pi/documents/STA_github/ros2_ws/install/ydlidar_ros2_driver:/home/pi/documents/STA_github/ros2_ws/install/mobile_robot:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron')]), 'shell': False}
+[53.003541] (shark) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[53.004946] (shark) StdoutLine: {'line': b'-- Installing: /home/pi/documents/STA_github/ros2_ws/install/shark/lib/shark/shark\n'}
+[53.065589] (-) TimerEvent: {}
+[53.072266] (shark) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/documents/STA_github/ros2_ws/install/shark/lib/shark/shark" to ""\n'}
+[53.073473] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/ament_index/resource_index/package_run_dependencies/shark\n'}
+[53.074304] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/ament_index/resource_index/parent_prefix_path/shark\n'}
+[53.075345] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/ament_prefix_path.sh\n'}
+[53.076278] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/ament_prefix_path.dsv\n'}
+[53.077396] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/path.sh\n'}
+[53.078066] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/environment/path.dsv\n'}
+[53.078882] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.bash\n'}
+[53.080034] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.sh\n'}
+[53.081287] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.zsh\n'}
+[53.082523] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/local_setup.dsv\n'}
+[53.083508] (shark) StdoutLine: {'line': b'-- Installing: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/package.dsv\n'}
+[53.085160] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/ament_index/resource_index/packages/shark\n'}
+[53.086972] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/cmake/sharkConfig.cmake\n'}
+[53.088101] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/cmake/sharkConfig-version.cmake\n'}
+[53.088856] (shark) StdoutLine: {'line': b'-- Up-to-date: /home/pi/documents/STA_github/ros2_ws/install/shark/share/shark/package.xml\n'}
+[53.089967] (shark) CommandEnded: {'returncode': 0}
+[53.165674] (-) TimerEvent: {}
+[53.267056] (-) TimerEvent: {}
+[53.368699] (-) TimerEvent: {}
+[53.470381] (-) TimerEvent: {}
+[53.571245] (-) TimerEvent: {}
+[53.672233] (-) TimerEvent: {}
+[53.773551] (-) TimerEvent: {}
+[53.874247] (-) TimerEvent: {}
+[53.975152] (-) TimerEvent: {}
+[53.985140] (shark) JobEnded: {'identifier': 'shark', 'rc': 0}
+[53.990370] (-) EventReactorShutdown: {}

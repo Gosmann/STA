@@ -1,0 +1,85 @@
+-- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+-- Found rclcpp: 21.0.3 (/opt/ros/iron/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+-- Found nav_msgs: 5.0.0 (/opt/ros/iron/share/nav_msgs/cmake)
+-- Found tf2_ros: 0.31.5 (/opt/ros/iron/share/tf2_ros/cmake)
+-- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/documents/STA_github/ros2_ws/src/build/shark
+[ 33%] [32mBuilding CXX object CMakeFiles/shark.dir/src/shark.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/shark.dir/src/kinematics.cpp.o[0m
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Knode_t* simulate(node_t*, double, actions)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:55:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   55 |     for(int i = 0 ; [01;35m[Ki < node->depth[m[K ; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Kvoid print_node(node_t)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:128:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  128 |     for(j = 0 ; [01;35m[Kj < node.depth[m[K ; j++){
+      |                 [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:136:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  136 |     for(j = 0 ; [01;35m[Kj < node.depth[m[K ; j++)
+      |                 [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:[m[K In function ‘[01m[Kvoid print_all_children(node_t*)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/kinematics.cpp:152:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  152 |     int i, [01;35m[Kj[m[K;
+      |            [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:29:23:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   29 | pose_t robot_slam = {0[01;35m[K}[m[K ;
+      |                       [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:29:23:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:30:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   30 | pose_t origin = {0[01;35m[K}[m[K ;
+      |                   [01;35m[K^[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:30:19:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kpose_t::theta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Knode_t* a_star(node_t*, double)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:182:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  182 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+      |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                   [01;35m[K|[m[K                       [32m[K|[m[K
+      |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:188:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  188 |         printf("[[01;35m[K%p[m[K] \n", [32m[Knode->children[i][m[K );
+      |                  [01;35m[K~^[m[K       [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                   [01;35m[K|[m[K                       [32m[K|[m[K
+      |                   [01;35m[Kvoid*[m[K                   [32m[Knode_t*[m[K
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/documents/STA_github/ros2_ws/src/shark/src/shark.cpp:275:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 2 has type ‘[01m[Knode_t*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  275 |         printf("[01;35m[K%p[m[K \n", [32m[Kstart.children[0][m[K) ;
+      |                 [01;35m[K~^[m[K      [32m[K~~~~~~~~~~~~~~~~~[m[K
+      |                  [01;35m[K|[m[K                      [32m[K|[m[K
+      |                  [01;35m[Kvoid*[m[K                  [32m[Knode_t*[m[K
+[100%] [32m[1mLinking CXX executable shark[0m
+[100%] Built target shark
+-- Install configuration: ""
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/lib/shark/shark
+-- Set runtime path of "/home/pi/documents/STA_github/ros2_ws/src/install/shark/lib/shark/shark" to ""
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/ament_index/resource_index/package_run_dependencies/shark
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/ament_index/resource_index/parent_prefix_path/shark
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/environment/ament_prefix_path.sh
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/environment/ament_prefix_path.dsv
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/environment/path.sh
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/environment/path.dsv
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/local_setup.bash
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/local_setup.sh
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/local_setup.zsh
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/local_setup.dsv
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/package.dsv
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/ament_index/resource_index/packages/shark
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/cmake/sharkConfig.cmake
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/cmake/sharkConfig-version.cmake
+-- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/package.xml

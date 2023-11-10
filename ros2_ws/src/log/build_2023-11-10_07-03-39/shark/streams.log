@@ -1,0 +1,23 @@
+[0.976s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/src/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/src/build/shark -- -j4 -l4
+[1.258s] [35m[1mConsolidate compiler generated dependencies of target shark[0m
+[1.402s] [100%] Built target shark
+[1.456s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/src/build/shark' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --build /home/pi/documents/STA_github/ros2_ws/src/build/shark -- -j4 -l4
+[1.704s] Invoking command in '/home/pi/documents/STA_github/ros2_ws/src/build/shark': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/src/build/shark
+[1.759s] -- Install configuration: ""
+[1.763s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/lib/shark/shark
+[1.768s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/ament_index/resource_index/package_run_dependencies/shark
+[1.772s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/ament_index/resource_index/parent_prefix_path/shark
+[1.774s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/environment/ament_prefix_path.sh
+[1.776s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/environment/ament_prefix_path.dsv
+[1.779s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/environment/path.sh
+[1.783s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/environment/path.dsv
+[1.786s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/local_setup.bash
+[1.789s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/local_setup.sh
+[1.799s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/local_setup.zsh
+[1.802s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/local_setup.dsv
+[1.806s] -- Installing: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/package.dsv
+[1.834s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/ament_index/resource_index/packages/shark
+[1.836s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/cmake/sharkConfig.cmake
+[1.837s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/cmake/sharkConfig-version.cmake
+[1.843s] -- Up-to-date: /home/pi/documents/STA_github/ros2_ws/src/install/shark/share/shark/package.xml
+[1.862s] Invoked command in '/home/pi/documents/STA_github/ros2_ws/src/build/shark' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/ydlidar_ros2_driver:/opt/ros/iron /usr/bin/cmake --install /home/pi/documents/STA_github/ros2_ws/src/build/shark

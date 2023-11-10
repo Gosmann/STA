@@ -3,6 +3,14 @@
 #include <string>
 #include <chrono>
 
+#include <stdio.h>
+#include <fcntl.h> 	// Contains file controls like O_RDWR
+#include <errno.h> 	// Error integer and strerror() function
+#include <termios.h> 	// Contains POSIX terminal control definitions
+#include <unistd.h> 	// write(), read(), close()
+#include <time.h>
+
+
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "nav_msgs/msg/odometry.hpp"
@@ -115,35 +123,37 @@ void expand_node( node_t * node, double dt ){
         
         node_t copy_node = node[0];
         
+        float std_speed = 0.08 ;
+        
         switch( actions[i] ){
             case Left_Forwards:                    // expand left forwards
                 copy_node.state.phi = 0.10 ;       // 5.7º
-                copy_node.state.speed = 0.08 ;     // move forwards at 0.08 m/s    
+                copy_node.state.speed = std_speed ;     // move forwards at 0.08 m/s    
                 node->children[ i ] = simulate( &copy_node, dt, Left_Forwards);
                 break;
             case Right_Forwards:                   // expand right forwards
                 copy_node.state.phi = -0.10 ;      // -15º
-                copy_node.state.speed = 1 ;        // move forwards at 1 m/s    
+                copy_node.state.speed = std_speed ;        // move forwards at 1 m/s    
                 node->children[ i ] = simulate( &copy_node, dt, Right_Forwards);
                 break;
             case Forwards:                         // expand forwards
                 copy_node.state.phi = 0 ;          // 0º
-                copy_node.state.speed = 1 ;        // move forwards at 1 m/s    
+                copy_node.state.speed = std_speed ;        // move forwards at 1 m/s    
                 node->children[ i ] = simulate( &copy_node, dt, Forwards);
                 break;
             case Backwards:                        // expand backwards
                 copy_node.state.phi = 0 ;          // 0º
-                copy_node.state.speed = -1 ;       // move forwards at 1 m/s    
+                copy_node.state.speed = -1 * std_speed ;       // move forwards at 1 m/s    
                 node->children[ i ] = simulate( &copy_node, dt, Backwards);
                 break;
             case Left_Backwards:                   // expand left backwards
                 copy_node.state.phi = 0.10 ;       // 15º
-                copy_node.state.speed = -1 ;       // move backwards at 1 m/s    
+                copy_node.state.speed = -1 * std_speed ;       // move backwards at 1 m/s    
                 node->children[ i ] = simulate( &copy_node, dt, Left_Backwards);
                 break;
             case Right_Backwards:                  // expand right forwards
                 copy_node.state.phi = -0.10 ;      // -15º
-                copy_node.state.speed = -1 ;       // move backwards at 1 m/s    
+                copy_node.state.speed = -1 * std_speed ;       // move backwards at 1 m/s    
                 node->children[ i ] = simulate( &copy_node, dt, Right_Backwards);
                 break;
         }
@@ -190,7 +200,8 @@ node_t * a_star( node_t * node, double dt ){
     
     best_node = current_best_node;
 
-    for( i = 0 ; i < 10000 ; i++ ){
+    //for( i = 0 ; i < node->depth ; i++ ){
+    for( i = 0 ; i < 50 ; i++ ){    
 
         //printf("[%d] print possible nodes: \n", i);
         //print_possible_nodes_rec( node ) ;
@@ -230,14 +241,14 @@ int main(int argc, char * argv[])
   rclcpp::init(argc, argv);
   
   //rclcpp::spin(std::make_shared<MapSubscriber>());
- rclcpp::Rate loop_rate(100ms);
+ rclcpp::Rate loop_rate(1000ms);
  auto node_sub = std::make_shared<MapSubscriber>() ;
   
    
   while(1){
     rclcpp::spin_some(node_sub);
-    printf("heigth : %d, width : %d, resolution : %f, origin [x, y, theta] : [%f, %f, %f] \n",
-		heigth, width, resolution, origin.x, origin.y, origin.theta);
+    printf("heigth : %d, width : %d, resolution : %f, origin [x, y, theta] : [%f, %f, %f], robot [x, y, theta] : [%f, %f, %f] \n",
+		heigth, width, resolution, origin.x, origin.y, origin.theta, robot_slam.x, robot_slam.y, robot_slam.theta);
     
     
     
@@ -285,6 +296,37 @@ int main(int argc, char * argv[])
         flag_new_pose = 0;
         
         
+        // write command to serial
+        // int serial_port = open("/dev/ttyUSB0", O_RDWR); 	// usb port
+		int serial_port = open("/dev/ttyUSB0", O_RDWR);	// GPIO pins
+		
+		char buffer_serial[128] = {0} ;	// buffer that stores the commands
+		sprintf(buffer_serial, "s p 10.0 \n");
+		
+		// serial configuration
+		struct termios tty ;		// struct that store serial configuration
+		tcgetattr(serial_port, &tty) ;	
+		tty.c_cc[VTIME] = 0;		// no timeout delay	
+		tty.c_cc[VMIN] = 0;		// no timeout delay
+		cfsetispeed(&tty, B115200);	// define input speed
+		cfsetospeed(&tty, B115200);	// define output speed
+		
+		int n = write(serial_port, buffer_serial, strlen(buffer_serial));
+		
+		if(n < 0){
+			printf("write with error \n");
+		}
+		else if(n == strlen(buffer_serial)){
+			printf("write successful \n");
+		}
+		else{
+			printf("write strange \n");
+		}
+		
+		printf("wait keyboard ... \n");
+		getc(stdin);
+		
+		        
         
     }
     else{

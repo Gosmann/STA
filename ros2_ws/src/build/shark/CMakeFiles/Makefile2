@@ -135,12 +135,12 @@ CMakeFiles/shark_uninstall.dir/clean:
 CMakeFiles/shark.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shark.dir/build.make CMakeFiles/shark.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shark.dir/build.make CMakeFiles/shark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles --progress-num=1,2 "Built target shark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles --progress-num=1,2,3 "Built target shark"
 .PHONY : CMakeFiles/shark.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shark.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/documents/STA_github/ros2_ws/src/build/shark/CMakeFiles 0
 .PHONY : CMakeFiles/shark.dir/rule

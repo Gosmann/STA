@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/shark.dir/src/kinematics.cpp.o"
+  "CMakeFiles/shark.dir/src/kinematics.cpp.o.d"
   "CMakeFiles/shark.dir/src/shark.cpp.o"
   "CMakeFiles/shark.dir/src/shark.cpp.o.d"
   "shark"
