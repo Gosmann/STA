@@ -20,4 +20,6 @@ gosmann@gosmann-G3-3579:~/ros2_ws$ ros2 service call /slam_toolbox/save_map slam
 
 pi@raspberrypi:~$ ros2 launch ydlidar_ros2_driver ydlidar_launch.py
 
+pi@raspberrypi:~$ ros2 launch ydlidar_ros2_driver ydlidar_launch_mod.py
+
 
