@@ -15,7 +15,7 @@ gosmann@gosmann-G3-3579:~/ros2_ws$ ros2 run mobile_robot mobile_robot
 
 gosmann@gosmann-G3-3579:~/ros2_ws$ ros2 launch slam_toolbox online_async_launch.py params_file:=./mapper_params_online_async.yaml
 
-gosmann@gosmann-G3-3579:~/ros2_ws$ ros2 shark shark
+gosmann@gosmann-G3-3579:~/ros2_ws$ ros2 run shark shark
 
 gosmann@gosmann-G3-3579:~/ros2_ws$ rviz2
 
