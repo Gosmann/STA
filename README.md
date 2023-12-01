@@ -1,6 +1,9 @@
 # STA
 
 ## useful commands
+ssh -X pi@192.168.0.166
+
+ifconfig
 
 sudo dd bs=4M if=/dev/mmcblk0 status=progress of=/media/gosmann/external_Ext4/image3.img.gz
 
